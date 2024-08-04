@@ -6,14 +6,36 @@
 
     <title>Document</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- NAVBAR -->
     <nav>
         <div class="events">
             
         </div>
     </nav>
-    <h1>AEROCLUB</h1>
+    <!-- HERO SECTION-->
+     <div class="hero">
+        <div class="slider">
+            <div class="slides">
+                <img src="img\s1.jpg" alt="slide1" id="s1">
+            </div>
+            <div class="slides">
+                <img src="" alt="slide2" id="s2">
+            </div>
+            <div class="slides">
+                <img src="slides" alt="slide3" id="s3">
+            </div>
+        </div>
+            <button id="left" onclick="moveSlide(-1)">
+                <i class="fa-solid fa-less-than"></i>
+            </button>
+            <button id="right" onclick="moveSlide(1)">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+     </div>
+     <script src="script.js"></script>
     
 </body>
 </html>
