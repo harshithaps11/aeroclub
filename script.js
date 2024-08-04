@@ -10,4 +10,4 @@ function moveSlide(step) {
     slides.style.transform = `translateX(${offset}%)`;
 }
 
-setInterval(() => moveSlide(1), 5500);
+setInterval(() => moveSlide(1), 6000);
