@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NKQ5F65G');</script>
+<!-- End Google Tag Manager -->
+  <title>Aero Club Nitte</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../img/logo_aero.png" rel="icon">
+  <link href="../img/logo_aero.png" rel="logo_aero">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Sedgwick+Ave+Display&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../vendor/aos/aos.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
+  <!-- Template Main CSS File -->
+  <link href="../css/style.css" rel="stylesheet">
+  <style>
+ 
+
+    
+    .whatsapp-link {
+      color: #45beff !important;
+    }
+
+    /* Pop-up styles */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow: auto;
+      /* Ensure the entire pop-up is scrollable */
+    }
+
+    .popup-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      max-height: 80vh;
+      /* Set a maximum height for the content */
+      overflow-y: auto;
+      /* Make the content scrollable */
+    }
+
+    .popup h2 {
+      color: #333;
+    }
+
+    .popup p {
+      color: #555;
+    }
+
+    .popup ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .popup button {
+      background-color: #333;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .popup button:hover {
+      background-color: #555;
+    }
+
+    /* Close button style */
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      color: #555;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #333;
+    }
+.portfolio-info {
+  position: relative;
+  cursor: pointer;
+}
+
+.portfolio-info .tooltip {
+  position: absolute;
+  top: 100%; /* Set top to 100% to position it at the bottom */
+  left: 50%;
+  transform: translate(-50%, 7px);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 9999;
+  max-width: 800px;
+  overflow-y: auto; /* Make the tooltip scrollable */
+}
+
+
+
+.portfolio-info:hover .tooltip {
+  display: block;
+  opacity: 1;
+  overflow: auto;
+}
+.tooltip {
+    max-width: 100%;
+    width: 100%;
+}
+
+.scrollable-tooltip {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.scrollable-content {
+    padding: 10px;
+}
+
+.activity-name {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Adjust the transparency by changing the last value (0.5 in this case) */
+        padding: 10px;
+        color: white;
+        text-align: center;
+    }
+@media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+
+    .col-md-6 {
+      order: 2;
+      text-align: center;
+    }
+
+    .col-md-6 .text-md-right {
+      text-align: center;
+      margin-top: 30px; /* Adjust top margin as needed for more space */
+    }
+  }
+ #Welcometitle {
+      padding-left: 5vh; 
+text-align: justify;
+        
+      }
+
+ @media (max-width: 768px) {
+            .animated {
+                text-align: center;
+            }
+.btn-get-started scrollto{
+align:center;}
+
+.col-md-6 {
+    padding-top: 20px; /* Adjust the value according to your preference */
+  }
+ #Welcometitle {
+        text-align: center;
+        
+      }}
+.col-md-6 {
+    padding-top: 20px; /* Adjust the value according to your preference */
+  }
+ 
+  </style>
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKQ5F65G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container_new">
+
+      <div class="logo float-left" style="height: max-content;">
+
+
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="/home"><img src="../img/logo_aero.png" alt="" style=" height: 5vh; width: 5vh;" class="img-fluid"></a>
+      </div>
+
+
+
+      <nav class="nav-menu float-right d-none d-lg-block ">
+
+        <ul>
+          <li class="active"><a href="/home">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/achievement">Achievement</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/vayurvya">Vayurvya</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Join Us <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://chat.whatsapp.com/FxJah3YRcNlKcBUyrEoWlP" class="whatsapp-link">Aero Club Nitte</a>
+              </li>
+              <li><a href="https://chat.whatsapp.com/JMdz3P5vWl31e6HPgweBZR" class="whatsapp-link">Aero Club Nitte
+                  Alumni</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
+
+      <!-- Slide 1 -->
+
+      <!-- Slide 2 -->
+     <div class="carousel-item active">
+        <div class="carousel-container"><br><br>
+          <!--<img src="../assets/img/Vayurvya_Logo.png" style="height: 17vh;">-->
+          <h2 class="animated fadeInDown"></h2>
+          <div class="animated fadeInUp" style="color: black; font-family:'Montserrat'; font-size: 2vh; ">Welcome to Our 10th Anniversary National Technical Competition in the Skies
+            <br>
+            Join us in commemorating a momentous occasion – a remarkable milestone celebration<br>
+            Revitalize Creativity for Tech Enthusiasts : Unleashing Innovation!</div>
+          <h2 class="animated fadeInDown"></h2>
+          <a class="btn-get-started scrollto " style="height: 6vh; color: white;" href="/vayurvya">REGISTER</a>
+        </div>
+      </div>
+
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Space !-->
+  <h2 class="animated fadeInDown"></h2>
+  <h2 class="animated fadeInDown"></h2>
+
+  <!--Vision Section-->
+  <div class="card text-center">
+    <div id="Welcometitle"
+      style="font-size: 3.5vh; color: rgba(1, 1, 66, 0.887);font-style: 'Montserrat' ;">
+      <strong>Welcome to Aeroclub Nitte</strong>
+    </div>
+    <div class="card-body">
+      <p class="card-text" style="font-size: medium; text-align: justify; padding-left: 5vh; padding-right: 5vh;">
+        Established in 2013, it transcended beyond a mere student-led technical club to become a thriving community with
+        a shared passion for conquering the skies. We are more than innovators. We are a hub of excellence, focusing on
+        analysing, fabricating, and testing self-built UAVs that showcase our commitment to cutting-edge technology.
+        At Aeroclub Nitte, we go beyond the realm of machinery. We aspire to nurture a vibrant aviation community that
+        imparts knowledge and skills. As the official aeromodelling team of NMAMIT, we take immense pride in being a
+        testament to the innovative spirit of our institution. Unbounded by geographical limits, we proudly showcase our
+        engineering creativity on the global competition stage, representing NMAMIT as a beacon of ingenuity.<br>
+        <br>
+        In our pursuit of aeronautical excellence, Aeroclub Nitte is a leading institution in the field of aeronautical
+        excellence. We specialise in crafting elegant and efficient aircraft navigating the skies. Our expertise in
+        Aerodynamics has been recognised in prestigious competitions like the SAE Aero Design Competition and the
+        National Level competition hosted by Boeing in IITs nationwide. We are proud to hold the SAE rank 1 south zone
+        in 2023 in the micro class, which is a testament to our dedication and skills.
+        Rooted within the academic tapestry of NMAMIT, Aeroclub Nitte is more than a club. It is a dynamic collective of
+        passionate individuals committed to pushing the boundaries of engineering and aviation.
+      </p><br>
+    </div>
+
+
+  </div>
+
+
+  <!-- ======= Why Us Section ======= -->
+  <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6 video-box">
+          <img src="../img/Thumbnail.jpg" style="height: 100%; width: 100%;" class="img-fluid" alt="">
+          <a href="https://youtu.be/fwTKtaPnbeQ?si=i6IpOyfMcaJrK03F" class="venobox play-btn mb-4" data-vbtype="video"
+            data-autoplay="true"></a>
+          <!--<iframe width="420" height="315" src="https://www.youtube.com/embed/69K4ASfNzug"></iframe>-->
+
+        </div>
+
+        <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-fingerprint"></i></div>
+            <h4 class="title"><a href="">VISION</a></h4>
+            <p class="description">To become a leading force in drone technology
+              and innovation, Aero Club, Nitte envisions
+              fostering technical excellence, building a
+              vibrant aviation community, and expanding its
+              global influence through RC aeromodelling
+              workshops, outreach programs, and
+              collaboration
+
+            </p>
+          </div>
+
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-gift"></i></div>
+            <h4 class="title"><a href="">MISSION</a></h4>
+            <p class="description">Our mission is to share knowledge and expertise while
+              nurturing a vibrant and influential aviation community, all
+              underpinned by our steadfast commitment to excellence as
+              we continually inspire and propel our members to achieve
+              remarkable success in the aviation realm</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Why Us Section -->
+
+
+
+
+  </div>
+  <br>
+  <br>
+
+
+
+
+  <!-- End of Vision Section-->
+
+
+  <!-- Activities Section-->
+
+  <main id="main">
+    
+     <section class="portfolio">
+        <div class="container_new">
+          <h1 class="section-title" style="font-size: 4vh; color: rgba(1, 1, 66, 0.887);font-style: 'Montserrat' ;  padding-top: 20px;">
+            <center><b>What do we do?</b> </center>
+           </h1>
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+    
+            <div class="col-lg-4 col-md-6 filter-app">
+              <div class="portfolio-item">
+                <img src="../img/rc_aeromodelling.jpg" style="height:315px;" class="img-fluid" alt="">
+                <div class="portfolio-info" data-toggle="tooltip" data-placement="bottom">
+                  <h3><a href="../img/rc_aeromodelling.jpg" data-gall="portfolioGallery" class="venobox"
+                      title="App 1"></a></h3>
+                  <a href="../img/rc_aeromodelling.jpgF" data-gall="portfolioGallery" class="venobox"
+                    title="App 1"><b><i class="icofont-square-up"></i></b></a>
+                  <div class="tooltip scrollable-tooltip">
+                    <strong>RC Aeromodelling Workshop</strong><br>
+                    <div class="scrollable-content">
+                    This workshop gives hands on training in building and understanding theory behind Remote-Controlled fixed wing planes. 
+                </div>
+              </div></div>
+ <div class="activity-name">
+            <p> RC Aeromodelling Workshop</p>
+        </div>
+            </div></div>
+
+
+            <div class="col-lg-4 col-md-6 filter-app">
+                <div class="portfolio-item">
+                  <img src="../img/quad.jpg" style="height:315px;" class="img-fluid" alt="">
+                  <div class="portfolio-info" data-toggle="tooltip" data-placement="">
+                    <h3><a href="../img/quad.jpg" data-gall="portfolioGallery" class="venobox"
+                        title="App 1"></a></h3>
+                    <a href="../img/quad.jpg" data-gall="portfolioGallery" class="venobox"
+                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
+                    <div class="tooltip scrollable-tooltip">
+                      <strong>Multicopter Workshop</strong><br>
+                      <div class="scrollable-content">
+                      
+                        A multi-rotor workshop is a hands-on event where participants learn to build and fly their own drones, gaining practical skills in drone assembly and flight operation. It's an ideal introduction to the world of drone technology and offers a fun and educational experience.
+                  </div></div></div>
+ <div class="activity-name">
+            <p>Multicopter Workshop</p>
+        </div>
+                </div>
+              </div>
+    
+
+              <div class="col-lg-4 col-md-6 filter-app">
+                <div class="portfolio-item">
+                  <img src="../img/Autonomous_UAV1.jpg" style="height:315px;" class="img-fluid" alt="">
+                  <div class="portfolio-info" data-toggle="tooltip" data-placement="bottom">
+                    <h3><a href="../img/Autonomous_UAV1.jpg" data-gall="portfolioGallery" class="venobox"
+                        title="App 1"></a></h3>
+                    <a href="../img/Autonomous_UAV1.jpg" data-gall="portfolioGallery" class="venobox"
+                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
+                    <div class="tooltip scrollable-tooltip">
+                      <strong> Autonomous UAV Workshop</strong><br>
+                      <div class="scrollable-content">
+                      This workshop gives hands on experince in building Autonomus UAV. The participants will be working with flight controllers with GPS Modules to achieve autonomus flight.
+                  </div>
+                </div></div>
+<div class="activity-name">
+            <p>Autonomous UAV Workshop</p>
+        </div>
+
+              </div>     </div>
+
+
+    
+              
+           
+
+             <div class="col-lg-4 col-md-6 filter-app">
+              <div class="portfolio-item">
+                <img src="../img/pilot_training1.jpg" style="height:315px;" class="img-fluid" alt="">
+                <div class="portfolio-info" data-toggle="tooltip" data-placement="top">
+                  <h3><a href="../img/pilot_training1.jpg" data-gall="portfolioGallery" class="venobox"
+                      title="App 1"></a></h3>
+                  <a href="../img/pilot_training1.jpg" data-gall="portfolioGallery" class="venobox"
+                    title="App 1"><b><i class="icofont-square-up"></i></b></a>
+                  <div class="tooltip scrollable-tooltip">
+                    <strong>Adavanced UAV Flying Training</strong><br>
+                    <div class="scrollable-content">
+                      Advanced UAV flying training is a comprehensive process that seamlessly integrates simulations and hands-on field training. This multifaceted approach equips pilots with the necessary skills and expertise to operate UAVs effectively in complex real-world environments.
+                </div></div>
+              </div>
+<div class="activity-name">
+            <p>Adavanced UAV Flying Training</p>
+        </div>
+            </div>     </div>
+
+
+            <div class="col-lg-4 col-md-6 filter-app">
+                <div class="portfolio-item">
+                  <img src="../img/national.jpg" style="height:315px;" class="img-fluid" alt="">
+                  <div class="portfolio-info" data-toggle="tooltip" data-placement="bottom">
+                    <h3><a href="../img/national.jpg" data-gall="portfolioGallery" class="venobox"
+                        title="App 1"></a></h3>
+                    <a href="../img/national.jpg" data-gall="portfolioGallery" class="venobox"
+                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
+                    <div class="tooltip scrollable-tooltip">
+                      <strong>National and Zonal Competitions</strong><br>
+                      <div class="scrollable-content">
+                      Participating in national and zonal level competitions offers numerous benefits. Firstly, it provides a platform for individuals to showcase their talents and skills on a broader stage, helping them gain recognition and exposure.
+                      </div>
+                    </div>
+                  </div>
+<div class="activity-name">
+            <p>National and Zonal Competitions</p>
+        </div>
+                </div>
+              </div>
+    
+
+              <div class="col-lg-4 col-md-6 filter-app">
+                <div class="portfolio-item">
+                  <img src="../img/nain.jpeg" style="height:315px;" class="img-fluid" alt="">
+                  <div class="portfolio-info" data-toggle="tooltip" data-placement="bottom">
+                    <h3><a href="../img/nain.jpeg" data-gall="portfolioGallery" class="venobox"
+                        title="App 1"></a></h3>
+                    <a href="../img/nain.jpeg" data-gall="portfolioGallery" class="venobox"
+                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
+                    <div class="tooltip scrollable-tooltip">
+                      <strong>Government Funded Projects</strong><br>
+                      <div class="scrollable-content">
+                      Government-funded projects are harnessing the power of innovation by pitching drone solution ideas at various events. This proactive approach aims to address real-life problems through cutting-edge technology, fostering a brighter future for society.
+                    </div></div>
+                  </div>
+<div class="activity-name">
+            <p>Government Funded Projects</p>
+        </div>
+                </div>
+              </div>
+
+
+
+              <!-- <div class="col-lg-4 col-md-6 filter-app">
+                <div class="portfolio-item">
+                  <img src="../img/aerial_pesticide_sprayer.jpg" style="height:315px;" class="img-fluid" alt="">
+                  <div class="portfolio-info" data-toggle="tooltip" data-placement="bottom">
+                    <h3><a href="../img/aerial_pesticide_sprayer.jpg" data-gall="portfolioGallery" class="venobox"
+                        title="App 1"></a></h3>
+                    <a href="../img/aerial_pesticide_sprayer.jpg" data-gall="portfolioGallery" class="venobox"
+                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
+                    <div class="tooltip">
+                      <strong>Building Artificial Intelligence System</strong><br>
+                      Building artificial intelligence systems that harness cutting-edge AI solutions in combination with drones presents an innovative approach to efficiently address complex challenges. This synergy empowers us to unlock new possibilities in various domains.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4 col-md-6 filter-app">
+                <div class="portfolio-item">
+                  <img src="../img/aerial_pesticide_sprayer.jpg" style="height:315px;" class="img-fluid" alt="">
+                  <div class="portfolio-info" data-toggle="tooltip" data-placement="bottom">
+                    <h3><a href="../img/aerial_pesticide_sprayer.jpg" data-gall="portfolioGallery" class="venobox"
+                        title="App 1"></a></h3>
+                    <a href="../img/aerial_pesticide_sprayer.jpg" data-gall="portfolioGallery" class="venobox"
+                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
+                    <div class="tooltip">
+                      <strong> Web and App Development</strong><br>
+                      Web and app development is a dynamic field that empowers individuals to create innovative digital solutions. To excel in this industry, one must continually upskill through rigorous learning and hands-on projects to stay at the forefront of technological advancements.
+                  </div>
+                </div>
+              </div> -->
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  </main> <!-- End #main -->
+
+
+    <!-- Activities section-->
+
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="400">
+      <div class="container_new">
+        <br>
+        <h1 class="section-title"
+          style="font-size: 4vh; color: rgba(1, 1, 66, 0.887);font-style: 'Montserrat' ;">
+          <center><b>Our pillars of support</b></center>
+        </h1>
+
+
+        <div class="slider owl-carousel">
+          <div class="card">
+            <div class="member">
+              <div class="member-img">
+                <img src="../img/gururaj.jpg" style="height: 314px; width: 466px;" class="img-fluid" alt="">
+                <div class="social">
+
+                  <a href="https://www.linkedin.com/in/gururaj-upadhyaya-24b24515"><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Dr. Gururaj Upadhyaya</h4>
+                <span>Associate Professor<br>Dept of ME, NMAMIT<br><br><br> </span>
+
+              </div>
+            </div>
+          </div>
+            <div class="card">
+            <div class="member">
+              <div class="member-img">
+                <img src="../img/Divin.jpg" style="height: 308px; width: 466px;" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Lt Cdr Divin Bharadwaj</h4>
+                <span>Founder of AeroClub Nitte
+                  <br>Indian Navy</span>
+                <br><br>
+              </div>
+            </div>
+          </div>
+
+         <!-- <div class="card">
+            <div class="member">
+              <div class="member-img">
+                <img src="../img/ananth200.jpeg" style="height: 314px; width: 466px;" class="img-fluid" alt="">
+                <div class="social">
+
+                  <a href="https://www.linkedin.com/in/ananth-erasappa-83995583"><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Mr. Ananth Erasappa</h4>
+                <span>UAV Operator<br>UN peacekeeping mission<br><br><br></span>
+
+              </div>
+            </div>
+          </div>-->
+
+          <div class="card">
+            <div class="member">
+              <div class="member-img">
+                <img src="../img/kathik1.jpg" style="height: 308px; width: 466px;" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/karthik-badanidiyoor/"><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Mr. Karthik B</h4>
+                <span>Senior executive
+                  <br>Tata Aerospace and Defense</span>
+                <br><br>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="member">
+              <div class="member-img">
+                <img src="../img/harshita1.jpeg" style="height: 314px; width: 466px;" class="img-fluid" alt="">
+
+                <div class="social">
+
+                  <a href="https://www.linkedin.com/in/harshitha-g-suresh"><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info">
+                <h4>Ms. Harshitha GS</h4>
+                <span>Paid media executive<br>The Ascot Group, UK<br><br><br></span>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="member">
+              <div class="member-img">
+                <img src="../img/ankith.jpg" style="height: 314px; width: 466px;" class="img-fluid" alt="">
+                <div class="social">
+
+                  <a href="https://www.linkedin.com/in/ankith-bhandary-1b5234193/"><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+               <h4>Mr. Ankith Bhandary</h4>
+                <span>Software Development Engineer-2
+                  <br>OCI, Oracle<br><br> <br></span>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="member">
+              <div class="member-img">
+                <img src="../img/sushmita.jpg" style="height: 314px; width: 466px;" class="img-fluid" alt="">
+                <div class="social">
+
+                  <a href="https://www.linkedin.com/in/sushmita-s-shetty-125214180"><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Ms. Sushmita S Shetty</h4>
+                <span>DSE<br>Jfrog<br><br><br></span>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="member">
+              <div class="member-img">
+                <img src="../img/deekshityo.jpg" style="height: 314px; width: 466px;" class="img-fluid" alt="">
+                <div class="social">
+
+                  <a href="https://www.linkedin.com/in/deekshith-prabhu-1888ba212/"><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Mr. Deekshith Prabhu</h4>
+                <span>System Engineer<br>Karman Drones<br><br><br></span>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card" style="height: 474px;">
+            <div class="member">
+              <div class="member-img">
+                <img src="../img/team/amankumar.jpg" style="height:314px; width:466px" class="img-fluid" alt="">
+                <div class="social">
+
+                  <a href="https://www.linkedin.com/in/aman-kumar-srivastav-544591202/"><i
+                      class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Mr. Aman Kumar Srivastav</h4>
+                <span>UAV Design Engineer and Test Pilot <br>blueINFINITY Innovation Labs</span>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+        <br>
+
+        <script>
+          $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 1000, //1000ms = 1s;
+            responsiveClass: true,
+            responsive: {
+              0: {
+                items: 1,
+                nav: true
+              },
+              600: {
+                items: 3,
+                nav: true
+              },
+              1000: {
+                items: 5,
+                nav: true,
+                loop: true
+              }
+            },
+
+            autoplayHoverPause: true,
+          });
+        </script>
+
+
+      </div>
+      </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+
+    
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos-duration="500">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Address</h2>
+        <p>
+          Aeroclub Nitte<br>
+          NMAM Institute of Technology<br>
+          3rd Floor Jnana Saudha<br>
+          Karkala, Udupi<br>
+          Karnataka<br>
+          Pin Code - 574110<br>
+          +91 9113589277
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <div class="text-md-right" style="margin-top: 30px;"> <!-- Adjust top margin as needed for more space -->
+          <a href="https://www.facebook.com/aeroclubnitte/" class="facebook" style="color: white;"><i
+              class="bx bxl-facebook bx-sm"></i> Facebook</a><br>
+          <a href="https://instagram.com/aeroclubnitte?utm_medium=copy_link" class="instagram"
+            style="color: white;"><i class="bx bxl-instagram bx-sm"></i> Instagram</a><br>
+          <a href="https://www.linkedin.com/company/aeroclub-nitte" class="linkedin"
+            style="color: white;"><i class="bx bxl-linkedin bx-sm"></i> LinkedIn</a><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Aero Club Nitte</span></strong>. All Rights Reserved |
+          <a href="/privacy-policy" style="color: blue; text-decoration: underline;" target="_blank">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+
+  <!-- End Footer -->
+  <!-- Privacy Policy Pop-up -->
+  <div id="privacyPolicyPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePrivacyPolicyPopup()">&times;</span>
+      <h2>Privacy Policy</h2>
+      <p><strong>Effective Date:</strong> 13-01-2024</p>
+      <p>
+        At Aeroclub Nitte, we are committed to protecting your privacy and ensuring the security of your personal
+        information.
+        This Privacy Policy outlines how we collect, use, share, and safeguard the information you provide using our
+        website.
+      </p><br>
+      <h3>Information We Collect:</h3>
+      <p>
+        When you visit our website or engage with us, we may collect the following types of information:
+      </p>
+      <ul>
+        <li><strong>Personal Information:</strong> Name, contact information (email address, phone number), and any
+          other information you voluntarily provide.</li>
+        <li><strong>Usage Information:</strong> We may collect information about how you interact with our website,
+          including IP addresses, browser types, and browsing patterns.</li>
+      </ul>
+      <br>
+      <h3>How We Use Your Information:</h3>
+      <p>
+        We will use the information we collect for the following purposes:
+      </p>
+      <ul>
+        <li>To contact you about our events and activities.</li>
+        <li>To improve our website and enhance user experience.</li>
+        <li>To communicate with you regarding updates, newsletters, and other relevant information.</li>
+      </ul>
+      <br>
+      <h3>Sharing Your Information:</h3>
+      <p>
+        We may share your information with our partners, who may contact you about their products and services. However,
+        we will not sell, trade, or rent your personal information to third parties for marketing purposes.
+      </p>
+      <br>
+      <h3>Your Consent:</h3>
+      <p>
+        By providing your information to Aeroclub Nitte, you consent to collecting, using, and sharing your information
+        as described in this Privacy Policy.
+      </p>
+      <br>
+      <h3>Security:</h3>
+      <p>
+        We take reasonable measures to protect the information you provide to us from unauthorized access or disclosure.
+        However, no data transmission over the Internet can be guaranteed to be completely secure, and we cannot ensure
+        or warrant the security of any information you transmit to us.
+      </p>
+      <br>
+      <h3>Your Choices:</h3>
+      <p>
+        You can opt out of receiving communications from us or our partners. If you wish, please contact us at
+        aeroclubnitte@nmamit.in
+      </p>
+      <br>
+      <h3>Changes to the Privacy Policy:</h3>
+      <p>
+        We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated
+        effective date.
+      </p>
+      <br>
+      <h3>Contact Us:</h3>
+      <p>
+        If you have any questions or concerns about our Privacy Policy, please contact us at aeroclubnitte@nmamit.in.
+      </p>
+      <br>
+      <p>
+        Thank you for trusting Aeroclub Nitte with your information. We are dedicated to maintaining your privacy and
+        providing a secure and enjoyable online experience.
+      </p>
+      <br>
+
+    </div>
+  </div>
+
+  <!-- JavaScript code for the privacy policy pop-up functionality -->
+  <script>
+    // Function to open the privacy policy pop-up
+    function openPrivacyPolicyPopup() {
+      document.getElementById('privacyPolicyPopup').style.display = 'block';
+    }
+
+    // Function to close the privacy policy pop-up
+    function closePrivacyPolicyPopup() {
+      document.getElementById('privacyPolicyPopup').style.display = 'none';
+    }
+  </script>
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../vendor/php-email-form/validate.js"></script>
+  <script src="../vendor/venobox/venobox.min.js"></script>
+  <script src="../vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../vendor/counterup/counterup.min.js"></script>
+  <script src="../vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../vendor/aos/aos.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script>
+    const scrollingBox = document.getElementById('scrollingBox');
+    let isSmaller = false;
+    const stick_to_top = document.createElement('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 800 && !isSmaller) {
+        scrollingBox.classList.add('smaller');
+        isSmaller = true;
+      } else if (window.scrollY <= 600 && isSmaller) {
+        scrollingBox.classList.remove('smaller');
+        isSmaller = false;
+      }
+    });
+  </script>
+
+  <!-- Template Main JS File -->
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>
