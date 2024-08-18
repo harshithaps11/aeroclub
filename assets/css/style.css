@@ -3740,3 +3740,25 @@ button {
 /*  ------------------------------------------------
     flipcards
     -----------------------------------------------*/
+
+
+/*events page*/
+.events{
+    position:relative;
+    top:80px;
+}
+.slider{
+    height:500px;
+    width:100%;
+    border: 1px solid black;
+
+}
+.year{
+    height:500px;
+    width:100%;
+    border: 1px solid black;
+
+}
+#2023-24{
+    
+}
