@@ -32,7 +32,9 @@ app.get("/home", (req, res) => {
 app.get("/projects", (req, res) => {
   res.render("projects.ejs");
 });
-
+app.get("/events", (req, res) => {
+  res.render("events.ejs");
+});
 app.get("/gallery", (req, res) => {
   res.render("gallery.ejs");
 });
