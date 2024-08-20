@@ -3754,11 +3754,26 @@ button {
 
 }
 .year{
-    height:500px;
+    height:auto;
     width:100%;
     border: 1px solid black;
 
 }
-#2023-24{
-    
+.contain_eve{
+    height:30px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#a2cce3;
+   
+    box-shadow: #0d2735;
+    display: inline;
+    justify-content: center;
+}
+.eve_box{
+    margin:20px;
+    width: 30%;
+    height: 250px;
+    border: 1px solid black;
+  
 }
