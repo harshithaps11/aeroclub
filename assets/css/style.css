@@ -3765,7 +3765,7 @@ button {
    
     background-color:#a2cce3;
    
-    box-shadow:0 12px 0  #0d2735 ;
+    box-shadow:0 5px 10px 0  #0d2735 ;
    
 }
 .eve_box{
@@ -3773,6 +3773,7 @@ button {
     width: 30%;
     height: 250px;
     border: 1px solid black;
+    box-shadow: 0 5px 8px 0;
   
 }
 
