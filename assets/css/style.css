@@ -3762,13 +3762,11 @@ button {
 .contain_eve{
     height:30px;
     width:100%;
-    display: flex;
-    justify-content: space-between;
+   
     background-color:#a2cce3;
    
-    box-shadow: #0d2735;
-    display: inline;
-    justify-content: center;
+    box-shadow:0 12px 0  #0d2735 ;
+   
 }
 .eve_box{
     margin:20px;
@@ -3777,3 +3775,11 @@ button {
     border: 1px solid black;
   
 }
+
+.ha{
+display: flex;
+justify-content: center;;
+flex-direction: row;
+
+}
+
