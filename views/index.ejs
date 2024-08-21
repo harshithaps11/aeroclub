@@ -46,7 +46,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
+  <link rel="stylesheet" href="styles.css">
 
   <!-- Template Main CSS File -->
   <link href="../css/style.css" rel="stylesheet">
@@ -267,22 +267,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-cntent-center align-items-center">
     <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
-
-      <!-- Slide 1 -->
-
-      <!-- Slide 2 -->
-     <div class="carousel-item active">
-        <div class="carousel-container"><br><br>
-          <!--<img src="../assets/img/Vayurvya_Logo.png" style="height: 17vh;">-->
-          <h2 class="animated fadeInDown"></h2>
-          <div class="animated fadeInUp" style="color: black; font-family:'Montserrat'; font-size: 2vh; ">Welcome to Our 10th Anniversary National Technical Competition in the Skies
-            <br>
-            Join us in commemorating a momentous occasion – a remarkable milestone celebration<br>
-            Revitalize Creativity for Tech Enthusiasts : Unleashing Innovation!</div>
-          <h2 class="animated fadeInDown"></h2>
-          <a class="btn-get-started scrollto " style="height: 6vh; color: white;" href="/vayurvya">REGISTER</a>
+      <div class="hero-section">
+        <div class="sl">
+          <div class="sl1" >
+            <img src="assets\img\6_sec_comp.gif" id="s1">
+          </div>
+          <div class="sl1" id="s2">
+            
+          </div>
+          <div class="sl1" id="s3">
+            
+          </div>
         </div>
       </div>
+      <button id="left" onclick="moveSlide(-1)">
+        <i class="fa-solid fa-less-than"></i>
+      </button>
+      <button id="right" onclick="moveSlide(1)">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+    <script src=".js"></script>
 
 
       <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">

@@ -1,0 +1,52 @@
+.hero-section{
+    height: 90vh;
+    width: 100%;
+}
+.sl{
+    width: 100%;
+    height: 90vh;
+    transition: transform 0.5s ease-in-out;
+}
+.sl1{
+    width: 100%;
+    height: 90vh;
+    box-sizing: border-box;
+    background-size: contain;
+  
+}
+#s1{
+    width: 100%;
+    height: 90vh;
+}
+#s2{
+    width: 100%;
+    height: 90vh;
+  
+    background-size: contain;
+} 
+#s3{
+    width: 100%;
+    height: 90vh;
+
+    background-size: contain;
+}
+button{
+    position: absolute;
+    top: 300px;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+    border: 0;
+    color: white;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: white;
+    color: rgba(0,0,0,0.5); ;
+    transition: all 0.5s ease-out;
+}
+#left{
+    left: 0;
+}
+#right{
+    right: 0;
+}
