@@ -3470,7 +3470,7 @@ button {
 }
 
 .read_more:hover {
-    background: blue;
+    background: rgb(63, 4, 150);
     color: #fff;
     transition: ease-in all 0.5s;
     border-radius: 25px;
@@ -3617,7 +3617,7 @@ button {
 }
 
 .multi {
-    color: #f6d601;
+    color: #2601f6;
     font-weight: bold;
     font-size: 40px;
 }
@@ -3679,7 +3679,7 @@ button {
 }
 
 .copyright-11 a:hover {
-    color: #eec237;
+    color: #37e5ee;
 }
 
 /** end footer **/
