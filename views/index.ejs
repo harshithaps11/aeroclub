@@ -267,10 +267,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-cntent-center align-items-center">
       <div class="hero-section">
-        <img src="img1.png" alt="hero-image">
+        <img src="img1.png" class="slide" alt="hero-image">
+        <img src="web.png" class="slide" alt="hero-image">
+        <img src="img1.png" class="slide" alt="hero-image">
       </div>
+      <button>
+          pre
+      </button>
+      <button>
+          next
+      </button>
   </section>
-
+  
+  <script>
+    const slides = document.querySelectorAll(".slide")
+    var counter =0;
+    slides.forEach(
+      (hero-img,index)=>{
+        slide.style.left = `${index * 100}%`
+      }
+    )
+    const goNext = () =>{
+      counter++
+      slideImage()
+    }
+    const slideImage=() => {
+      slides.forEach(
+        (slide)=> {
+          slide.style.transform = `transalteX(-${counter * 100}%)`
+        }
+      )
+    }
+  </script>
 
   <!-- Space !
   <h2 class="animated fadeInDown"></h2>
