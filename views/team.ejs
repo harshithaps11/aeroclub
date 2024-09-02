@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -40,7 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link href="../css/style.css" rel="stylesheet">
 <style>
 .whatsapp-link {
-  color: #45beff !important;
+  color: #45ff64 !important;
 }
 /* Pop-up styles */
     .popup {
@@ -64,7 +63,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       padding: 20px;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      max-width: 600px;
+      max-width: 800px;
       max-height: 80vh;
       /* Set a maximum height for the content */
       overflow-y: auto;
@@ -76,7 +75,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     .popup p {
-      color: #555;
+      color: #4e79a4;
     }
 
     .popup ul {
@@ -86,7 +85,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     .popup button {
       background-color: #333;
-      color: #fff;
+      color: #2676c2cb;
       padding: 10px 20px;
       border: none;
       border-radius: 5px;
@@ -94,7 +93,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     .popup button:hover {
-      background-color: #555;
+      background-color: #7499b5;
     }
 
     /* Close button style */
@@ -103,13 +102,83 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       top: 10px;
       right: 10px;
       font-size: 20px;
-      color: #555;
+      color: #555555;
       cursor: pointer;
     }
 
     .close:hover {
-      color: #333;
+      color: #4e3333;
     }
+      /* Navbar styles */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #008cba; /* Adjust color to match your design */
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #005f73;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #008cba;
+    color: white;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #005f73;
+}
+
 @media (max-width: 768px) {
     .row {
       flex-direction: column;
@@ -122,100 +191,182 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     .col-md-6 .text-md-right {
       text-align: center;
-      margin-top: 30px; /* Adjust top margin as needed for more space */
+      margin-top: -20px; /* Adjust top margin as needed for more space */
     }
   }
 .col-md-6 {
-    padding-top: 20px; /* Adjust the value according to your preference */
+    padding-top: 0px; /* Adjust the value according to your preference */
   }
+    html {
+          scroll-behavior: smooth;
+          }
 
-</style>
+   
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Wrapper for background image and content */
+        .background-wrapper 
+        {
+            position: relative;
+            background-image: url('../img/team/coreteam.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 95vh; /* Adjust height as needed */
+        }
+        
+        /* Semi-transparent overlay */
+        .background-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(0deg, rgba(206, 209, 209, 0.525), rgba(71, 196, 227, 0.525)); /* Adjust colors and opacity */
+            z-index: 1;
+        }
+        .background-wrapper > * {
+           position: relative;
+            z-index: 2;
+          }
+        /* Content on top of the background */
+        .content {
+            position: relative;
+            z-index: 2;
+            color: rgba(38, 38, 174, 0.649); /* Text color */
+            padding: 20px;
+            text-align: center;
+        }
+        /* Hover effect for team members */
+      .team-member {
+        display: inline-block;
+         margin: 100px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
+  /* Add hover effect */
+    .team-member:hover {
+       transform: scale(2.1); /* Slightly increase the size */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a shadow */
+        cursor: pointer; /* Change cursor to pointer */
+      }
 
+        
+    /* Team member images */
+    .team-member img 
+    {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      transition: transform 0.3s ease; /* Smooth image hover transition */
+    }
+
+    .team-member:hover img {
+    transform: scale(2.5); /* Slight zoom effect on image hover */
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    margin: 1;
+    font-size: 14px;
+}
+    </style>
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKQ5F65G"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-   <!-- ======= Header ======= -->
-   <header id="header" class="fixed-top header-transparent">
-    <div class="container_new">
-
-      <div class="logo float-left" style="height: max-content;">
-
-
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="/home"><img src="../img/logo_aero.png" alt="" style=" height: 5vh; width: 5vh;" class="img-fluid"></a>
-      </div>
-
-
-
-      <nav class="nav-menu float-right d-none d-lg-block ">
-
-        <ul>
-          <li class="active"><a href="/home">Home</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/achievement">Achievement</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/team">Team</a></li>
-          <li><a href="/contact">Contact Us</a></li>
-          <li><a href="/vayurvya">Vayurvya</a></li>
-<li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Join Us <span class="caret"></span></a>
-    <ul class="dropdown-menu">
-      <li><a href="https://chat.whatsapp.com/FxJah3YRcNlKcBUyrEoWlP" class="whatsapp-link">Aero Club Nitte</a></li>
-      <li><a href="https://chat.whatsapp.com/JMdz3P5vWl31e6HPgweBZR" class="whatsapp-link">Aero Club Nitte Alumni</a></li>
-    </ul>
-  </li>
-        </ul>
-      </nav><!-- .nav-menu -->
-
+  
+  <div class="background-wrapper">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKQ5F65G"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        
+           <!-- ======= Header ======= -->
+           <header id="header" class="fixed-top header-transparent">
+            <div class="container_new">
+        
+              <div class="logo float-left" style="height: max-content;">
+        
+        
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <a href="/home"><img src="../img/logo_aero.png" alt="" style=" height: 5vh; width: 5vh;" class="img-fluid"></a>
+              </div>
+        
+        
+        
+              <nav class="nav-menu float-right d-none d-lg-block ">
+        
+                <ul>
+                  <li class="active"><a href="/home">Home</a></li>
+                  <li><a href="/projects">Projects</a></li>
+                  <li><a href="/achievement">Achievement</a></li>
+                  <li><a href="/gallery">Gallery</a></li>
+                  <li class="dropdown">
+                    <a href="/team" class="dropdown-toggle" data-toggle="dropdown">Team</a>
+                    <div class="dropdown-content">
+                        <a href="#2020-24 BATCH">2020-24 BATCH</a>
+                        <a href="#2021-25 BATCH">2021-25 BATCH</a>
+                        <a href="#2022-26 BATCH">2022-26 BATCH</a>
+                        <a href="#2023-27 BATCH">2023-27 BATCH</a>
+                    </div>
+                  </li>            
+                  <li><a href="/contact">Contact Us</a></li>
+                  <li><a href="/vayurvya">Vayurvya</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Join Us <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://chat.whatsapp.com/FxJah3YRcNlKcBUyrEoWlP" class="whatsapp-link">Aero Club Nitte</a></li>
+              <li><a href="https://chat.whatsapp.com/JMdz3P5vWl31e6HPgweBZR" class="whatsapp-link">Aero Club Nitte Alumni</a></li>
+            </ul>
+          </li>
+                </ul>
+              </nav><!-- .nav-menu -->
+        
+            </div>
+          </header><!-- End Header -->
+        
+          <main id="main">
+           
+            <!-- ======= Our Team Section ======= -->
+           
+            </section><!-- End Our Team Section -->
     </div>
-  </header><!-- End Header -->
-
-  <main id="main">
-
-    <!-- ======= Our Team Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container_new">
-
+     <!-- ======= Team Section ======= -->
+     <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container_new">  <div class="container_new">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Our Team</h2>
-          <ul>
-            <li><a href="/home">Home</a></li>
-            <li>Our Team</li>
-          </ul>
+        
+          <h2><b>OUR TEAM</b></h2></div>
+        
         </div>
-
-      </div>
-    </section><!-- End Our Team Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-      <div class="container_new">
-        <div class="container_new">
+        <div class="container_new" id="2022-26 BATCH">
         <center><h2>2022-26 BATCH</h2></center></div>
         <div class="row">
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                <div class="member" style="position: relative; z-index: 1;">
-                    <div class="member-img">
-                        <img src="../img/team/ritheesh3.jpg" style="height: 400px; width: 500px;" class="img-fluid" alt="">
-                        <div class="social" >
-                            <a href="https://www.linkedin.com/in/rithesh-shetty-37b62424b/"><i class="icofont-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <div class="member-info" style="position: relative; top: 20px;">
-                        <h4>Rithesh Shetty</h4>
-                        <span>President</span>
-                        <span>Mechanical Engineering</span>
-                    </div>
+         
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="../img/team/ritheesh3.jpg" style="height: 400px; width: 500px;"  class="img-fluid" alt="">
+                <div class="social">
+
+                  <a href="https://www.linkedin.com/in/rithesh-shetty-37b62424b/"><i class="icofont-linkedin"></i></a>
                 </div>
+              </div>
+              <div class="member-info">
+                <h4>Rithesh Shetty</h4>
+                <span >President</span>
+                <span>Mechanical engineering</span>
+
+              </div>
             </div>
-            
+          </div> 
 
           
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
@@ -411,21 +562,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h4>Sanjana S</h4>
                 <span >Recruitment lead</span>
                 <span>INFORMATION SCIENCE ENGINEERING</span>
-
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
-
+        </div>
+        
+                 
           <div class="container_new">
             <center><h2>2023-27 BATCH</h2></center></div>
-            <div class="row"></div>
-         <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
+            <div class="row">
+         
+          
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
+          
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           
             <div class="member">
@@ -824,16 +973,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </div>
           </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="../img/team/abhyudaya.jpg" style="height: 400px; width: 500px;" class="img-fluid" alt="">
+                <div class="social">
 
-   <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
-   <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
-
+                  <a href="https://www.linkedin.com/in/abhyudaya-j-acharya-ab0307280/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Abhyudaya J</h4>
+                <span>Computer science and ENGINEERING </span>
+              </div>
+            </div>
+          </div>
+</div>
           <div class="container_new">
             <center><h2>2021-25 BATCH</h2></center></div>
             <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
+          
+          
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
@@ -982,8 +1142,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
-</div>
-<div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
+  </div>
+ 
 
           <div class="container_new">
             <center><h2>2020-24 BATCH</h2></center></div>
@@ -1169,20 +1329,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-
-          
-
-
-
-         
-
-          
-      
-
-
-          
-    
-
               </div>
             </div>
           </div>
@@ -1334,7 +1480,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- Template Main JS File -->
   <script src="../js/main.js"></script>
-
 </body>
-
 </html>
