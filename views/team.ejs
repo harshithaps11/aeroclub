@@ -310,10 +310,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <li class="dropdown">
                     <a href="/team" class="dropdown-toggle" data-toggle="dropdown">Team</a>
                     <div class="dropdown-content">
-                        <a href="#2020-24 BATCH">2020-24 BATCH</a>
-                        <a href="#2021-25 BATCH">2021-25 BATCH</a>
-                        <a href="#2022-26 BATCH">2022-26 BATCH</a>
-                        <a href="#2023-27 BATCH">2023-27 BATCH</a>
+                        <a href="#2020-24BATCH" >2020-24 BATCH</a>
+                        <a href="#2021-25BATCH">2021-25 BATCH</a>
+                        <a href="#2022-26BATCH">2022-26 BATCH</a>
+                        <a href="#2023-27BATCH">2023-27 BATCH</a>
                     </div>
                   </li>            
                   <li><a href="/contact">Contact Us</a></li>
@@ -345,7 +345,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <h2><b>OUR TEAM</b></h2></div>
         
         </div>
-        <div class="container_new" id="2022-26 BATCH">
+    
+        <div class="container_new" id="2022-26BATCH" >
         <center><h2>2022-26 BATCH</h2></center></div>
         <div class="row">
 
@@ -567,8 +568,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
         
-                 
-          <div class="container_new">
+      
+      
+          <div class="container_new" id="2023-27BATCH" >
             <center><h2>2023-27 BATCH</h2></center></div>
             <div class="row">
          
@@ -988,8 +990,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
             </div>
           </div>
-</div>
-          <div class="container_new">
+      </div>
+          
+          <div class="container_new" id="2021-25BATCH">
             <center><h2>2021-25 BATCH</h2></center></div>
             <div class="row">
           
@@ -1145,7 +1148,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
  
 
-          <div class="container_new">
+          <div class="container_new" id="2020-24BATCH">
             <center><h2>2020-24 BATCH</h2></center></div>
             <div class="row">
 
@@ -1480,5 +1483,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <!-- Template Main JS File -->
   <script src="../js/main.js"></script>
+<script>
+ const teamDropdown = document.querySelector('.dropdown');
+const teamLinks = document.querySelectorAll('.dropdown-content a');
+
+teamDropdown.addEventListener('click', (e) => {
+    e.preventDefault(); 
+});
+
+teamLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default link behavior
+        const targetId = e.target.getAttribute('href'); // Get the target section ID
+        const targetElement = document.querySelector(targetId); // Find the target element
+        targetElement.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
+    });
+});
+</script>
+
 </body>
 </html>
