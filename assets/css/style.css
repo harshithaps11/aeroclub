@@ -1,6 +1,6 @@
 body {
     font-family: "Montserrat";
-    color: #444;
+    background-color: white;
 }
 
 a {
@@ -351,10 +351,10 @@ h6,
 #hero::after {
     content: "";
     position: absolute;
-    left: 50%;
+    left: 60%;
     top: 0;
     width: 100%;
-    height: 95%;
+    height: 100%;
     /*background-image: url("../img/Vayurvya\ _F.svg");*/
     background-size: cover;
     z-index: 0;
@@ -376,7 +376,7 @@ h6,
     transform: translateX(-50%) translateY(18px) rotate(2deg);
   } */
 
-#hero .carousel-container {
+/*#hero .carousel-container {
     display: flex;
     justify-content: left;
     align-items: start;
@@ -385,8 +385,8 @@ h6,
     position: relative;
     top: 0;
     left: 0;
-    /* transform: translate(-50%, -50%); */
-}
+    /* transform: translate(-50%, -50%); 
+}*/
 @media (max-width: 768px) {
    #hero .carousel-container {
     display: flex;
@@ -504,12 +504,25 @@ h6,
         transform: translateX(-50%) translateY(20px) rotate(4deg);
     }
 }
+.notification{
+    width: 50px;
+    height: 150px;
+    position: fixed;
+    top:590px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color:#CBF7ED;
+    border-radius: 0px 20px 20px 0;
+}
 
 /* Carosal mentors*/
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
-* .slider {
+/* .slider {
     max-width: 100%;
     display: flex;
 }
@@ -518,7 +531,7 @@ h6,
     flex: 0 1;
     margin: 0 10px;
     background: rgb(253, 252, 252);
-    /* height: 60vh; */
+     height: 60vh; 
 }
 
 .slider .card .img {
@@ -585,7 +598,7 @@ h6,
 
 .card .content .btn button:hover {
     transform: scale(0.9);
-}
+}*/
 
 /*--------------------------------------------------------------
   # Sections General
@@ -3470,7 +3483,7 @@ button {
 }
 
 .read_more:hover {
-    background: blue;
+    background: rgb(63, 4, 150);
     color: #fff;
     transition: ease-in all 0.5s;
     border-radius: 25px;
@@ -3617,7 +3630,7 @@ button {
 }
 
 .multi {
-    color: #f6d601;
+    color: #2601f6;
     font-weight: bold;
     font-size: 40px;
 }
@@ -3679,7 +3692,7 @@ button {
 }
 
 .copyright-11 a:hover {
-    color: #eec237;
+    color: #37e5ee;
 }
 
 /** end footer **/
@@ -3784,3 +3797,7 @@ flex-direction: row;
 
 }
 
+
+ 
+
+ 
