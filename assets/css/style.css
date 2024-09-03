@@ -3763,19 +3763,55 @@ button {
 .slider{
     height:500px;
     width:100%;
-    border: 1px solid black;
+
+
 
 }
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust this height as needed */
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire hero section */
+    z-index: 1; /* Keeps the image below any overlay content */
+}
+
+.overlay-content {
+    position: absolute;
+    z-index: 2; /* Places content above the image */
+    color: white; /* Text color */
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
 .year{
     height:auto;
     width:100%;
-    border: 1px solid black;
+    
 
 }
 .contain_eve{
     height:30px;
     width:100%;
-   
+    margin-top: 20px;
     background-color:#a2cce3;
    
     box-shadow:0 5px 10px 0  #0d2735 ;
@@ -3785,9 +3821,9 @@ button {
     margin:20px;
     width: 30%;
     height: 250px;
-    border: 1px solid black;
+    
     box-shadow: 0 5px 8px 0;
-  
+    border-radius: 10px;
 }
 
 .ha{
@@ -3797,7 +3833,60 @@ flex-direction: row;
 
 }
 
+.ha {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  .eve_box {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .image_container {
+    position: relative;
+    
+  }
+  
+  .image_container img {
+    width: 100%;
+    height: 250px;
+    transition: opacity 0.5s ease;
+    border-radius: 10px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 10px;
+  }
+  
+  .image_container:hover img {
+    opacity: 0.3; /* Make the image transparent on hover */
+  }
+  
+  .image_container:hover .overlay {
+    opacity: 1; /* Show the overlay on hover */
+  }
+  
+  .heading {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white; /* Adjust this color as needed */
+  }
 
- 
-
- 
+ .two{
+    margin-bottom: 100px;
+ }
