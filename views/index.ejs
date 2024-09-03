@@ -295,11 +295,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-cntent-center align-items-center">
       <div class="hero-section">
+        <div class="slides">
+        <img src="web.png" class="hero-img" alt="hero-image">
+        </div>
+        <div class="slides">
         <img src="img1.png" class="hero-img" alt="hero-image">
-  
+        </div>
+        <div class="slides">
+        <img src="pilot_training.jpg" class="hero-img" alt="hero-image">
+        </div>
       </div>
+      <button id="left" onclick="moveSlide(-1)">
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+    <button id="right" onclick="moveSlide(1)">
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
   </section>
+  <script>
+    let currentIndex = 0;
 
+function moveSlide(step) {
+    const slides = document.querySelector('.hero-section');
+    const totalSlides = document.querySelectorAll('.slides').length;
+
+    currentIndex = (currentIndex + step + totalSlides) % totalSlides;
+    const offset = -currentIndex * 100;
+
+    slides.style.transform = `translateX(${offset}%)`;
+}
+
+
+  </script>
 
   <!-- Space !
   <h2 class="animated fadeInDown"></h2>
@@ -384,129 +411,96 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
             <div class="col-lg-4 col-md-6 filter-app">
               <div class="portfolio-item">
-                <img src="../img/rc_aeromodelling.jpg" style="height:315px;" class="img-fluid" alt="">
-                <div class="portfolio-info" data-toggle="tooltip" data-placement="bottom">
-                  <h3><a href="../img/rc_aeromodelling.jpg" data-gall="portfolioGallery" class="venobox"
-                      title="App 1"></a></h3>
-                  <a href="../img/rc_aeromodelling.jpgF" data-gall="portfolioGallery" class="venobox"
-                    title="App 1"><b><i class="icofont-square-up"></i></b></a>
-                  <div class="tooltip scrollable-tooltip">
-                    <strong>RC Aeromodelling Workshop</strong><br>
-                    <div class="scrollable-content">
-                    This workshop gives hands on training in building and understanding theory behind Remote-Controlled fixed wing planes. 
+                <img src="../img/rc_aeromodelling.jpg" style="object-fit:fill;" class="img-fluid" alt="">
+                
+                <div class="activity-name">
+                <p> RC Aeromodelling Workshop</p>
                 </div>
-              </div></div>
- <div class="activity-name">
-            <p> RC Aeromodelling Workshop</p>
-        </div>
-            </div></div>
+                
+                <div class="portfolio-image-overlay">
+                  <h2>RC Aeromodelling Workshop</h2>
+                  <p>This workshop gives hands on training in building and understanding theory behind Remote-Controlled fixed wing planes.</p>
+                </div>
 
+              </div>
+            </div>
 
             <div class="col-lg-4 col-md-6 filter-app">
                 <div class="portfolio-item">
-                  <img src="../img/quad.jpg" style="height:315px;" class="img-fluid" alt="">
-                  <div class="portfolio-info" data-toggle="tooltip" data-placement="">
-                    <h3><a href="../img/quad.jpg" data-gall="portfolioGallery" class="venobox"
-                        title="App 1"></a></h3>
-                    <a href="../img/quad.jpg" data-gall="portfolioGallery" class="venobox"
-                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
-                    <div class="tooltip scrollable-tooltip">
-                      <strong>Multicopter Workshop</strong><br>
-                      <div class="scrollable-content">
-                      
-                        A multi-rotor workshop is a hands-on event where participants learn to build and fly their own drones, gaining practical skills in drone assembly and flight operation. It's an ideal introduction to the world of drone technology and offers a fun and educational experience.
-                  </div></div></div>
- <div class="activity-name">
-            <p>Multicopter Workshop</p>
-        </div>
+                  <img src="../img/quad.jpg" style="height:325px;object-fit:cover;" class="img-fluid" alt="">
+
+                  <div class="activity-name">
+                  <p>Multicopter Workshop</p>
+                  </div>
+
+                  <div class="portfolio-image-overlay">
+                    <h2>Multicopter Workshop</h2>
+                    <p>A multi-rotor workshop is a hands-on event where participants learn to build and fly their own drones, gaining practical skills in drone assembly and flight operation. It's an ideal introduction to the world of drone technology and offers a fun and educational experience.</p>
+                  </div>
+
                 </div>
-              </div>
+            </div>
     
 
               <div class="col-lg-4 col-md-6 filter-app">
                 <div class="portfolio-item">
-                  <img src="../img/Autonomous_UAV1.jpg" style="height:315px;" class="img-fluid" alt="">
-                  <div class="portfolio-info" data-toggle="tooltip" data-placement="bottom">
-                    <h3><a href="../img/Autonomous_UAV1.jpg" data-gall="portfolioGallery" class="venobox"
-                        title="App 1"></a></h3>
-                    <a href="../img/Autonomous_UAV1.jpg" data-gall="portfolioGallery" class="venobox"
-                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
-                    <div class="tooltip scrollable-tooltip">
-                      <strong> Autonomous UAV Workshop</strong><br>
-                      <div class="scrollable-content">
-                      This workshop gives hands on experince in building Autonomus UAV. The participants will be working with flight controllers with GPS Modules to achieve autonomus flight.
+                  <img src="../img/Autonomous_UAV1.jpg" style="object-fit:fill;" class="img-fluid" alt="">
+
+                  <div class="activity-name">
+                  <p>Autonomous UAV Workshop</p>
                   </div>
-                </div></div>
-<div class="activity-name">
-            <p>Autonomous UAV Workshop</p>
-        </div>
 
-              </div>     </div>
-
-
-    
-              
-           
-
-             <div class="col-lg-4 col-md-6 filter-app">
-              <div class="portfolio-item">
-                <img src="../img/pilot_training1.jpg" style="height:315px;" class="img-fluid" alt="">
-                <div class="portfolio-info" data-toggle="tooltip" data-placement="top">
-                  <h3><a href="../img/pilot_training1.jpg" data-gall="portfolioGallery" class="venobox"
-                      title="App 1"></a></h3>
-                  <a href="../img/pilot_training1.jpg" data-gall="portfolioGallery" class="venobox"
-                    title="App 1"><b><i class="icofont-square-up"></i></b></a>
-                  <div class="tooltip scrollable-tooltip">
-                    <strong>Adavanced UAV Flying Training</strong><br>
-                    <div class="scrollable-content">
-                      Advanced UAV flying training is a comprehensive process that seamlessly integrates simulations and hands-on field training. This multifaceted approach equips pilots with the necessary skills and expertise to operate UAVs effectively in complex real-world environments.
-                </div></div>
+                  <div class="portfolio-image-overlay">
+                    <h2>Autonomous UAV Workshop</h2>
+                    <p>This workshop gives hands on experince in building Autonomus UAV. The participants will be working with flight controllers with GPS Modules to achieve autonomus flight.</p>
+                  </div>
+                  
+                </div>     
               </div>
-<div class="activity-name">
-            <p>Adavanced UAV Flying Training</p>
-        </div>
-            </div>     </div>
+              
+              <div class="col-lg-4 col-md-6 filter-app">
+              <div class="portfolio-item">
+                <img src="../img/pilot_training1.jpg" style="object-fit:fill;" class="img-fluid" alt="">
 
+                <div class="activity-name">
+            <p>Adavanced UAV Flying Training</p>
+                </div>
+
+                <div class="portfolio-image-overlay">
+                  <h2>Adavanced UAV Flying Training</h2>
+                  <p>Advanced UAV flying training is a comprehensive process that seamlessly integrates simulations and hands-on field training. This multifaceted approach equips pilots with the necessary skills and expertise to operate UAVs effectively in complex real-world environments.</p>
+                </div>
+              </div>     
+              </div>
 
             <div class="col-lg-4 col-md-6 filter-app">
                 <div class="portfolio-item">
                   <img src="../img/national.jpg" style="height:315px;" class="img-fluid" alt="">
-                  <div class="portfolio-info" data-toggle="tooltip" data-placement="bottom">
-                    <h3><a href="../img/national.jpg" data-gall="portfolioGallery" class="venobox"
-                        title="App 1"></a></h3>
-                    <a href="../img/national.jpg" data-gall="portfolioGallery" class="venobox"
-                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
-                    <div class="tooltip scrollable-tooltip">
-                      <strong>National and Zonal Competitions</strong><br>
-                      <div class="scrollable-content">
-                      Participating in national and zonal level competitions offers numerous benefits. Firstly, it provides a platform for individuals to showcase their talents and skills on a broader stage, helping them gain recognition and exposure.
-                      </div>
-                    </div>
+
+                  <div class="activity-name">
+                  <p>National and Zonal Competitions</p>
                   </div>
-<div class="activity-name">
-            <p>National and Zonal Competitions</p>
-        </div>
+                  <div class="portfolio-image-overlay">
+                    <h2>National and Zonal Competitions</h2>
+                    <p>Participating in national and zonal level competitions offers numerous benefits. Firstly, it provides a platform for individuals to showcase their talents and skills on a broader stage, helping them gain recognition and exposure.</p>
+                  </div>
                 </div>
-              </div>
+            </div>
     
 
               <div class="col-lg-4 col-md-6 filter-app">
                 <div class="portfolio-item">
                   <img src="../img/nain.jpeg" style="height:315px;" class="img-fluid" alt="">
-                  <div class="portfolio-info" data-toggle="tooltip" data-placement="bottom">
-                    <h3><a href="../img/nain.jpeg" data-gall="portfolioGallery" class="venobox"
-                        title="App 1"></a></h3>
-                    <a href="../img/nain.jpeg" data-gall="portfolioGallery" class="venobox"
-                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
-                    <div class="tooltip scrollable-tooltip">
-                      <strong>Government Funded Projects</strong><br>
-                      <div class="scrollable-content">
-                      Government-funded projects are harnessing the power of innovation by pitching drone solution ideas at various events. This proactive approach aims to address real-life problems through cutting-edge technology, fostering a brighter future for society.
-                    </div></div>
+  
+                  <div class="activity-name">
+                  <p>Government Funded Projects</p>
                   </div>
-<div class="activity-name">
-            <p>Government Funded Projects</p>
-        </div>
+
+                  <div class="portfolio-image-overlay">
+                    <h2>Government Funded Projects</h2>
+                    <p>Government-funded projects are harnessing the power of innovation by pitching drone solution ideas at various events. This proactive approach aims to address real-life problems through cutting-edge technology, fostering a brighter future for society.</p>
+                  </div>
+
                 </div>
               </div>
 
