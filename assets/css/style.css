@@ -45,7 +45,21 @@ h6,
     top: 8px;
     left: 8px;
 }
-
+#hero button{
+    position: absolute;
+    top: 300px;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+    border: 0;
+    color: white;
+    border-radius: 5px;
+}
+#left{
+    left: 0;
+}
+#right{
+    right: 0;
+}
 .back-to-top:hover {
     color: #fff;
     background: #85b6cf;
@@ -348,19 +362,19 @@ h6,
     position: relative;
 }
 
-#hero::after {
+/*#hero::after {
     content: "";
     position: absolute;
     left: 60%;
     top: 0;
     width: 100%;
     height: 100%;
-    /*background-image: url("../img/Vayurvya\ _F.svg");*/
+    /*background-image: url("../img/Vayurvya\ _F.svg");
     background-size: cover;
     z-index: 0;
     border-radius: 0 0 0 0;
     transform: translateX(-50%) rotate(0deg);
-}
+}*/
 
 /* #hero::before {
     content: "";
@@ -1732,6 +1746,7 @@ section {
 }
 
 .portfolio .portfolio-item img {
+    object-fit: fill;
     transition: all 0.3s ease-in-out;
 }
 
@@ -3791,10 +3806,16 @@ button {
 
 }
 .hero-section {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Adjust this height as needed */
-    overflow: hidden;
+    display: flex;
+    min-width: 100%;
+    height: 600px;
+    transition: transform 0.5s ease-in-out;
+}
+.slides{
+    min-width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+    background-size: contain;
 }
 
 .hero-image {
