@@ -110,12 +110,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: #4e3333;
     }
       /* Navbar styles */
-.navbar {
+      .navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #008cba; /* Adjust color to match your design */
+    background-color: #008cba; /* Navbar background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: sticky; /* Makes the navbar sticky */
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensure it stays above other elements */
 }
 
 .navbar li {
@@ -128,11 +133,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
 .navbar li a:hover {
-    background-color: #005f73;
+    background-color: #005f73; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight zoom-in effect */
 }
+
 
 /* Dropdown styles */
 .dropdown {
@@ -265,7 +273,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     .team-member:hover img {
-    transform: scale(2.5); /* Slight zoom effect on image hover */
+    transform: scale(0); /* Slight zoom effect on image hover */
 }
 
 .team-member h3 {
@@ -345,7 +353,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <h2><b>OUR TEAM</b></h2></div>
         
         </div>
-    
+     
         <div class="container_new" id="2022-26BATCH" >
         <center><h2>2022-26 BATCH</h2></center></div>
         <div class="row">
@@ -990,7 +998,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
             </div>
           </div>
-      </div>
+        </div>
           
           <div class="container_new" id="2021-25BATCH">
             <center><h2>2021-25 BATCH</h2></center></div>
@@ -1145,7 +1153,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
-  </div>
+        </div>
  
 
           <div class="container_new" id="2020-24BATCH">
@@ -1339,6 +1347,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
 
       </div>
+      </div>
     </section><!-- End Team Section -->
 
   </main><!-- End #main -->
@@ -1463,7 +1472,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         document.getElementById('privacyPolicyPopup').style.display = 'none';
     }
 </script>
-
+<script>document.getElementById('teamDropdown').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector('#team').scrollIntoView({ 
+        behavior: 'smooth' 
+    });
+});
+</script>
 
   <!-- End Footer -->
 
@@ -1483,23 +1498,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <!-- Template Main JS File -->
   <script src="../js/main.js"></script>
-<script>
- const teamDropdown = document.querySelector('.dropdown');
-const teamLinks = document.querySelectorAll('.dropdown-content a');
-
-teamDropdown.addEventListener('click', (e) => {
-    e.preventDefault(); 
-});
-
-teamLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent default link behavior
-        const targetId = e.target.getAttribute('href'); // Get the target section ID
-        const targetElement = document.querySelector(targetId); // Find the target element
-        targetElement.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
-    });
-});
-</script>
 
 </body>
 </html>
