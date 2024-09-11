@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -40,7 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link href="../css/style.css" rel="stylesheet">
 <style>
 .whatsapp-link {
-  color: #45beff !important;
+  color: #45ff64 !important;
 }
 /* Pop-up styles */
     .popup {
@@ -64,7 +63,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       padding: 20px;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      max-width: 600px;
+      max-width: 800px;
       max-height: 80vh;
       /* Set a maximum height for the content */
       overflow-y: auto;
@@ -76,7 +75,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     .popup p {
-      color: #555;
+      color: #4e79a4;
     }
 
     .popup ul {
@@ -86,7 +85,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     .popup button {
       background-color: #333;
-      color: #fff;
+      color: #2676c2cb;
       padding: 10px 20px;
       border: none;
       border-radius: 5px;
@@ -94,7 +93,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     .popup button:hover {
-      background-color: #555;
+      background-color: #7499b5;
     }
 
     /* Close button style */
@@ -103,13 +102,91 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       top: 10px;
       right: 10px;
       font-size: 20px;
-      color: #555;
+      color: #555555;
       cursor: pointer;
     }
 
     .close:hover {
-      color: #333;
+      color: #4e3333;
     }
+      /* Navbar styles */
+      .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #008cba; /* Navbar background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: sticky; /* Makes the navbar sticky */
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.navbar li a:hover {
+    background-color: #005f73; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight zoom-in effect */
+}
+
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #008cba;
+    color: white;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #005f73;
+}
+
 @media (max-width: 768px) {
     .row {
       flex-direction: column;
@@ -122,85 +199,336 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     .col-md-6 .text-md-right {
       text-align: center;
-      margin-top: 30px; /* Adjust top margin as needed for more space */
+      margin-top: -20px; /* Adjust top margin as needed for more space */
     }
   }
 .col-md-6 {
-    padding-top: 20px; /* Adjust the value according to your preference */
+    padding-top: 0px; /* Adjust the value according to your preference */
   }
+    html {
+          scroll-behavior: smooth;
+          }
 
-</style>
+   
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Wrapper for background image and content */
+        .background-wrapper 
+        {
+            position: relative;
+            background-image: url('../img/team/coreteam.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 95vh; /* Adjust height as needed */
+        }
+        
+        /* Semi-transparent overlay */
+        .background-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(0deg, rgba(206, 209, 209, 0.525), rgba(71, 196, 227, 0.525)); /* Adjust colors and opacity */
+            z-index: 1;
+        }
+        .background-wrapper > * {
+           position: relative;
+            z-index: 2;
+          }
+        /* Content on top of the background */
+        .content {
+            position: relative;
+            z-index: 2;
+            color: rgba(38, 38, 174, 0.649); /* Text color */
+            padding: 20px;
+            text-align: center;
+        }
+        .team-section {
+    text-align: center;
+    padding: 10px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Dynamic columns */
+    gap: 10px;
+    padding: 20px;
+    justify-content: center; /* Ensures the grid is centered */
+}
+
+.team-card {
+    background-color: rgba(7, 85, 232, 0.259); /* White background for the card */
+    border-radius: 10px; /* Rounds the corners of the card */
+    padding: 20px; /* Adds space inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for 3D effect */
+    text-align: center; /* Centers text inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation on hover for scaling and shadow */
+    position: relative; /* Position relative to allow for absolute positioning inside */
+    width: 100%; /* Ensures the card takes up full width of its grid column */
+    min-height: 400px; /* Ensures that all cards have at least this height */
+    display: flex; /* Flexbox for inner alignment */
+    flex-direction: column; /* Align content vertically */
+    justify-content: space-between; /* Distributes content evenly inside the card */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.member-img {
+    overflow: hidden; /* Ensures the image doesn't overflow outside the container */
+    border-radius: 50%; /* Makes the image container circular */
+    width: 150px; /* Sets the width of the image container */
+    height: 150px; /* Sets the height of the image container */
+    margin: 0 auto 20px; /* Centers the image container and adds 20px space below it */
+}
+
+.member-img img {
+    width: 100%; /* Makes the image fit the container's width */
+    height: 100%; /* Makes the image fit the container's height */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+.team-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 0 8px 16px rgba(18, 44, 146, 0.737); /* Darker shadow for a raised effect on hover */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the card */
+}
+
+  
 
 
+.team-card:hover .member-img img {
+    transform: scale(1.2); /* Slight zoom-in effect on the image when hovered */
+}
+
+.member-info h4 {
+    font-size: 1.5em; /* Increases the font size of the member's name */
+    margin-bottom: 10px; /* Adds space below the name */
+}
+
+.member-info .role {
+    color: #ff6600; /* Orange color for the role text */
+    margin-bottom: 5px; /* Adds space below the role text */
+    font-weight: bold; /* Makes the role text bold */
+}
+
+.member-info p {
+    color: #555; /* Dark gray color for the text */
+}
+
+.social-icons a {
+    color: #333; /* Dark color for the social media icons */
+    margin: 0 10px; /* Adds space of 10px to the left and right of each icon */
+    font-size: 1.2em; /* Increases the size of the social media icons */
+    transition: color 0.3s ease; /* Smooth transition when changing the icon color on hover */
+}
+
+.social-icons a:hover {
+    color: #ff6600; /* Changes the icon color to orange on hover */
+}
+
+
+    </style>
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKQ5F65G"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-   <!-- ======= Header ======= -->
-   <header id="header" class="fixed-top header-transparent">
-    <div class="container_new">
-
-      <div class="logo float-left" style="height: max-content;">
-
-
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="/home"><img src="../img/logo_aero.png" alt="" style=" height: 5vh; width: 5vh;" class="img-fluid"></a>
-      </div>
-
-
-
-      <nav class="nav-menu float-right d-none d-lg-block ">
-
-        <ul>
-          <li class="active"><a href="/home">Home</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/achievement">Achievement</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/team">Team</a></li>
-          <li><a href="/contact">Contact Us</a></li>
-          <li><a href="/vayurvya">Vayurvya</a></li>
-<li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Join Us <span class="caret"></span></a>
-    <ul class="dropdown-menu">
-      <li><a href="https://chat.whatsapp.com/FxJah3YRcNlKcBUyrEoWlP" class="whatsapp-link">Aero Club Nitte</a></li>
-      <li><a href="https://chat.whatsapp.com/JMdz3P5vWl31e6HPgweBZR" class="whatsapp-link">Aero Club Nitte Alumni</a></li>
-    </ul>
-  </li>
-        </ul>
-      </nav><!-- .nav-menu -->
-
+  
+  <div class="background-wrapper">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKQ5F65G"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        
+           <!-- ======= Header ======= -->
+           <header id="header" class="fixed-top header-transparent">
+            <div class="container_new">
+        
+              <div class="logo float-left" style="height: max-content;">
+        
+        
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <a href="/home"><img src="../img/logo_aero.png" alt="" style=" height: 5vh; width: 5vh;" class="img-fluid"></a>
+              </div>
+        
+        
+        
+              <nav class="nav-menu float-right d-none d-lg-block ">
+        
+                <ul>
+                  <li class="active"><a href="/home">Home</a></li>
+                  <li><a href="/projects">Projects</a></li>
+                  <li><a href="/achievement">Achievement</a></li>
+                  <li><a href="/gallery">Gallery</a></li>
+                  <li class="dropdown">
+                    <a href="/team" class="dropdown-toggle" data-toggle="dropdown">Team</a>
+                    <div class="dropdown-content">
+                        <a href="#2020-24BATCH">2020-24 BATCH</a>
+                        <a href="#2021-25BATCH">2021-25 BATCH</a>
+                        <a href="#2022-26BATCH">2022-26 BATCH</a>
+                        <a href="#2023-27BATCH">2023-27 BATCH</a>
+                    </div>
+                  </li>            
+                  <li><a href="/contact">Contact Us</a></li>
+                  <li><a href="/vayurvya">Vayurvya</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Join Us <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://chat.whatsapp.com/FxJah3YRcNlKcBUyrEoWlP" class="whatsapp-link">Aero Club Nitte</a></li>
+              <li><a href="https://chat.whatsapp.com/JMdz3P5vWl31e6HPgweBZR" class="whatsapp-link">Aero Club Nitte Alumni</a></li>
+            </ul>
+          </li>
+                </ul>
+              </nav><!-- .nav-menu -->
+        
+            </div>
+          </header><!-- End Header -->
+        
+          <main id="main">
+           
+            <!-- ======= Our Team Section ======= -->
+           
+            </section><!-- End Our Team Section -->
     </div>
-  </header><!-- End Header -->
-
-  <main id="main">
-
-    <!-- ======= Our Team Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container_new">
-
+     <!-- ======= Team Section ======= -->
+     <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container_new">  <div class="container_new">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Our Team</h2>
-          <ol>
-            <li><a href="/home">Home</a></li>
-            <li>Our Team</li>
-          </ol>
+        
+          <center><h2><b>OUR TEAM</b></h2></center></div>
+        
         </div>
-
-      </div>
-    </section><!-- End Our Team Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-      <div class="container_new">
-        <div class="container_new">
+     
+        <div class="container_new" id="2022-26BATCH" >
         <center><h2>2022-26 BATCH</h2></center></div>
         <div class="row">
 
-         
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="team-card member">
+                <div class="member-img">
+                    <img src="../img/team/ritheesh3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+                </div>
+                <div class="member-info">
+                    <h4>Rithesh Shetty</h4>
+                    <p class="role">President</p>
+                    <p>Mechanical Engineering</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rithesh-shetty-37b62424b/"><i class="icofont-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="team-card member">
+              <div class="member-img">
+                  <img src="../img/team/ananthakrishna1.JPG" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                  <h4>Anantha Krishna</h4>
+                  <p class="role">Software lead</p>
+                  <p>Electronics and communication Engineering</p>
+                  <div class="social-icons">
+                      <a href="https://www.linkedin.com/in/anantha-krishna-93590023a/"><i class="icofont-linkedin"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="team-card member">
+            <div class="member-img">
+                <img src="../img/team/prateeksha.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            </div>
+            <div class="member-info">
+                <h4>Pratheeksha Nayak</h4>
+                <p class="role">Social Media lead</p>
+                <p>INFORMATION SCIENCE</p>
+                <p>ENGINEERING</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/pratheeksha-nayak-49a24424a/"><i class="icofont-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+      <div class="team-card member">
+          <div class="member-img">
+              <img src="../img/team/ritheesh3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+              <h4>Rithesh Shetty</h4>
+              <p class="role">President</p>
+              <p>Mechanical Engineering</p>
+              <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/rithesh-shetty-37b62424b/"><i class="icofont-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+    <div class="team-card member">
+        <div class="member-img">
+            <img src="../img/team/ritheesh3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+        </div>
+        <div class="member-info">
+            <h4>Rithesh Shetty</h4>
+            <p class="role">President</p>
+            <p>Mechanical Engineering</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/rithesh-shetty-37b62424b/"><i class="icofont-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+  <div class="team-card member">
+      <div class="member-img">
+          <img src="../img/team/ritheesh3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+      </div>
+      <div class="member-info">
+          <h4>Rithesh Shetty</h4>
+          <p class="role">President</p>
+          <p>Mechanical Engineering</p>
+          <div class="social-icons">
+              <a href="https://www.linkedin.com/in/rithesh-shetty-37b62424b/"><i class="icofont-linkedin"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+  <div class="team-card member">
+      <div class="member-img">
+          <img src="../img/team/ritheesh3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+      </div>
+      <div class="member-info">
+          <h4>Rithesh Shetty</h4>
+          <p class="role">President</p>
+          <p>Mechanical Engineering</p>
+          <div class="social-icons">
+              <a href="https://www.linkedin.com/in/rithesh-shetty-37b62424b/"><i class="icofont-linkedin"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+  <div class="team-card member">
+      <div class="member-img">
+          <img src="../img/team/ritheesh3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+      </div>
+      <div class="member-info">
+          <h4>Rithesh Shetty</h4>
+          <p class="role">President</p>
+          <p>Mechanical Engineering</p>
+          <div class="social-icons">
+              <a href="https://www.linkedin.com/in/rithesh-shetty-37b62424b/"><i class="icofont-linkedin"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+<!--************************************************************
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
@@ -413,16 +741,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h4>Sanjana S</h4>
                 <span >Recruitment lead</span>
                 <span>INFORMATION SCIENCE ENGINEERING</span>
-
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
+        
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="member">
+            <div class="member-img">
+              <img src="../img/team/amritha.jpg" style="height: 400px; width: 500px;" class="img-fluid" alt="">
+              <div class="social">
 
-          <div class="container_new">
-            <center><h2>2022-26 BATCH</h2></center></div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
+                <a href="https://www.linkedin.com/in/amritha-k-poojari-62559524b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Amritha K </h4>
+              <span>ELECTRONICS and COMMUNICATION ENGINEERING</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="member">
+            <div class="member-img">
+              <img src="../img/team/vaishnavi.jpeg" style="height: 400px; width: 500px;" class="img-fluid" alt="">
+              <div class="social">
+
+                <a href="https://www.linkedin.com/in/vaishnavi-a-ganiga-32bb91251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Vaishnavi A </h4>
+              <span> MECHANICAL ENGINEERING </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="member">
+            <div class="member-img">
+              <img src="../img/team/juvita.jpg" style="height: 400px; width: 500px;" class="img-fluid" alt="">
+              <div class="social">
+
+                <a href="https://www.linkedin.com/in/juvita-joshma-802363289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>J Juvita Joshma </h4>
+              <span>ELECTRONICS and COMMUNICATION ENGINEERING </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+          <div class="container_new" id="2023-27BATCH" >
+            <center><h2>2023-27 BATCH</h2></center></div>
+            <div class="row">
+         
+          
+
+          
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           
             <div class="member">
@@ -681,7 +1057,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Shishir D </h4>
+                <h4>Shishir D</h4>
                 <span>Computer science ENGINEERING</span>
               </div>
             </div>
@@ -779,50 +1155,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="../img/team/amritha.jpg" style="height: 400px; width: 500px;" class="img-fluid" alt="">
+                <img src="../img/team/abhyudaya.jpg" style="height: 400px; width: 500px;" class="img-fluid" alt="">
                 <div class="social">
 
-                  <a href="https://www.linkedin.com/in/amritha-k-poojari-62559524b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="icofont-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/abhyudaya-j-acharya-ab0307280/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="icofont-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Amritha K </h4>
-                <span>ELECTRONICS and COMMUNICATION ENGINEERING</span>
+                <h4>Abhyudaya J</h4>
+                <span>Computer science and ENGINEERING </span>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="../img/team/vaishnavi.jpeg" style="height: 400px; width: 500px;" class="img-fluid" alt="">
-                <div class="social">
-
-                  <a href="https://www.linkedin.com/in/vaishnavi-a-ganiga-32bb91251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Vaishnavi A </h4>
-                <span> MECHANICAL ENGINEERING </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="../img/team/juvita.jpg" style="height: 400px; width: 500px;" class="img-fluid" alt="">
-                <div class="social">
-
-                  <a href="https://www.linkedin.com/in/juvita-joshma-802363289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>J Juvita Joshma </h4>
-                <span>ELECTRONICS and COMMUNICATION ENGINEERING </span>
-              </div>
-            </div>
-          </div>
+        </div>
           
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
+          <div class="container_new" id="2021-25BATCH">
+            <center><h2>2021-25 BATCH</h2></center></div>
+            <div class="row">
+          
+          
+
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
@@ -839,8 +1191,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </div>
           </div>
-
-
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
@@ -971,11 +1321,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </div>
           </div>
-
-
           
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="../img/team/pradeep.jpg" style="height: 400px; width: 500px;" class="img-fluid" alt="">
+                <div class="social">
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
+                  <a href="https://www.linkedin.com/in/pradeep-b-jakkanagoudra-87a64b22a/"><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Pradeep B</h4>
+                <span>electronics and communication engineering</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+
+          <div class="container_new" id="2020-24BATCH">
+            <center><h2>2020-24 BATCH</h2></center></div>
+            <div class="row">
+
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
@@ -1152,23 +1521,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
               </div>
             </div>
-          </div>
+          </div>-->
 
 
-
-
-          
-
-
-
-         
-
-          
-      
-
-
-          
-    
 
               </div>
             </div>
@@ -1176,6 +1531,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         </div>
 
+      </div>
       </div>
     </section><!-- End Team Section -->
 
@@ -1301,7 +1657,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         document.getElementById('privacyPolicyPopup').style.display = 'none';
     }
 </script>
-
+<script>document.getElementById('teamDropdown').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector('#team').scrollIntoView({ 
+        behavior: 'smooth' 
+    });
+});
+</script>
 
   <!-- End Footer -->
 
@@ -1323,5 +1685,4 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="../js/main.js"></script>
 
 </body>
-
 </html>
