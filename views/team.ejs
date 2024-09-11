@@ -248,28 +248,91 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             padding: 20px;
             text-align: center;
         }
-        .member {
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-          position: relative; /* For positioning the shadow */
-        }
+        .team-section {
+    text-align: center;
+    padding: 10px;
+}
 
-        .member-img {
-          overflow: hidden; /* To ensure the image doesn't overflow */
-        }
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Dynamic columns */
+    gap: 10px;
+    padding: 20px;
+    justify-content: center; /* Ensures the grid is centered */
+}
 
-        .member-img img {
-          transition: transform 0.3s ease; /* Smooth image hover transition */
-        }
+.team-card {
+    background-color: rgba(7, 85, 232, 0.259); /* White background for the card */
+    border-radius: 10px; /* Rounds the corners of the card */
+    padding: 20px; /* Adds space inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for 3D effect */
+    text-align: center; /* Centers text inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation on hover for scaling and shadow */
+    position: relative; /* Position relative to allow for absolute positioning inside */
+    width: 100%; /* Ensures the card takes up full width of its grid column */
+    min-height: 400px; /* Ensures that all cards have at least this height */
+    display: flex; /* Flexbox for inner alignment */
+    flex-direction: column; /* Align content vertically */
+    justify-content: space-between; /* Distributes content evenly inside the card */
+    margin-left: auto;
+    margin-right: auto;
+}
 
-        .member:hover {
-           transform: scale(1.05); /* Slightly increase the size of the member card */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a shadow */
-           cursor: pointer; /* Change cursor to pointer */
-          }
+.member-img {
+    overflow: hidden; /* Ensures the image doesn't overflow outside the container */
+    border-radius: 50%; /* Makes the image container circular */
+    width: 150px; /* Sets the width of the image container */
+    height: 150px; /* Sets the height of the image container */
+    margin: 0 auto 20px; /* Centers the image container and adds 20px space below it */
+}
 
-        .member:hover img {
-            transform: scale(1.1); /* Slight zoom effect on image hover */
-          }
+.member-img img {
+    width: 100%; /* Makes the image fit the container's width */
+    height: 100%; /* Makes the image fit the container's height */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+.team-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 0 8px 16px rgba(18, 44, 146, 0.737); /* Darker shadow for a raised effect on hover */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the card */
+}
+
+  
+
+
+.team-card:hover .member-img img {
+    transform: scale(1.2); /* Slight zoom-in effect on the image when hovered */
+}
+
+.member-info h4 {
+    font-size: 1.5em; /* Increases the font size of the member's name */
+    margin-bottom: 10px; /* Adds space below the name */
+}
+
+.member-info .role {
+    color: #ff6600; /* Orange color for the role text */
+    margin-bottom: 5px; /* Adds space below the role text */
+    font-weight: bold; /* Makes the role text bold */
+}
+
+.member-info p {
+    color: #555; /* Dark gray color for the text */
+}
+
+.social-icons a {
+    color: #333; /* Dark color for the social media icons */
+    margin: 0 10px; /* Adds space of 10px to the left and right of each icon */
+    font-size: 1.2em; /* Increases the size of the social media icons */
+    transition: color 0.3s ease; /* Smooth transition when changing the icon color on hover */
+}
+
+.social-icons a:hover {
+    color: #ff6600; /* Changes the icon color to orange on hover */
+}
+
+
     </style>
 </head>
 
@@ -336,7 +399,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="container_new">  <div class="container_new">
         <div class="d-flex justify-content-between align-items-center">
         
-          <h2><b>OUR TEAM</b></h2></div>
+          <center><h2><b>OUR TEAM</b></h2></center></div>
         
         </div>
      
@@ -344,7 +407,128 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <center><h2>2022-26 BATCH</h2></center></div>
         <div class="row">
 
-         
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="team-card member">
+                <div class="member-img">
+                    <img src="../img/team/ritheesh3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+                </div>
+                <div class="member-info">
+                    <h4>Rithesh Shetty</h4>
+                    <p class="role">President</p>
+                    <p>Mechanical Engineering</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rithesh-shetty-37b62424b/"><i class="icofont-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="team-card member">
+              <div class="member-img">
+                  <img src="../img/team/ananthakrishna1.JPG" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                  <h4>Anantha Krishna</h4>
+                  <p class="role">Software lead</p>
+                  <p>Electronics and communication Engineering</p>
+                  <div class="social-icons">
+                      <a href="https://www.linkedin.com/in/anantha-krishna-93590023a/"><i class="icofont-linkedin"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="team-card member">
+            <div class="member-img">
+                <img src="../img/team/prateeksha.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            </div>
+            <div class="member-info">
+                <h4>Pratheeksha Nayak</h4>
+                <p class="role">Social Media lead</p>
+                <p>INFORMATION SCIENCE</p>
+                <p>ENGINEERING</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/pratheeksha-nayak-49a24424a/"><i class="icofont-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+      <div class="team-card member">
+          <div class="member-img">
+              <img src="../img/team/ritheesh3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+              <h4>Rithesh Shetty</h4>
+              <p class="role">President</p>
+              <p>Mechanical Engineering</p>
+              <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/rithesh-shetty-37b62424b/"><i class="icofont-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+    <div class="team-card member">
+        <div class="member-img">
+            <img src="../img/team/ritheesh3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+        </div>
+        <div class="member-info">
+            <h4>Rithesh Shetty</h4>
+            <p class="role">President</p>
+            <p>Mechanical Engineering</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/rithesh-shetty-37b62424b/"><i class="icofont-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+  <div class="team-card member">
+      <div class="member-img">
+          <img src="../img/team/ritheesh3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+      </div>
+      <div class="member-info">
+          <h4>Rithesh Shetty</h4>
+          <p class="role">President</p>
+          <p>Mechanical Engineering</p>
+          <div class="social-icons">
+              <a href="https://www.linkedin.com/in/rithesh-shetty-37b62424b/"><i class="icofont-linkedin"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+  <div class="team-card member">
+      <div class="member-img">
+          <img src="../img/team/ritheesh3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+      </div>
+      <div class="member-info">
+          <h4>Rithesh Shetty</h4>
+          <p class="role">President</p>
+          <p>Mechanical Engineering</p>
+          <div class="social-icons">
+              <a href="https://www.linkedin.com/in/rithesh-shetty-37b62424b/"><i class="icofont-linkedin"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+  <div class="team-card member">
+      <div class="member-img">
+          <img src="../img/team/ritheesh3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+      </div>
+      <div class="member-info">
+          <h4>Rithesh Shetty</h4>
+          <p class="role">President</p>
+          <p>Mechanical Engineering</p>
+          <div class="social-icons">
+              <a href="https://www.linkedin.com/in/rithesh-shetty-37b62424b/"><i class="icofont-linkedin"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+<!--************************************************************
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
@@ -1337,7 +1521,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
               </div>
             </div>
-          </div>
+          </div>-->
 
 
 
