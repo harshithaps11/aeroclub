@@ -998,11 +998,15 @@ section {
   --------------------------------------------------------------*/
 
 .why-us {
-    background-color: white;
+    width: 90%;
+    background-color: #0A2239;
+    border-radius: 20px;
     justify-content: left;
     align-items: flex-start;
     text-align: left;
+    position: relative;
     left: 10vh;
+    top: 9vh;
 }
 
 .why-us .container {
