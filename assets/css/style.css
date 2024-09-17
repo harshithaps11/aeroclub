@@ -3877,12 +3877,14 @@ button {
 
 }
 .contain_eve{
-    height:30px;
-    width:100%;
+    height:45px;
+    width:1180px;
     margin-top: 20px;
     background-color:#a2cce3;
-   
+   border-radius: 20px;
     box-shadow:0 5px 10px 0  #0d2735 ;
+   position: relative;
+  
    
 }
 .eve_box{
