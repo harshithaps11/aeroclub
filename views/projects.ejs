@@ -300,8 +300,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
             <div class="col-lg-4 col-md-6 filter-app">
               <div class="portfolio-item">
-                  <img src="../img/solarplane.jpg" style="height: 315px;" class="img-fluid" alt="">
-                  <div class="portfolio-info" data-toggle="tooltip" data-placement="top">
+                  <img src="../img/solarplane.jpg" style="height: 315px;" class="img-fluid" class="image" alt="" onclick="showPopup()" >
+                  <!--<div class="portfolio-info" data-toggle="tooltip" data-placement="top">
                       <h3><a href="../img/solarplane.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"></a></h3>
                       <a href="../img/solarplane.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><b><i class="icofont-square-up"></i></b></a>
                       <div class="tooltip scrollable-tooltip">
@@ -311,7 +311,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Renewable solar energy powers the RC plane motor, which requires 6-7 volts and 40-60 amps. To meet this demand, 14 solar cells with 0.5 volts and 6 amps panels were installed on the aircraft for energy generation.
                             </div>
                       </div>
-                  </div>
+                      
+                    
+                
+                   
+                  </div>-->
+                  <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span class="close" onclick="hidePopup()">&times;</span>
+                        <h2>Solar Powered radio controlled plane</h2>
+                        <p>Renewable solar energy powers the RC plane motor, which requires 6-7 volts and 40-60 amps. To meet this demand, 14 solar cells with 0.5 volts and 6 amps panels were installed on the aircraft for energy generation.
+                          </p>
+                    </div>
+                </div>
                   <div class="project-name">
                       <p>Solar Powered radio controlled plane</p>
                   </div>
@@ -323,7 +335,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
            
             <div class="col-lg-4 col-md-6 filter-app">
                 <div class="portfolio-item">
-                  <img src="../img/umatis.jpg" style="height:315px;" class="img-fluid" alt="">
+                  <img src="../img/umatis.jpg" style="height:315px;" class="img-fluid" alt=""  >
                   <div class="portfolio-info" data-toggle="tooltip" data-placement="top">
                     <h3><a href="../img/umatis.jpg" data-gall="portfolioGallery" class="venobox"
                         title="App 1"></a></h3>
@@ -718,6 +730,17 @@ structure for the wings.
         document.getElementById('privacyPolicyPopup').style.display = 'none';
     }
 </script>
+
+<script>
+function showPopup() {
+  document.getElementById("popup").style.display = "flex";
+}
+
+function hidePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+</script> 
+
 
   
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
