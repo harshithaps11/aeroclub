@@ -216,7 +216,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     padding-top: 20px; /* Adjust the value according to your preference */
   }
 
- 
+.popup-content h2{
+  color: #45beff;
+  
+}
 </style>
 
 
@@ -888,48 +891,35 @@ structure for the wings.
     }
   }
   </script> 
+<script>
+        function addPointerEffectToImages() {
+    
+            const images = [
+                document.getElementById('solar'),
+                document.getElementById('uman'),
+                document.getElementById('haaps'),
+                document.getElementById('acye'),
+                document.getElementById('hms'),
+                document.getElementById('aps'),
+                document.getElementById('hac'),
+                document.getElementById('sd'),
+                document.getElementById('ap'),
+                document.getElementById('vtol')
+            ];
+            
+            images.forEach(image => {
+                image.addEventListener('mouseover', function() {
+                    image.style.cursor = 'pointer';
+                });
 
-<!-- <script>
-function showPopup() {
-  document.querySelectorAll(".popup").style.display = "flex";
-}
+                image.addEventListener('mouseout', function() {
+                    image.style.cursor = 'default';
+                });
+            });
+        }
 
-function hidePopup() {
-  document.querySelectorAll(".popup").style.display = "none";
-}
-</script> -->
-
-
-<!--<script>
-  // Get all images
-  const images = document.querySelectorAll('.image');
-
-  // Get the popup and popup info elements
-  const popup = document.getElementById('popup');
-  const popupInfo = document.getElementById('popup-info');
-  const closeBtn = document.querySelector('.close');
-
-  // Loop through the images and add click event listeners
-  images.forEach(image => {
-    image.addEventListener('click', function() {
-      const info = image.getAttribute('data-info'); // Get the predefined information
-      popupInfo.textContent = info; // Set the info in the popup
-      popup.style.display = 'block'; // Show the popup
-    });
-  });
-
-  // Close the popup when the close button is clicked
-  closeBtn.addEventListener('click', function() {
-    popup.style.display = 'none';
-  });
-
-  // Close the popup when clicking outside of the popup content
-  window.addEventListener('click', function(event) {
-    if (event.target == popup) {
-      popup.style.display = 'none';
-    }
-  });
-</script>-->
+        addPointerEffectToImages();
+    </script>
 
   
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
