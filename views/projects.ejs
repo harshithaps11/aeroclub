@@ -66,23 +66,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background-color: rgba(0, 0, 0, 0.5);
       overflow: auto;
       /* Ensure the entire pop-up is scrollable */
-    }
+    } 
+  
 
     .popup-content {
-      position: absolute;
-      top: 50%;
+      position:sticky;
+      top: 5%;
       left: 50%;
+      font-style:italic ;
       transform: translate(-50%, -50%);
-      background-color: #fff;
+      background-color: hsl(191, 27%, 88%);
       padding: 20px;
       border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 5 5 8px rgba(69, 228, 228, 0.985);
       max-width: 600px;
       max-height: 80vh;
       /* Set a maximum height for the content */
       overflow-y: auto;
+      
+      
       /* Make the content scrollable */
     }
+
 
     .popup h2 {
       color: #333;
@@ -145,19 +150,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   overflow: auto;
 } */
 .portfolio-info .tooltip {
-  position: absolute;
-  top: 100%; /* Set top to 100% to position it at the bottom */
-  left: 50%;
-  transform: translate(-50%, 7px);
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  z-index: 9999;
-  max-width: 800px;
-  overflow-y: auto; /* Make the tooltip scrollable */
+   position: absolute;
+    top: 100%; /* Set top to 100% to position it at the bottom */
+    left: 50%;
+    transform: translate(-50%, 7px);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 9999;
+    max-width: 800px;
+    overflow-y: auto; /* Make the tooltip scrollable */
 }
 
 
@@ -181,6 +186,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         padding: 10px;
         color: white;
         text-align: center;
+        text-shadow: 5px 5px 5px rgb(45, 32, 225); 
     }
 @media (max-width: 768px) {
     .row {
@@ -217,9 +223,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 
 .popup-content h2{
-  color: #45beff;
-  
+  color: #45beff; 
+  padding: 10px;
+  text-shadow: 1px 1px 3px rgba(2, 1, 3, 0.8);  
 }
+
 </style>
 
 

@@ -1856,16 +1856,16 @@ h2{
     align-items: center;
 }
 
-.popup-content {
-    background-color: #fff;
+/*.popup-content {
+    background-color: #30d0d5;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #888888;
     width: 80%;
     max-width: 500px;
-    position: relative;
+    position: sticky;
     text-align: center;
-}
+}*/
 
 .close {
     color: #aaa;
