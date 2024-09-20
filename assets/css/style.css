@@ -3928,6 +3928,7 @@ button {
 .year{
     height:auto;
     width:100%;
+    color: white;
     
 
 }
@@ -3935,10 +3936,11 @@ button {
     height:45px;
     width:1180px;
     margin-top: 20px;
-    background-color:#a2cce3;
+    background-color:#0A2239;
    border-radius: 20px;
     box-shadow:0 5px 10px 0  #0d2735 ;
    position: relative;
+   
   
    
 }
@@ -4015,3 +4017,4 @@ flex-direction: row;
  .two{
     margin-bottom: 100px;
  }
+ 
