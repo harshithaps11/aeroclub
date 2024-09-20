@@ -71,9 +71,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     .popup-content {
       position:sticky;
-      top: 5%;
+      top: 50%;
       left: 50%;
-      font-style:italic ;
+      font-style:bold;
       transform: translate(-50%, -50%);
       background-color: hsl(191, 27%, 88%);
       padding: 20px;
@@ -225,7 +225,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .popup-content h2{
   color: #45beff; 
   padding: 10px;
-  text-shadow: 1px 1px 3px rgba(2, 1, 3, 0.8);  
+  text-shadow: 1px 1px 3px rgba(2, 1, 3, 0.8); 
+ 
 }
 
 </style>
@@ -312,7 +313,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="col-lg-4 col-md-6 filter-app">
               <div class="portfolio-item" >
                 
-                   <img src="../img/solarplane.jpg" id="solar" style="height: 315px;" class="img-fluid" alt="" onclick="showPopup(this)">
+                <img src="../img/solarplane.jpg" id="solar" style="height: 315px;" class="img-fluid" alt="" onclick="showPopup(this)">
                   <!--<div class="portfolio-info" data-toggle="tooltip" data-placement="top">
                       <h3><a href="../img/solarplane.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"></a></h3>
                       <a href="../img/solarplane.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><b><i class="icofont-square-up"></i></b></a>
@@ -329,12 +330,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                    
                   </div>-->
                   <div id="popup1"  class="popup">
+                    
                     <div class="popup-content" >
+      
                         <span id="solar_close" class="close" onclick="hidePopup(this)">&times;</span>
                         <h2>Solar Powered radio controlled plane</h2>
                         <p>Renewable solar energy powers the RC plane motor, which requires 6-7 volts and 40-60 amps. To meet this demand, 14 solar cells with 0.5 volts and 6 amps panels were installed on the aircraft for energy generation.
                           </p>
-                          
+                         
                     </div>
                 </div>
                   <div class="project-name">
