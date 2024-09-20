@@ -1863,7 +1863,7 @@ section {
     top: 10%;
     left: 0;
     right: 0;
-}
+}/*
 .portfolio-image-overlay{
     text-align: center;
     position: absolute;
@@ -1930,7 +1930,62 @@ section {
 h2{
     text-align: center;
 }
+*/
+.image-container {
+    width: 250px;
+    position: relative;
+    display: inline-block;
+}
 
+.image {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+/*.popup-content {
+    background-color: #30d0d5;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888888;
+    width: 80%;
+    max-width: 500px;
+    position: sticky;
+    text-align: center;
+}*/
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2{
+    text-align: center;
+}
 
 /*--------------------------------------------------------------
   # Team
@@ -4114,16 +4169,20 @@ button {
 .year{
     height:auto;
     width:100%;
+    color: white;
     
 
 }
 .contain_eve{
-    height:30px;
-    width:100%;
+    height:45px;
+    width:1180px;
     margin-top: 20px;
-    background-color:#a2cce3;
-   
+    background-color:#0A2239;
+   border-radius: 20px;
     box-shadow:0 5px 10px 0  #0d2735 ;
+   position: relative;
+   
+  
    
 }
 .eve_box{
@@ -4199,3 +4258,4 @@ flex-direction: row;
  .two{
     margin-bottom: 100px;
  }
+ 
