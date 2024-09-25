@@ -24,7 +24,12 @@
     "nodemailer": "^6.6.2"
   },
   "devDependencies": {
+<<<<<<< HEAD
+    "nodemon": "^3.1.7"
+  }
+=======
     "nodemon": "^3.1.4"
   },
   "keywords": []
+>>>>>>> 2911b72f1b11ccb2e50e8791764c3dd45cc172dc
 }
