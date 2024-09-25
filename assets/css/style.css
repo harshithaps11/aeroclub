@@ -1963,7 +1963,44 @@ h2{
     background-color: rgba(0,0,0,0.4);
     justify-content: center;
     align-items: center;
+    z-index: 9999;
+    width: 90%;
 }
+
+/* For very small mobile screens (Android/iOS) */
+@media (max-width: 359px) {
+    .popup-content {
+      max-width: 90%;    /* Use a percentage to make it flexible on small screens */
+      padding: 15px;     /* Less padding for small screens */
+    }
+  }
+  
+  /* For small to medium smartphones (Android/iOS) */
+  @media (min-width: 360px) and (max-width: 639px) {
+    .popup-content {
+      max-width: 90%;    /* Make the width slightly larger for mid-size phones */
+      padding: 20px;     /* Moderate padding for better spacing */
+    }
+  }
+  
+  @media (min-width: 640px) {
+    /* For tablets and larger mobile screens */
+    .popup-content {
+      max-width: 640px; /* Adjust width for tablets */
+      padding: 15px;    /* Slightly more padding for larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* For desktops and larger screens */
+    .popup-content {
+      max-width: 600px; /* Keep the width larger for desktop */
+      padding: 30px;    /* More padding for desktop */
+    }
+  }
+  
+  
+  
 
 /*.popup-content {
     background-color: #30d0d5;
