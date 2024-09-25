@@ -1870,7 +1870,7 @@ section {
     top: 10%;
     left: 0;
     right: 0;
-}/*
+}
 .portfolio-image-overlay{
     text-align: center;
     position: absolute;
@@ -1918,7 +1918,7 @@ section {
     opacity: 1;
     top: calc(50% - 30px);
 }
-
+/*
 .close {
     color: #aaa;
     float: right;
@@ -1937,7 +1937,7 @@ section {
 h2{
     text-align: center;
 }
-*/
+
 .image-container {
     width: 250px;
     position: relative;
@@ -1962,7 +1962,7 @@ h2{
     background-color: rgba(0,0,0,0.4);
     justify-content: center;
     align-items: center;
-}
+}*/
 
 /*.popup-content {
     background-color: #30d0d5;
@@ -1974,7 +1974,7 @@ h2{
     position: sticky;
     text-align: center;
 }*/
-
+/*
 .close {
     color: #aaa;
     float: right;
@@ -1992,7 +1992,7 @@ h2{
 
 h2{
     text-align: center;
-}
+}*/
 
 /*--------------------------------------------------------------
   # Team
