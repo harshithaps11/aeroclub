@@ -612,7 +612,7 @@ h6,
     
 }
 
-.modal-content {
+.modal-content1 {
     width: 100px; /* Full width */
     height: 180px;
     backdrop-filter: blur(30px);
@@ -620,11 +620,9 @@ h6,
     border: 2px solid rgba(255,255,255,0.18);
     overflow: auto;
     border-radius: 10px;
-}
-
-.modal-content .fa-instagram{
-    width: 20px;
-    height: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
 }
 
 .close {
