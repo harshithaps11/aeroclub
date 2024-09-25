@@ -540,16 +540,6 @@ h6,
     left: 23px;
     z-index: 1;
 }
-@media (max-height:1920px){
-    .my-btn{
-        top: 900px;
-    }
-}
-@media (max-height:2160px){
-    .my-btn{
-        top: 630px;
-    }
-}
 
 .my-btn-border {
 	height: 59px; 
@@ -619,7 +609,7 @@ h6,
     top: 530px;
     width: 120px; /* Full width */
     height: 200px; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: none; /* Enable scroll if needed */
     
 }
 
