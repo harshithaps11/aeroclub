@@ -167,7 +167,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 
 .dropdown-content a {
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -222,10 +222,10 @@ html {
         .background-wrapper 
         {
             position: relative;
-            background-image: url('../img/team/coreteam.jpg');
+            background-image: url('../img/team/coreteamFinal.png');
             background-size: cover;
             background-position: center;
-            height: 95vh; /* Adjust height as needed */
+            height: 100vh; /* Adjust height as needed */
         }
         
         /* Semi-transparent overlay */
@@ -236,7 +236,7 @@ html {
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(0deg, rgba(206, 209, 209, 0.525), rgba(71, 196, 227, 0.525)); /* Adjust colors and opacity */
+            /*background-image: linear-gradient(0deg, rgba(206, 209, 209, 0.525), rgba(71, 196, 227, 0.525));*/ /* Adjust colors and opacity */
             z-index: 1;
         }
         .background-wrapper > * {
@@ -272,7 +272,7 @@ html {
     background-color: #83c2e152; /* Powder blue */
     border-radius: 20px; /* Rounds the corners of the card */
     padding: 20px; /* Adds space inside the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.641); /* Light shadow for 3D effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Light shadow for 3D effect */
     text-align: center; /* Centers text inside the card */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation on hover for scaling and shadow */
     position: auto; /* Position relative to allow for absolute positioning inside */
@@ -296,15 +296,17 @@ html {
 }
 
 .member-img img {
+    border: none; /* Ensure no border is added around the image */
     width: 100%; /* Makes the image fit the container's width */
     height: 100%; /* Makes the image fit the container's height */
     object-fit: cover; /* Ensures the image covers the container without stretching */
     transition: transform 0.3s ease; /* Smooth zoom effect on hover */
 }
 
+
 .team-card:hover {
     transform: scale(1.09); /* Slightly enlarges the card on hover */
-    box-shadow: 0 8px 16px rgba(17, 40, 134, 0.9); /* Darker shadow for a raised effect on hover */
+    box-shadow: 0 8px 16px rgba(10, 37, 145, 0.908); /* Darker shadow for a raised effect on hover */
     cursor: pointer; /* Changes the cursor to a pointer when hovering over the card */
 }
 
@@ -327,7 +329,7 @@ html {
 }
 
 .member-info p {
-    color: #555; /* Dark gray color for the text */
+    color: #55555528; /* Dark gray color for the text */
 }
 
 .social-icons a {
@@ -339,6 +341,7 @@ html {
 
 .social-icons a:hover {
     color: #043fb4; /* Changes the icon color to orange on hover */
+    
 }
 
 .outer-box {
@@ -417,7 +420,7 @@ html {
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="team-card member">
                 <div class="member-img">
-                    <img src="../img/team/ritheesh3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+                    <img src="../img/team/Rithesh Shetty-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
                 </div>
                 <div class="member-info">
                     <h4>Rithesh Shetty</h4>
@@ -432,7 +435,7 @@ html {
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           <div class="team-card member">
               <div class="member-img">
-                  <img src="../img/team/ananthakrishna1.JPG" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+                  <img src="../img/team/Anantha Krishna-24.pnG" style="height: 150px; width: 150px;" class="img-fluid" alt="">
               </div>
               <div class="member-info">
                   <h4>Anantha Krishna</h4>
@@ -440,6 +443,8 @@ html {
                   <span>Electronics and communication Engineering</span>
                   <div class="social-icons">
                       <a href="https://www.linkedin.com/in/anantha-krishna-93590023a/"><i class="icofont-linkedin"></i></a>
+                      <a href="https://www.instagram.com/anantha_krishna_404/"><i class="icofont-instagram"></i></a>
+
                   </div>
               </div>
           </div>
@@ -447,7 +452,7 @@ html {
       <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
         <div class="team-card member">
             <div class="member-img">
-                <img src="../img/team/prateeksha.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+                <img src="../img/team/Pratheeksha Nayak-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
             </div>
             <div class="member-info">
                 <h4>Pratheeksha Nayak</h4>
@@ -462,7 +467,7 @@ html {
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/ranjith.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Ranjith R Bhandary-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Ranjith R Bhandary</h4>
@@ -477,7 +482,7 @@ html {
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/sathwik.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Sathvik Poojary-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>Sathwik Poojary</h4>
@@ -492,7 +497,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
   <div class="team-card member">
       <div class="member-img">
-          <img src="../img/team/vachan.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+          <img src="../img/team/Vachan Narkodu-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
       </div>
       <div class="member-info">
           <h4>Vachan Narkodu</h4>
@@ -507,7 +512,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
   <div class="team-card member">
       <div class="member-img">
-          <img src="../img/team/nidheesh.JPG" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+          <img src="../img/team/Nidheesh-24.pnG" style="height: 150px; width: 150px;" class="img-fluid" alt="">
       </div>
       <div class="member-info">
           <h4>Nidheesh Poojary</h4>
@@ -522,7 +527,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
   <div class="team-card member">
       <div class="member-img">
-          <img src="../img/team/shravya.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+          <img src="../img/team/Shravya A Prabhu-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
       </div>
       <div class="member-info">
           <h4>Shravya P</h4>
@@ -538,7 +543,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
   <div class="team-card member">
       <div class="member-img">
-          <img src="../img/team/manoj.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+          <img src="../img/team/Manoj Gowda-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
       </div>
       <div class="member-info">
           <h4>Manoj Gowda</h4>
@@ -553,7 +558,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
   <div class="team-card member">
       <div class="member-img">
-          <img src="../img/team/DEEPA (1).jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+          <img src="../img/team/M Deepa Bhat-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
       </div>
       <div class="member-info">
           <h4>Deepa Bhat</h4>
@@ -568,7 +573,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
   <div class="team-card member">
       <div class="member-img">
-          <img src="../img/team/sanjana2.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+          <img src="../img/team/Sanjana S-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
       </div>
       <div class="member-info">
           <h4>Sanjana S</h4>
@@ -581,7 +586,7 @@ html {
   </div>
 </div>
 
-  <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+ <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
             <img src="../img/team/amritha.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
@@ -594,12 +599,12 @@ html {
             </div>
         </div>
     </div>
-  </div>
+  </div> -->
 
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
   <div class="team-card member">
       <div class="member-img">
-          <img src="../img/team/juvita.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+          <img src="../img/team/J Juvita Joshma-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
       </div>
       <div class="member-info">
           <h4>J Juvita Joshma</h4>
@@ -617,7 +622,7 @@ html {
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/Gagandeep.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Gagandeep Kayara Gangadhara-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Gagandeep Kayara Gangadhara</h4>
@@ -632,7 +637,7 @@ html {
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/shreyas3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Shreyas-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Shreyas</h4>
@@ -646,7 +651,7 @@ html {
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/meghraj2.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Meghraj M-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Meghraj M</h4>
@@ -660,7 +665,7 @@ html {
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/samruddh.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Samruddha S Aithal-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Samruddh S Aithal</h4>
@@ -674,7 +679,7 @@ html {
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/sampanna.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Sampanna-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Sampanna Shetty</h4>
@@ -688,7 +693,7 @@ html {
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/sujan.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Sujan S-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Sujan S</h4>
@@ -702,7 +707,7 @@ html {
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/aneesh3.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Aneesh Prabhu-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Aneesh Prabhu</h4>
@@ -716,7 +721,7 @@ html {
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/shainil.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Shainil S Shetty-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Shainil S Shetty</h4>
@@ -731,7 +736,7 @@ html {
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/vinayak.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Vinayak Prabhu-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Vinayak Prabhu</h4>
@@ -746,7 +751,7 @@ html {
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/prajwal.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Prajwal B T-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Prajwal Badiwana</h4>
@@ -761,7 +766,7 @@ html {
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/vinodh.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Vinod S Shanbogue-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Vinod Shanbouge</h4>
@@ -776,7 +781,7 @@ html {
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/nishanth2.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Nishanth Prabhu-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Nishanth</h4>
@@ -791,7 +796,7 @@ html {
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/abhijna4.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Abhijna Laxmi-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Abhijna</h4>
@@ -806,7 +811,7 @@ html {
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/harshitha2.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Harshitha P Salian-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Harshitha P Salian</h4>
@@ -821,7 +826,7 @@ html {
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/sangeetha.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Sangeetha J-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Sangeetha</h4>
@@ -836,7 +841,7 @@ html {
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/daivik2.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Daivik Shetty-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Daivik</h4>
@@ -851,7 +856,7 @@ html {
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
-              <img src="../img/team/shishir.jpeg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+              <img src="../img/team/Shishir D-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
               <h4>Shishir D</h4>
@@ -863,7 +868,7 @@ html {
       </div>
   </div>
   
-  <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+  <!--<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
       <div class="team-card member">
           <div class="member-img">
               <img src="../img/team/shashank.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
@@ -876,7 +881,7 @@ html {
               </div>
           </div>
       </div>
-  </div>
+  </div>-->
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
@@ -895,7 +900,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/vasavi4.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Vasavi Joshi-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>Vassavi Joshi</h4>
@@ -910,7 +915,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/srinidhi.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Srinidhi D S-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>Srinidhi</h4>
@@ -925,7 +930,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/chimayk2.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Chinmay Kulkarni-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>Chinmay K</h4>
@@ -936,11 +941,24 @@ html {
         </div>
     </div>
 </div>
-
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/bhoomika.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Prashith R Shetty-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+        </div>
+        <div class="member-info">
+            <h4>Prashith Shetty</h4>
+            <span>Computer Science and Engineering (CyberSecurity)</span>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/posts/prashith-shetty-a91508244_cyberinsight-cybersecurity-proton-activity-7238143150706282496-BZlo?utm_source=share&utm_medium=member_android"><i class="icofont-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+    <div class="team-card member">
+        <div class="member-img">
+            <img src="../img/team/Bhoomika-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>Bhoomika</h4>
@@ -955,7 +973,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/abhyudaya.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Abhyudaya J-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>Abhyudaya J</h4>
@@ -972,7 +990,7 @@ html {
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/divyamshu (1).jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Divyamshu-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>Divyamshu YN</h4>
@@ -987,7 +1005,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/sharanya1.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Sharanya-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>Sharanya Acharya</h4>
@@ -1002,7 +1020,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/hardika (1).jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Hardhika-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>Hardhika U</h4>
@@ -1017,7 +1035,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/sanketh.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Sanketh-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>Sanketh K.K</h4>
@@ -1032,7 +1050,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/abhiram (1).jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Abhiram-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>N S K Abhiram</h4>
@@ -1047,7 +1065,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/suhana (1).jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Suhana S Shetty-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>Suhana S Shetty</h4>
@@ -1062,7 +1080,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/navraj.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Navraj-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>Navraj D Shetty</h4>
@@ -1077,7 +1095,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/mithra.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/P V Mithra-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>Pannagesha Vishwa Mithra</h4>
@@ -1092,7 +1110,7 @@ html {
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member">
         <div class="member-img">
-            <img src="../img/team/pradeep.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Pradeep-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member-info">
             <h4>Pradeep B</h4>
@@ -1261,17 +1279,13 @@ html {
 
 <!-- Teamwork Quote Section -->
 <div class="col-lg-12 d-flex align-items-stretch justify-content-center">
-  <div style="border: 2px solid #0000000c; padding: 20px; max-width: 800px; text-align: center; background-color: #e1e5e978;">
-      <h5 style="
-          font-weight: bold; 
-          background: -webkit-linear-gradient(left, #0212f4, #07ece9); 
-          -webkit-background-clip: text; 
-          -webkit-text-fill-color: transparent;">
-          "Coming together is a beginning, Keeping together is progress, Working together is success."
-        </h5>
-         
+    <div style="border: 2px solid rgba(0, 0, 0, 0.05); padding: 20px; max-width: 800px; text-align: center; background-color: rgba(225, 229, 233, 0.47);">
+      <h5 style="font-weight: bold; background: linear-gradient(to right, #0212f4, #07ece9); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-fill-color: transparent;">
+        "Coming together is a beginning, Keeping together is progress, Working together is success."
+      </h5>
+    </div>
   </div>
-</div>
+  
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
 
 

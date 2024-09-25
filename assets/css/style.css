@@ -518,7 +518,7 @@ h6,
         transform: translateX(-50%) translateY(20px) rotate(4deg);
     }
 }
- /* Nitification */
+ /* Notification */
 
  .my-btn, .my-btn-border, .btn-bell {
 	border-radius: 50%;
@@ -604,20 +604,27 @@ h6,
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: -40px;
-    top: 490px;
-    width: 500px; /* Full width */
-    height: 300px; /* Full height */
+    left: 5px;
+    top: 530px;
+    width: 120px; /* Full width */
+    height: 200px; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 100px; /* Full width */
+    height: 180px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(255,228,237,0.37);
+    border: 2px solid rgba(255,255,255,0.18);
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.modal-content .fa-instagram{
+    width: 20px;
+    height: 20px;
 }
 
 .close {
