@@ -540,11 +540,7 @@ h6,
     left: 23px;
     z-index: 1;
 }
-@media (max-height:1920px){
-    .my-btn{
-        top: 550px;
-    }
-}
+
 .my-btn-border {
 	height: 59px; 
 	width: 59px;
@@ -613,7 +609,7 @@ h6,
     top: 530px;
     width: 120px; /* Full width */
     height: 200px; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: none; /* Enable scroll if needed */
     
 }
 
@@ -2007,24 +2003,24 @@ h2{
     border-radius: 20px;
 }
 
-.team .member {
+.team .member2 {
     margin-bottom: 20px;
     overflow: hidden;
     border: 2px solid black;
     border-radius: 20px;
 }
 
-.team .member .member-img {
+.team .member2 .member2-img {
     position: relative;
     overflow: hidden;
     border: 2px solid black;
     border-radius: 20px;
 }
-.member-img img{
+.member2-img img{
     padding: 5px;
     border-radius: 20px;
 }
-.team .member .social {
+.team .member2 .social {
     position: absolute;
     left: 0;
     bottom: -40px;
@@ -2036,7 +2032,7 @@ h2{
     background: rgba(113, 118, 121, 0.8);
 }
 
-.team .member .social a {
+.team .member2 .social a {
     transition: color 0.3s;
     color: #fff;
     margin: 0 10px;
@@ -2044,22 +2040,22 @@ h2{
     display: inline-block;
 }
 
-.team .member .social a:hover {
+.team .member2 .social a:hover {
     color: #68a4c4;
 }
 
-.team .member .social i {
+.team .member2 .social i {
     font-size: 18px;
     margin: 0 2px;
 }
 
-.team .member .member-info h4 {
+.team .member2 .member2-info h4 {
     font-weight: 700;
     margin: 15px 0 5px 0;
     font-size: 18px;
 }
 
-.team .member .member-info span {
+.team .member2 .member2-info span {
     display: block;
     font-size: 13px;
     text-transform: uppercase;
@@ -2068,14 +2064,14 @@ h2{
     color: #68a4c4;
 }
 
-.team .member .member-info p {
+.team .member2 .member2-info p {
     font-style: italic;
     font-size: 14px;
     line-height: 26px;
     color: #666;
 }
 
-.team .member:hover .social {
+.team .member2:hover .social {
     bottom: 0;
     opacity: 1;
     transition: bottom ease-in-out 0.4s;
@@ -2988,7 +2984,8 @@ h2{
   padding give
   */
 .give-padding {
-    padding: 1%;
+    padding: 4%;
+    
 }
 
 .center_comp {
@@ -3012,14 +3009,14 @@ h2{
   new changes from mentor
   */
 
-.team .member .member-info h4 {
+.team .member2 .member2-info h4 {
     font-weight: 700;
     margin: 15px 0 5px 0;
     font-size: 18px;
     text-align: center;
 }
 
-.team .member .member-info span {
+.team .member2 .member2-info span {
     display: block;
     font-size: 13px;
     text-transform: uppercase;
@@ -3029,7 +3026,7 @@ h2{
     text-align: center;
 }
 
-.team .member .member-info p {
+.team .member2 .member2-info p {
     font-style: italic;
     font-size: 14px;
     line-height: 26px;
@@ -3038,7 +3035,7 @@ h2{
 
 /* Styling for mentors linkedin */
 
-.slider .card .member .social {
+.slider .card .member2 .social {
     position: absolute;
     left: 0;
     bottom: -40px;
@@ -3050,7 +3047,7 @@ h2{
     background: rgba(113, 118, 121, 0.8);
 }
 
-.slider .card .member .social a {
+.slider .card .member2 .social a {
     transition: color 0.3s;
     color: #fff;
     margin: 0 10px;
@@ -3058,29 +3055,29 @@ h2{
     display: inline-block;
 }
 
-.slider .card .member .social a:hover {
+.slider .card .member2 .social a:hover {
     color: #68a4c4;
 }
 
-.slider .card .member .img .social i {
+.slider .card .member2 .img .social i {
     font-size: 18px;
     margin: 0 2px;
 }
 
-.slider .member:hover .social {
+.slider .member2:hover .social {
     bottom: 0;
     opacity: 1;
     transition: bottom ease-in-out 0.4s;
 }
 
-.slider .card .member .member-info h4 {
+.slider .card .member2 .member2-info h4 {
     font-weight: 700;
     margin: 15px 0 5px 0;
     font-size: 18px;
     text-align: center;
 }
 
-.slider .card .member .member-info span {
+.slider .card .member2 .member2-info span {
     display: block;
     font-size: 13px;
     font-weight: 400;
@@ -3089,7 +3086,7 @@ h2{
     color: #68a4c4;
 }
 
-.slider .card .member .member-info p {
+.slider .card .member2 .member2-info p {
     font-style: italic;
     font-size: 14px;
     line-height: 26px;
