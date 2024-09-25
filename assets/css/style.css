@@ -540,6 +540,11 @@ h6,
     left: 23px;
     z-index: 1;
 }
+@media (max-height:1920px){
+    .my-btn{
+        top: 550px;
+    }
+}
 .my-btn-border {
 	height: 59px; 
 	width: 59px;
