@@ -2796,8 +2796,8 @@ h2{
   # Footer
   --------------------------------------------------------------*/
 #footer {
-    background: #016fa5;
-    padding: 0 0 30px 0;
+    background-image: url(../img/long-version-v4.gif);
+    width: 100%;
     color: #fff;
     font-size: 14px;
 }
@@ -3034,11 +3034,13 @@ h2{
 /*
   circuit
   */
-
-.background_new {
-    background-image: url(../img/);
+  .background_new {
+    background-image: url(../img/long-version-v4.gif);
     position: center;
+   background-size: cover;
+   
 }
+
 
 /*
   showcase
