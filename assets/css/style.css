@@ -1,3 +1,48 @@
+/*
+.parallax {
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    
+}
+.parallax:nth-of-type(1) { 
+    background-image: url("../img/Aerodash.jpg");
+}  
+
+.parallax:first-of-type { 
+    background-image: url("../img/Backgroundplane.jpeg");
+    background-size: cover;  Adjusts the background to cover the entire element */
+     /* Centers the background image 
+}
+
+
+
+.parallax:nth-child(2) {
+    background-image: url("./images/bg-2.jpg");
+}
+
+.parallax:nth-child(3) {
+    background-image: url("/images/bg-3.jpg");
+}
+
+.content{
+    color: #f0f0f0;
+    text-align: center;
+    padding: 5px;
+   
+}
+
+.content h1{
+    font-size: clamp(2rem, 5vw, 6rem); 
+} 
+*/
+
 body {
     font-family: "Montserrat";
     background-color: white;
@@ -362,10 +407,10 @@ h6,
     overflow: hidden;
     position: relative;
 }
-@media (min-width: 360px) and (max-width: 639px) {
-    .container {
-      max-width: 100%;    /* Make the width slightly larger for mid-size phones */
-      height: 90vh;
+@media only screen and  (min-width: 360px) and (max-width: 639px) {
+    #hero {
+      min-width: 100%;    /* Make the width slightly larger for mid-size phones */
+      height: 100vh;
       overflow: hidden;
       position: relative; /* Moderate padding for better spacing */
     }
@@ -373,7 +418,7 @@ h6,
   
   @media (min-width: 640px) {
     /* For tablets and larger mobile screens */
-    .container {
+    #hero {
       max-width: 100%; /* Adjust width for tablets */
       height: 90vh;
       overflow: hidden;
@@ -506,6 +551,7 @@ h6,
 
 #hero .carousel-control-next-icon,
 #hero .carousel-control-prev-icon {
+    
     background: none;
     font-size: 48px;
     line-height: 1;
