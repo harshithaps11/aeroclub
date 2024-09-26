@@ -34,12 +34,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link href="../vendor/venobox/venobox.css" rel="stylesheet">
   <link href="../vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="../vendor/aos/aos.css" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
+<!-- jQuery, Popper.js, and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Template Main CSS File -->
   <link href="../css/style.css" rel="stylesheet">
 <style>
 .whatsapp-link {
-  color: #45ff64 !important;
+  color: #45beff
+   !important;
 }
 /* Pop-up styles */
     .popup {
@@ -162,7 +169,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.642);
     z-index: 1;
 }
 
@@ -201,7 +208,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 @media (max-width: 480px) {
     .team-container {
-        grid-template-columns: 1fr; /* 1 member3 per row on very small screens */
+        grid-template-columns: 4fr; /* 1 member3 per row on very small screens */
     }
 }
 
@@ -346,8 +353,43 @@ html {
 }
 
 .outer-box {
-  background-color: #2f98d1d9; /* Powder blue */
+  background-color:  #2f98d1d9 ;/* Powder blue */
 }
+/*.regular-container {
+    text-align: right;
+    position: relative;
+}
+
+.regular-dropdown-menu {
+    position: absolute;
+    right: 20;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0px;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.regular-dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease;
+}
+
+.regular-dropdown-menu a:last-child {
+    border-bottom: none; /* Remove border for the last item 
+}
+
+.regular-dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}*/
+
     </style>
 </head>
 
@@ -392,10 +434,10 @@ html {
                   <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Team<span class="caret"></span></a>
                     <div class="dropdown-menu">
-                        <a href="/team#2020-24BATCH">2020-24 BATCH</a>
-                        <a href="/team#2021-25BATCH">2021-25 BATCH</a>
-                        <a href="/team#2022-26BATCH">2022-26 BATCH</a>
-                        <a href="/team#2023-27BATCH">2023-27 BATCH</a>
+                        <a href="/team#2020-24BATCH" class="whatsapp-link">2020-24 BATCH</a>
+                        <a href="/team#2021-25BATCH" class="whatsapp-link">2021-25 BATCH</a>
+                        <a href="/team#2022-26BATCH" class="whatsapp-link">2022-26 BATCH</a>
+                        <a href="/team#2023-27BATCH" class="whatsapp-link">2023-27 BATCH</a> <!--class="whatsapp-link" is for maintaining colour-->
                     </div>
                 </li>
                 
@@ -425,9 +467,10 @@ html {
     </div>
      <!-- ======= Team Section ======= -->
      <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-      <div class="outer-box"">  <div class="container_new">
+      <div class="outer-box">  <div class="container_new">
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
-
+        
+        
         <div class="container_new" id="2022-26BATCH" >
         <center><h2>2022-26 BATCH</h2></center></div>
         <div class="row">
@@ -601,20 +644,7 @@ html {
   </div>
 </div>
 
- <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-    <div class="team-card member3">
-        <div class="member3-img">
-            <img src="../img/team/amritha.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
-        </div>
-        <div class="member3-info">
-            <h4>Amritha K</h4>
-            <span>ELECTRONICS and COMMUNICATION ENGINEERING</span>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/amritha-k-poojari-62559524b/"><i class="icofont-linkedin"></i></a>
-            </div>
-        </div>
-    </div>
-  </div> -->
+  
 
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
   <div class="team-card member3">
@@ -630,6 +660,20 @@ html {
       </div>
   </div>
 </div>
+<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+    <div class="team-card member3">
+        <div class="member3-img">
+            <img src="../img/team/Amrutha-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+        </div>
+        <div class="member3-info">
+            <h4>Amritha K</h4>
+            <span>ELECTRONICS and COMMUNICATION ENGINEERING</span>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/amritha-k-poojari-62559524b/"><i class="icofont-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+  </div> 
 </div>
 <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
 <div class="container_new" id="2023-27BATCH" >
@@ -860,7 +904,7 @@ html {
               <img src="../img/team/Daivik Shetty-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
           </div>
           <div class="member-info">
-              <h4>Daivik</h4>
+              <h4>Daivik Shetty</h4>
               <span>MECHANICAL ENGINEERING</span>
               <div class="social-icons">
                   <a href="https://www.linkedin.com/in/daivik-shetty-0a2009284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="icofont-linkedin"></i></a>
@@ -901,7 +945,7 @@ html {
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="team-card member3">
         <div class="member3-img">
-            <img src="../img/team/bhanushankar.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+            <img src="../img/team/Bhanushankar Ganapathi Bhat-24.png" style="height: 150px; width: 150px;" class="img-fluid" alt="">
         </div>
         <div class="member3-info">
             <h4>Bhanushankar</h4>
@@ -1445,7 +1489,7 @@ html {
 <script>document.getElementById('teamDropdown').addEventListener('click', function(event) {
     event.preventDefault();
     document.querySelector('#team').scrollIntoView({ 
-        behavior: 'smooth' 
+        behavior: 'fast' 
     });
 });
 </script>
