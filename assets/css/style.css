@@ -540,7 +540,6 @@ h6,
     left: 23px;
     z-index: 1;
 }
-
 .my-btn-border {
 	height: 59px; 
 	width: 59px;
@@ -609,11 +608,11 @@ h6,
     top: 530px;
     width: 120px; /* Full width */
     height: 200px; /* Full height */
-    overflow: none; /* Enable scroll if needed */
+    overflow: auto; /* Enable scroll if needed */
     
 }
 
-.modal-content1 {
+.modal-content {
     width: 100px; /* Full width */
     height: 180px;
     backdrop-filter: blur(30px);
@@ -621,9 +620,11 @@ h6,
     border: 2px solid rgba(255,255,255,0.18);
     overflow: auto;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
+}
+
+.modal-content .fa-instagram{
+    width: 20px;
+    height: 20px;
 }
 
 .close {
@@ -1962,7 +1963,44 @@ h2{
     background-color: rgba(0,0,0,0.4);
     justify-content: center;
     align-items: center;
+    z-index: 9999;
+    width: 90%;
 }
+
+/* For very small mobile screens (Android/iOS) */
+@media (max-width: 359px) {
+  .popup-content {
+    max-width: 90%;    /* Use a percentage to make it flexible on small screens */
+    padding: 15px;     /* Less padding for small screens */
+  }
+}
+
+/* For small to medium smartphones (Android/iOS) */
+@media (min-width: 360px) and (max-width: 639px) {
+  .popup-content {
+    max-width: 95%;    /* Make the width slightly larger for mid-size phones */
+    padding: 20px;     /* Moderate padding for better spacing */
+  }
+}
+
+@media (min-width: 640px) {
+  /* For tablets and larger mobile screens */
+  .popup-content {
+    max-width: 640px; /* Adjust width for tablets */
+    padding: 25px;    /* Slightly more padding for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* For desktops and larger screens */
+  .popup-content {
+    max-width: 600px; /* Keep the width larger for desktop */
+    padding: 30px;    /* More padding for desktop */
+  }
+}
+
+  
+  
 
 /*.popup-content {
     background-color: #30d0d5;
@@ -2003,24 +2041,24 @@ h2{
     border-radius: 20px;
 }
 
-.team .member2 {
+.team .member {
     margin-bottom: 20px;
     overflow: hidden;
     border: 2px solid black;
     border-radius: 20px;
 }
 
-.team .member2 .member2-img {
+.team .member .member-img {
     position: relative;
     overflow: hidden;
     border: 2px solid black;
     border-radius: 20px;
 }
-.member2-img img{
+.member-img img{
     padding: 5px;
     border-radius: 20px;
 }
-.team .member2 .social {
+.team .member .social {
     position: absolute;
     left: 0;
     bottom: -40px;
@@ -2032,7 +2070,7 @@ h2{
     background: rgba(113, 118, 121, 0.8);
 }
 
-.team .member2 .social a {
+.team .member .social a {
     transition: color 0.3s;
     color: #fff;
     margin: 0 10px;
@@ -2040,22 +2078,22 @@ h2{
     display: inline-block;
 }
 
-.team .member2 .social a:hover {
+.team .member .social a:hover {
     color: #68a4c4;
 }
 
-.team .member2 .social i {
+.team .member .social i {
     font-size: 18px;
     margin: 0 2px;
 }
 
-.team .member2 .member2-info h4 {
+.team .member .member-info h4 {
     font-weight: 700;
     margin: 15px 0 5px 0;
     font-size: 18px;
 }
 
-.team .member2 .member2-info span {
+.team .member .member-info span {
     display: block;
     font-size: 13px;
     text-transform: uppercase;
@@ -2064,14 +2102,14 @@ h2{
     color: #68a4c4;
 }
 
-.team .member2 .member2-info p {
+.team .member .member-info p {
     font-style: italic;
     font-size: 14px;
     line-height: 26px;
     color: #666;
 }
 
-.team .member2:hover .social {
+.team .member:hover .social {
     bottom: 0;
     opacity: 1;
     transition: bottom ease-in-out 0.4s;
@@ -2984,7 +3022,8 @@ h2{
   padding give
   */
 .give-padding {
-    padding: 4%;
+    padding: 1%;
+    
     
 }
 
@@ -3009,14 +3048,14 @@ h2{
   new changes from mentor
   */
 
-.team .member2 .member2-info h4 {
+.team .member .member-info h4 {
     font-weight: 700;
     margin: 15px 0 5px 0;
     font-size: 18px;
     text-align: center;
 }
 
-.team .member2 .member2-info span {
+.team .member .member-info span {
     display: block;
     font-size: 13px;
     text-transform: uppercase;
@@ -3026,7 +3065,7 @@ h2{
     text-align: center;
 }
 
-.team .member2 .member2-info p {
+.team .member .member-info p {
     font-style: italic;
     font-size: 14px;
     line-height: 26px;
@@ -3035,7 +3074,7 @@ h2{
 
 /* Styling for mentors linkedin */
 
-.slider .card .member2 .social {
+.slider .card .member .social {
     position: absolute;
     left: 0;
     bottom: -40px;
@@ -3047,7 +3086,7 @@ h2{
     background: rgba(113, 118, 121, 0.8);
 }
 
-.slider .card .member2 .social a {
+.slider .card .member .social a {
     transition: color 0.3s;
     color: #fff;
     margin: 0 10px;
@@ -3055,29 +3094,29 @@ h2{
     display: inline-block;
 }
 
-.slider .card .member2 .social a:hover {
+.slider .card .member .social a:hover {
     color: #68a4c4;
 }
 
-.slider .card .member2 .img .social i {
+.slider .card .member .img .social i {
     font-size: 18px;
     margin: 0 2px;
 }
 
-.slider .member2:hover .social {
+.slider .member:hover .social {
     bottom: 0;
     opacity: 1;
     transition: bottom ease-in-out 0.4s;
 }
 
-.slider .card .member2 .member2-info h4 {
+.slider .card .member .member-info h4 {
     font-weight: 700;
     margin: 15px 0 5px 0;
     font-size: 18px;
     text-align: center;
 }
 
-.slider .card .member2 .member2-info span {
+.slider .card .member .member-info span {
     display: block;
     font-size: 13px;
     font-weight: 400;
@@ -3086,7 +3125,7 @@ h2{
     color: #68a4c4;
 }
 
-.slider .card .member2 .member2-info p {
+.slider .card .member .member-info p {
     font-style: italic;
     font-size: 14px;
     line-height: 26px;
@@ -4030,18 +4069,18 @@ button {
 
 
 .slide .item:nth-child(3){
-    left: 50%;
+    left: 70%;
 }
 .slide .item:nth-child(4){
-    left: calc(50% + 220px);
+    left: calc(70% + 220px);
 }
 .slide .item:nth-child(5){
-    left: calc(50% + 440px);
+    left: calc(70% + 440px);
 }
 
 /* here n = 0, 1, 2, 3,... */
 .slide .item:nth-child(n + 6){
-    left: calc(50% + 660px);
+    left: calc(70% + 660px);
     opacity: 0;
 }
 
@@ -4266,4 +4305,84 @@ flex-direction: row;
  .two{
     margin-bottom: 100px;
  }
+ 
+ 
+ /* number of images*/
+.gallery {
+    --d: 10s;
+    /* duration */
+    display: grid;
+    width: 400px;
+    height: 500px;
+    position: relative;
+    left: 150px;
+    top:50px;
+
+
+  }
+  
+  .gallery > img {
+    grid-area: 1/1;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 10px solid #f2f2f2;
+    box-shadow: 0 0 4px #0007;
+    z-index: 2;
+    animation: slide var(--d) infinite, z-order var(--d) infinite steps(1);
+  }
+  
+  .gallery img:last-child {
+    animation-name: slide, z-order-last;
+  }
+  
+  .gallery > img:nth-child(1) {
+    animation-delay: calc(0*var(--d));
+    --r: 3deg;
+  }
+  
+  .gallery > img:nth-child(2) {
+    animation-delay: calc(-0.2*var(--d));
+    --r: 18deg;
+  }
+  
+  .gallery > img:nth-child(3) {
+    animation-delay: calc(-0.4*var(--d));
+    --r: 11deg;
+  }
+  
+  .gallery > img:nth-child(4) {
+    animation-delay: calc(-0.6*var(--d));
+    --r: -9deg;
+  }
+  
+  .gallery > img:nth-child(5) {
+    animation-delay: calc(-0.8*var(--d));
+    --r: 1deg;
+  }
+  
+  @keyframes slide {
+    10% {
+      transform: translateX(120%) rotate(var(--r));
+    }
+    0%, 100%, 20% {
+      transform: translateX(0%) rotate(var(--r));
+    }
+  }
+  @keyframes z-order {
+    10%, 20% {
+      z-index: 1;
+    }
+    80% {
+      z-index: 2;
+    }
+  }
+  @keyframes z-order-last {
+    10%, 20% {
+      z-index: 1;
+    }
+    90% {
+      z-index: 2;
+    }
+  }
  
