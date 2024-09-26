@@ -362,10 +362,10 @@ h6,
     overflow: hidden;
     position: relative;
 }
-@media (min-width: 360px) and (max-width: 639px) {
-    .container {
-      max-width: 100%;    /* Make the width slightly larger for mid-size phones */
-      height: 90vh;
+@media only screen and  (min-width: 360px) and (max-width: 639px) {
+    #hero {
+      min-width: 100%;    /* Make the width slightly larger for mid-size phones */
+      height: 100vh;
       overflow: hidden;
       position: relative; /* Moderate padding for better spacing */
     }
@@ -373,7 +373,7 @@ h6,
   
   @media (min-width: 640px) {
     /* For tablets and larger mobile screens */
-    .container {
+    #hero {
       max-width: 100%; /* Adjust width for tablets */
       height: 90vh;
       overflow: hidden;
