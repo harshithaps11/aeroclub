@@ -70,7 +70,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
 
     .popup-content {
-      position:sticky;
+      position:fixed;
       top: 50%;
       left: 50%;
       font-style:bold;
@@ -79,7 +79,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       padding: 20px;
       border-radius: 5px;
       box-shadow: 5 5 8px rgba(69, 228, 228, 0.985);
-      max-width: 600px;
+      
       max-height: 80vh;
       /* Set a maximum height for the content */
       overflow-y: auto;
@@ -242,51 +242,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
  <!-- ======= Header ======= -->
  <header id="header" class="fixed-top header-transparent">
-  <div class="container_new">
-    <div class="logo float-left" style="height: max-content">
+  <div class="container_new2">
+
+    <div class="logo float-left" style="height: max-content;">
+
+
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="/home"
-        ><img
-          src="../img/logo_aero.png"
-          alt=""
-          style="height: 5vh; width: 5vh"
-          class="img-fluid"
-      /></a>
+      <a href="/home"><img src="../img/logo_aero.png" alt="" style=" height: 90px; width: 85px;" class="img-fluid"></a>
     </div>
 
-    <nav class="nav-menu float-right d-none d-lg-block">
+
+
+    <nav class="nav-menu float-right d-none d-lg-block ">
+
       <ul>
         <li class="active"><a href="/home">Home</a></li>
         <li><a href="/projects">Projects</a></li>
-        <li><a href="/achievement">Achievements</a></li>
-        <li><a href="/gallery">Gallery</a></li>
-        <li><a href="/team">Team</a></li>
-        <li><a href="/contact">Contact Us</a></li>
-        <li><a href="/vayurvya">Vayurvya</a></li>
+        <li><a href="/events">Events</a></li> 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-            >Join Us <span class="caret"></span
-          ></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Achievements <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li>
-              <a
-                href="https://chat.whatsapp.com/FxJah3YRcNlKcBUyrEoWlP"
-                class="whatsapp-link"
-                >Aero Club Nitte</a
-              >
+            <li><a href="/achievement#2024" class="whatsapp-link">2024</a></li>
+            <li><a href="/achievement#2023" class="whatsapp-link">2023</a></li>
+            <li><a href="/achievement#2022" class="whatsapp-link">2022</a></li>
+            <li><a href="/achievement#2019" class="whatsapp-link">2019</a></li>
+            <li><a href="/achievement#2018" class="whatsapp-link">2018</a></li>
+          </ul>
+        </li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li class="dropdown">
+          <a href="/team" class="dropdown">Team
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a></a>
+          <div class="dropdown-menu">
+              <a href="/team#2020-24BATCH">2020-24 BATCH</a>
+              <a href="/team#2021-25BATCH">2021-25 BATCH</a>
+              <a href="/team#2022-26BATCH">2022-26 BATCH</a>
+              <a href="/team#2023-27BATCH">2023-27 BATCH</a>
+          </div>
+      </li>
+      
+      
+      
+        <li><a href="/contact">Contact Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Join Us <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://chat.whatsapp.com/FxJah3YRcNlKcBUyrEoWlP" class="whatsapp-link">Aero Club Nitte</a>
             </li>
-            <li>
-              <a
-                href="https://chat.whatsapp.com/JMdz3P5vWl31e6HPgweBZR"
-                class="whatsapp-link"
-                >Aero Club Nitte Alumni</a
-              >
-            </li>
+            <li><a href="https://chat.whatsapp.com/JMdz3P5vWl31e6HPgweBZR" class="whatsapp-link">Aero Club Nitte
+                Alumni</a></li>
           </ul>
         </li>
       </ul>
-    </nav>
-    <!-- .nav-menu -->
+    </nav><!-- .nav-menu -->
+
   </div>
 </header>
 <!-- End Header -->
