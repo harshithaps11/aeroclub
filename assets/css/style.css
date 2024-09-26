@@ -361,6 +361,76 @@ h6,
     overflow: hidden;
     position: relative;
 }
+@media (min-width: 360px) and (max-width: 639px) {
+    .container {
+      max-width: 100%;    /* Make the width slightly larger for mid-size phones */
+      height: 90vh;
+      overflow: hidden;
+      position: relative; /* Moderate padding for better spacing */
+    }
+  }
+  
+  @media (min-width: 640px) {
+    /* For tablets and larger mobile screens */
+    .container {
+      max-width: 100%; /* Adjust width for tablets */
+      height: 90vh;
+      overflow: hidden;
+      position: relative;   /* Slightly more padding for larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* For desktops and larger screens */
+    .container {
+      max-width: 100%; /* Keep the width larger for desktop */
+      height: 90vh;
+      overflow: hidden;
+      position: relative;    /* More padding for desktop */
+    }
+  }
+  #item1 button{
+    position: relative;
+    top:170px;
+    left:165px;
+    background-color:#0A2239;
+    width:200px;
+    height:75px;
+  }
+  @media (min-width: 360px) and (max-width: 639px) {
+    #item1 button {
+        position: relative;
+        top:170px;
+        left:-70px;
+        background-color:#0A2239;
+        width:150px;
+        height:50px;     /* Moderate padding for better spacing */
+    }
+  }
+  
+  @media (min-width: 640px) {
+    /* For tablets and larger mobile screens */
+    .btnwork {
+        position: relative;
+        top:170px;
+        left:50px;
+        background-color:#0A2239;
+        width:200px;
+        height:75px;    /* Slightly more padding for larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* For desktops and larger screens */
+    .btnwork {
+        position: relative;
+        top:170px;
+        left:50px;
+        background-color:#0A2239;
+        width:200px;
+        height:75px;    /* More padding for desktop */
+    }
+  }
 
 /*#hero::after {
     content: "";
