@@ -47,7 +47,8 @@ h6,
 }
 #hero button{
     position: absolute;
-    top: 300px;
+    top: 600px;
+
     padding: 15px;
     background-color: rgba(0,0,0,0.5);
     border: 0;
@@ -361,6 +362,76 @@ h6,
     overflow: hidden;
     position: relative;
 }
+@media (min-width: 360px) and (max-width: 639px) {
+    .container {
+      max-width: 100%;    /* Make the width slightly larger for mid-size phones */
+      height: 90vh;
+      overflow: hidden;
+      position: relative; /* Moderate padding for better spacing */
+    }
+  }
+  
+  @media (min-width: 640px) {
+    /* For tablets and larger mobile screens */
+    .container {
+      max-width: 100%; /* Adjust width for tablets */
+      height: 90vh;
+      overflow: hidden;
+      position: relative;   /* Slightly more padding for larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* For desktops and larger screens */
+    .container {
+      max-width: 100%; /* Keep the width larger for desktop */
+      height: 90vh;
+      overflow: hidden;
+      position: relative;    /* More padding for desktop */
+    }
+  }
+  #item1 button{
+    position: relative;
+    top:170px;
+    left:165px;
+    background-color:#0A2239;
+    width:200px;
+    height:75px;
+  }
+  @media (min-width: 360px) and (max-width: 639px) {
+    #item1 button {
+        position: relative;
+        top:170px;
+        left:-70px;
+        background-color:#0A2239;
+        width:150px;
+        height:50px;     /* Moderate padding for better spacing */
+    }
+  }
+  
+  @media (min-width: 640px) {
+    /* For tablets and larger mobile screens */
+    .btnwork {
+        position: relative;
+        top:170px;
+        left:50px;
+        background-color:#0A2239;
+        width:200px;
+        height:75px;    /* Slightly more padding for larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* For desktops and larger screens */
+    .btnwork {
+        position: relative;
+        top:170px;
+        left:50px;
+        background-color:#0A2239;
+        width:200px;
+        height:75px;    /* More padding for desktop */
+    }
+  }
 
 /*#hero::after {
     content: "";
@@ -1871,7 +1942,7 @@ section {
     top: 10%;
     left: 0;
     right: 0;
-}/*
+}
 .portfolio-image-overlay{
     text-align: center;
     position: absolute;
@@ -1938,7 +2009,7 @@ section {
 h2{
     text-align: center;
 }
-*/
+
 .image-container {
     width: 250px;
     position: relative;
@@ -2796,8 +2867,8 @@ h2{
   # Footer
   --------------------------------------------------------------*/
 #footer {
-    background: #016fa5;
-    padding: 0 0 30px 0;
+    background-image: url(../img/long-version-v4.gif);
+    width: 100%;
     color: #fff;
     font-size: 14px;
 }
@@ -3034,11 +3105,13 @@ h2{
 /*
   circuit
   */
-
-.background_new {
-    background-image: url(../img/);
+  .background_new {
+    background-image: url(../img/long-version-v4.gif);
     position: center;
+   background-size: cover;
+   
 }
+
 
 /*
   showcase
@@ -4168,7 +4241,7 @@ button {
 }
 .prev{
     position: relative;
-    left: 500px;
+    left: 650px;
 }
 
 /*
