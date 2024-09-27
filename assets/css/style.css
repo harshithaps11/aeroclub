@@ -1137,8 +1137,8 @@ section {
   --------------------------------------------------------------*/
 .container_new {
     padding: 0%;
-    position: relative;
-    margin: 0 5% 0 5%;
+    /* position: relative;
+    margin: 0 5% 0 5%; */
     background: white;
     box-shadow: 0 15px 36px 0 rgba(4, 6, 10, 0.14);
 }
@@ -1392,7 +1392,7 @@ section {
     position: absolute;
     top: 95%;
     left: 50%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     transition: all 0.1s;
     border-radius: -50% -50% 0% 0%;
 }
