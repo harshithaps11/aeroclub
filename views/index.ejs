@@ -34,6 +34,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
     rel="stylesheet">
+    <link  rel="stylesheet" href="style.css">
 
   <!-- Vendor CSS Files -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -243,14 +244,14 @@ align:center;}
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
+  <header id="header" class=" header-transparent">
     <div class="container_new2">
 
       <div class="logo float-left" style="height: max-content;">
 
 
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="/home"><img src="../img/logo_aero.png" alt="" style=" height: 90px; width: 85px;" class="img-fluid "></a>
+        <a href="/home"><img src="../img/logo_aero.png" alt="" style=" height: 80px; width: 85px;" class="img-fluid "></a>
       </div>
 
 
@@ -273,16 +274,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </li>
           <li><a href="/gallery">Gallery</a></li>
           <li class="dropdown">
-            <a href="/team" class="dropdown">Team
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a></a>
+            <a href="#team" class="team-link">Team</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+            </a>
             <div class="dropdown-menu">
-                <a href="/team#2020-24BATCH">2020-24 BATCH</a>
-                <a href="/team#2021-25BATCH">2021-25 BATCH</a>
-                <a href="/team#2022-26BATCH">2022-26 BATCH</a>
-                <a href="/team#2023-27BATCH">2023-27 BATCH</a>
+                <a href="/team#2020-24BATCH" class="whatsapp-link">2020-24 BATCH</a>
+                <a href="/team#2021-25BATCH" class="whatsapp-link">2021-25 BATCH</a>
+                <a href="/team#2022-26BATCH" class="whatsapp-link">2022-26 BATCH</a>
+                <a href="/team#2023-27BATCH" class="whatsapp-link">2023-27 BATCH</a>
             </div>
         </li>
         
+  
+
         
         
           <li><a href="/contact">Contact Us</a></li>
@@ -318,7 +323,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="item" id="item1" style="background-image: url(workshop.jpeg);background-size:cover;">
               <div class="content">
-                <button class="btnwork" href="https://forms.gle/SstkfVSiwuwdaPBQ8">Register Now</button>
+                <button class="btnwork">Register Now</button>
               </div>
           </div>
           <div class="item" style="background-image: url(../img/Vayurvya\ _F.svg);">
@@ -354,7 +359,21 @@ prev.addEventListener('click', function(){
     let items = document.querySelectorAll('.item')
     document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
 })
+
+ // Prevent dropdown when clicking on "Team" link
+ document.querySelector('.team-link').addEventListener('click', function (e) {
+        window.location.href = "#team"; // navigate to the team section
+    });
+
+    // Dropdown functionality when clicking on the caret
+    document.querySelector('.dropdown-toggle').addEventListener('click', function (e) {
+        e.preventDefault(); // prevent default action
+        var dropdownMenu = this.nextElementSibling;
+        dropdownMenu.classList.toggle('show'); // toggle the dropdown menu
+    });
+
   </script>
+  
       <!--<div class="hero-section">
         <div class="slides">
         <img src="web.png" class="hero-img" alt="hero-image">
@@ -889,11 +908,11 @@ window.onclick = function(event) {
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h2>Address</h2>
+          <h2 style="color: #fff;text-align: start;">Address</h2>
           <p>
             Aeroclub Nitte<br>
             NMAM Institute of Technology<br>
-            3rd Floor Jnana Saudha<br>
+            3rd Floor Raja Raman  Block<br>
             Karkala, Udupi<br>
             Karnataka<br>
             Pin Code - 574110<br>
