@@ -364,8 +364,9 @@ h6,
 }
 @media only screen and  (min-width: 360px) and (max-width: 639px) {
     #hero {
-      min-width: 100%;    /* Make the width slightly larger for mid-size phones */
-      height: 100vh;
+      max-width: 100%;    /* Make the width slightly larger for mid-size phones */
+      height: 70vh;
+      background-image: url();
       overflow: hidden;
       position: relative; /* Moderate padding for better spacing */
     }
@@ -1424,6 +1425,30 @@ section {
         opacity: 1;
     }
 }
+/*Row*/
+@media (min-width: 360px) and (max-width: 639px) {
+    .row  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+  }
+  
+  @media (min-width: 640px) {
+    /* For tablets and larger mobile screens */
+    .popup-content {
+      max-width: 640px; /* Adjust width for tablets */
+      padding: 25px;    /* Slightly more padding for larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* For desktops and larger screens */
+    .popup-content {
+      max-width: 600px; /* Keep the width larger for desktop */
+      padding: 30px;    /* More padding for desktop */
+    }
+  }
 
 /*--------------------------------------------------------------
   # Features
