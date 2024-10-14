@@ -4292,6 +4292,94 @@ button {
     left: 650px;
 }
 
+/*events media queries*/
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container_new2 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-menu {
+      width: 100%;
+      display: block;
+    }
+  
+    .nav-menu ul {
+      flex-direction: column;
+    }
+  
+    .nav-menu ul li {
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .hero-section {
+      padding: 10px;
+    }
+  
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .one, .two {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .eve_box {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-6 {
+      flex: 1 1 100%;
+      order: 1;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .text-md-right {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .popup-content {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .socialmedia {
+      margin: 0 5px;
+      width: 30px; /* Adjust size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .header-transparent {
+      padding: 10px;
+    }
+  
+    .nav-menu ul {
+      padding: 0;
+    }
+  
+    .popup-content {
+      padding: 10px;
+    }
+  
+    .popup h2 {
+      font-size: 1.5rem;
+    }
+  
+    .popup p,
+    .popup ul li {
+      font-size: 0.9rem;
+    }
+  }
 /*
 .hero-section {
     display: flex;
