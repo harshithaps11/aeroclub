@@ -69,9 +69,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     } 
   
 
-    .popup-content {
-      position:sticky;
-      top: 50%;
+.popup-content {
+      position:absolute;
+      top: 15%;
       left: 50%;
       font-style:bold;
       transform: translate(-50%, -50%);
@@ -79,14 +79,96 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       padding: 20px;
       border-radius: 5px;
       box-shadow: 5 5 8px rgba(69, 228, 228, 0.985);
-      max-width: 600px;
+      
       max-height: 80vh;
       /* Set a maximum height for the content */
       overflow-y: auto;
+      z-index: 9999;
       
       
       /* Make the content scrollable */
     }
+.popup-content h2 {
+      color: aqua;
+      padding: 10px;
+      text-shadow: 1px 1px 3px rgba(87, 159, 223, 0.8); 
+ }
+
+ .popup-content1 {
+      position:fixed;
+      top: 60%;
+      left: 50%;
+      font-style:bold;
+      transform: translate(-50%, -50%);
+      background-color: hsl(191, 27%, 88%);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 5 5 8px rgba(69, 228, 228, 0.985);
+      max-height: 80vh;
+      /* Set a maximum height for the content */
+      overflow-y: auto;
+      z-index: 9999;
+      
+      
+      /* Make the content scrollable */
+    }
+
+  .popup-content1 h2{
+      color: aqua; 
+      padding: 10px;
+      text-shadow:1px 1px 3px rgba(87, 159, 223, 0.8); 
+ }
+
+ .popup-content2 {
+      position:fixed;
+      top: 80%;
+      left: 50%;
+      font-style:bold;
+      transform: translate(-50%, -50%);
+      background-color: hsl(191, 27%, 88%);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 5 5 8px rgba(69, 228, 228, 0.985);
+      max-height: 80vh;
+      /* Set a maximum height for the content */
+      overflow-y: auto;
+      z-index: 9999;
+      
+      
+      /* Make the content scrollable */
+    }
+
+  .popup-content2 h2{
+      color: aqua; 
+      padding: 10px;
+      text-shadow: 1px 1px 3px rgba(87, 159, 223, 0.8); 
+ }
+
+ .popup-content3 {
+      position:fixed;
+      top: 42%;
+      left: 50%;
+      font-style:bold;
+      transform: translate(-50%, -50%);
+      background-color: hsl(191, 27%, 88%);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 5 5 8px rgba(69, 228, 228, 0.985);
+      max-height: 80vh;
+      /* Set a maximum height for the content */
+      overflow-y: auto;
+      z-index: 9999;
+      
+      
+      /* Make the content scrollable */
+    }
+
+  .popup-content3 h2{
+      color: aqua; 
+      padding: 10px;
+      text-shadow: 1px 1px 3px rgba(87, 159, 223, 0.8); 
+ }
+
 
 
     .popup h2 {
@@ -222,12 +304,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     padding-top: 20px; /* Adjust the value according to your preference */
   }
 
-.popup-content h2{
-  color: #45beff; 
-  padding: 10px;
-  text-shadow: 1px 1px 3px rgba(2, 1, 3, 0.8); 
- 
-}
+
 
 </style>
 
@@ -242,51 +319,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
  <!-- ======= Header ======= -->
  <header id="header" class="fixed-top header-transparent">
-  <div class="container_new">
-    <div class="logo float-left" style="height: max-content">
+  <div class="container_new2">
+
+    <div class="logo float-left" style="height: max-content;">
+
+
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="/home"
-        ><img
-          src="../img/logo_aero.png"
-          alt=""
-          style="height: 5vh; width: 5vh"
-          class="img-fluid"
-      /></a>
+      <a href="/home"><img src="../img/logo_aero.png" alt="" style=" height: 90px; width: 85px;" class="img-fluid"></a>
     </div>
 
-    <nav class="nav-menu float-right d-none d-lg-block">
+
+
+    <nav class="nav-menu float-right d-none d-lg-block ">
+
       <ul>
         <li class="active"><a href="/home">Home</a></li>
         <li><a href="/projects">Projects</a></li>
-        <li><a href="/achievement">Achievement</a></li>
-        <li><a href="/gallery">Gallery</a></li>
-        <li><a href="/team">Team</a></li>
-        <li><a href="/contact">Contact Us</a></li>
-        <li><a href="/vayurvya">Vayurvya</a></li>
+        <li><a href="/events">Events</a></li> 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-            >Join Us <span class="caret"></span
-          ></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Achievements <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li>
-              <a
-                href="https://chat.whatsapp.com/FxJah3YRcNlKcBUyrEoWlP"
-                class="whatsapp-link"
-                >Aero Club Nitte</a
-              >
+            <li><a href="/achievement#2024" class="whatsapp-link">2024</a></li>
+            <li><a href="/achievement#2023" class="whatsapp-link">2023</a></li>
+            <li><a href="/achievement#2022" class="whatsapp-link">2022</a></li>
+            <li><a href="/achievement#2019" class="whatsapp-link">2019</a></li>
+            <li><a href="/achievement#2018" class="whatsapp-link">2018</a></li>
+          </ul>
+        </li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li class="dropdown">
+          <a href="/team" class="dropdown">Team
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a></a>
+          <div class="dropdown-menu">
+              <a href="/team#2020-24BATCH">2020-24 BATCH</a>
+              <a href="/team#2021-25BATCH">2021-25 BATCH</a>
+              <a href="/team#2022-26BATCH">2022-26 BATCH</a>
+              <a href="/team#2023-27BATCH">2023-27 BATCH</a>
+          </div>
+      </li>
+      
+      
+      
+        <li><a href="/contact">Contact Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Join Us <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://chat.whatsapp.com/FxJah3YRcNlKcBUyrEoWlP" class="whatsapp-link">Aero Club Nitte</a>
             </li>
-            <li>
-              <a
-                href="https://chat.whatsapp.com/JMdz3P5vWl31e6HPgweBZR"
-                class="whatsapp-link"
-                >Aero Club Nitte Alumni</a
-              >
-            </li>
+            <li><a href="https://chat.whatsapp.com/JMdz3P5vWl31e6HPgweBZR" class="whatsapp-link">Aero Club Nitte
+                Alumni</a></li>
           </ul>
         </li>
       </ul>
-    </nav>
-    <!-- .nav-menu -->
+    </nav><!-- .nav-menu -->
+
   </div>
 </header>
 <!-- End Header -->
@@ -297,12 +383,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="breadcrumbs">
       <div class="container_new">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Our Projects</h2>
+          <h2 style="width: 100%;text-align: center;">Our Projects</h2>
           <ol>
-            <li><a href="/home">Home</a></li>
+          <!--  <li><a href="/home">Home</a></li>
             <li>Projects</li>
           </ol>
-        </div>
+        </div>-->
       </div>
     </section>
     <!-- ======= Portfolio Section ======= -->
@@ -455,7 +541,7 @@ convolutional neural networks.
                     </div></div>
                   </div>-->
                 <div id="popup4"  class="popup">
-                    <div class="popup-content">
+                    <div class="popup-content3">
                         <span id="acye_close" class="close" onclick="hidePopup(this)">&times;</span>
                         <h2>AERIAL CROP YIELD ESTIMATOR</h2>
                         <p>Developing a precise aerial crop
@@ -494,7 +580,7 @@ healthy and unhealthy plants
                   </div>
                 </div></div>-->
                 <div id="popup5"  class="popup">
-                  <div class="popup-content">
+                  <div class="popup-content3">
                       <span id="hms_close" class="close" onclick="hidePopup(this)">&times;</span>
                       <h2>AERIAL CROP HEALTH MONITORING SYSTEM</h2>
                       <p> Utilising the NDVI approach,
@@ -529,7 +615,7 @@ healthy and unhealthy plants
                     </div></div>
                   </div>-->
                   <div id="popup6"  class="popup">
-                    <div class="popup-content">
+                    <div class="popup-content3">
                         <span id="aps_close" class="close" onclick="hidePopup(this)">&times;</span>
                         <h2>AERIAL PESTICIDE SPRAYER</h2>
                         <p> This aircraft can access sensitive
@@ -567,7 +653,7 @@ structure for the wings.
                     </div>
                   </div></div>-->
                   <div id="popup7"  class="popup">
-                    <div class="popup-content">
+                    <div class="popup-content1">
                         <span id="hac_close" class="close" onclick="hidePopup(this)">&times;</span>
                         <h2>HOT AIRFOIL CUTTER</h2>
                         <p> It is a device based on heating
@@ -626,7 +712,7 @@ structure for the wings.
         
     </div>-->
     <div id="popup8"  class="popup">
-      <div class="popup-content">
+      <div class="popup-content1">
           <span id="sd_close" class="close" onclick="hidePopup(this)">&times;</span>
           <h2>SURVELLIANCE DRONE</h2>
           <p> The autonomous drone, weighing approximately 2.5 kg, is configured in an H shape for optimal stability during perimeter surveillance. It employs a Pixhawk flight controller for precise autonomous operations, with Mission Planner serving as the ground control station (GCS). The onboard Raspberry Pi enhances computational capabilities, and the drone is versatile enough for payload dropping.</p>
@@ -655,7 +741,7 @@ structure for the wings.
                     </div></div>
               </div>-->
                 <div id="popup9"  class="popup">
-                <div class="popup-content">
+                <div class="popup-content1">
                     <span id="ap_close" class="close" onclick="hidePopup(this)">&times;</span>
                     <h2>AUTONOMOUS PLANE</h2>
                     <p> An autonomous fixed wing UAV for payload dropping and medical kit is an unmanned aerial vehicle that has a fixed wing design and can fly without human intervention to deliver medical supplies or equipment to a desired location. Autonomous fixed wing UAVs can be useful for emergency situations, rural areas, or remote locations where conventional delivery methods are not feasible or safe. </p>
@@ -695,7 +781,7 @@ structure for the wings.
                   </div></div>
             </div>-->
             <div id="popup10"  class="popup">
-              <div class="popup-content">
+              <div class="popup-content2">
                   <span id="vtol_close" class="close" onclick="hidePopup(this)">&times;</span>
                   <h2>V-TOL</h2>
                   <p>Vertical Takeoff Landing is of the successful team project accomplished by Aero Club Nitte. It had won the "Best project of the year award" at the major Project Expro exhibition and competition, 2024. It is fully hand-crafted. 

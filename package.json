@@ -20,9 +20,10 @@
     "express-ejs": "^2.0.0",
     "express-ejs-layouts": "^2.5.1",
     "express-validator": "^7.2.0",
+    "final-code": "file:",
     "nodemailer": "^6.6.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.7"
   }
 }
