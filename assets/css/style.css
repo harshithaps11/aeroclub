@@ -1,48 +1,3 @@
-/*
-.parallax {
-    height: 100vh;
-    width: 100%;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position:center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: start;
-    
-}
-.parallax:nth-of-type(1) { 
-    background-image: url("../img/Aerodash.jpg");
-}  
-
-.parallax:first-of-type { 
-    background-image: url("../img/Backgroundplane.jpeg");
-    background-size: cover;  Adjusts the background to cover the entire element */
-     /* Centers the background image 
-}
-
-
-
-.parallax:nth-child(2) {
-    background-image: url("./images/bg-2.jpg");
-}
-
-.parallax:nth-child(3) {
-    background-image: url("/images/bg-3.jpg");
-}
-
-.content{
-    color: #f0f0f0;
-    text-align: center;
-    padding: 5px;
-   
-}
-
-.content h1{
-    font-size: clamp(2rem, 5vw, 6rem); 
-} 
-*/
-
 body {
     font-family: "Montserrat";
     background-color: white;
@@ -121,18 +76,18 @@ h6,
     z-index: 997;
     transition: all 0.5s;
     padding: 20px 0;
-    background:#0d2735;
+    background: #016fa5;
 }
 
 #header.header-transparent {
-    background:#0d2735;
+    background: rgba(9, 139, 204, 0.8);
     ;
 }
 
 #header.header-scrolled {
-    background: #0d2735;
-    height: 0px;
-    padding: 0;
+    background: rgba(9, 139, 204, 0.8);
+    height: 70px;
+    padding: 10px 0;
 }
 
 #header .logo h1 {
@@ -153,11 +108,9 @@ h6,
 
 #header .logo img {
     padding: 0;
-    margin-top: -23px;
-    margin-left: 10px;
-    max-height: 80px;
+    margin: 0;
+    max-height: 40px;
 }
-
 
 #main {
     margin-top: 80px;
@@ -283,7 +236,6 @@ h6,
     right: 15px;
 }
 
-
 @media (max-width: 1366px) {
     .nav-menu .drop-down .drop-down ul {
         left: -90%;
@@ -296,30 +248,6 @@ h6,
     .nav-menu .drop-down .drop-down>a:after {
         content: "\ea9d";
     }
-}
-
-.dropdown-menu {
-    display: none; /* Hidden by default */
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-menu a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-menu a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown-menu.show {
-    display: block; /* Show the dropdown menu when needed */
 }
 
 /* Mobile Navigation */
@@ -433,7 +361,7 @@ h6,
     height: 90vh;
     overflow: hidden;
     position: relative;
-}
+      }
 @media (min-width: 360px) and (max-width: 639px) {
     .container {
       max-width: 100%;    /* Make the width slightly larger for mid-size phones */
@@ -445,9 +373,9 @@ h6,
   
   @media (min-width: 640px) {
     /* For tablets and larger mobile screens */
-    #hero {
+    .container {
       max-width: 100%; /* Adjust width for tablets */
-      height: 350px;
+      height: 90vh;
       overflow: hidden;
       position: relative;   /* Slightly more padding for larger screens */
     }
@@ -457,7 +385,7 @@ h6,
     /* For desktops and larger screens */
     .container {
       max-width: 100%; /* Keep the width larger for desktop */
-      height: 350px;
+      height: 90vh;
       overflow: hidden;
       position: relative;    /* More padding for desktop */
     }
@@ -578,7 +506,6 @@ h6,
 
 #hero .carousel-control-next-icon,
 #hero .carousel-control-prev-icon {
-    
     background: none;
     font-size: 48px;
     line-height: 1;
@@ -1261,7 +1188,57 @@ section {
     left: 10vh;
     top: 9vh;
 }
-
+@media (min-width: 360px) and (max-width: 639px) {
+    .why-us {
+        width: 90%;
+        background-color: #0A2239;
+        border-radius: 20px;
+        justify-content: left;
+        align-items: flex-start;
+        text-align: left;
+        position: relative;
+        left: 10vh;
+        top: 9vh;
+        margin-left: -70px;
+}
+  }
+  
+  @media (min-width: 640px) {
+    /* For tablets and larger mobile screens */
+    .why-us {
+        width: 90%;
+        background-color: #0A2239;
+        border-radius: 20px;
+        justify-content: left;
+        align-items: flex-start;
+        text-align: left;
+        position: relative;
+        left: 10vh;
+        top: 9vh;
+        margin-left: -80px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* For desktops and larger screens */
+    .why-us {
+        width: 90%;
+        background-color: #0A2239;
+        border-radius: 20px;
+        justify-content: left;
+        align-items: flex-start;
+        text-align: left;
+        position: relative;
+        left: 10vh;
+        top: 9vh;
+        margin-left: 15px;
+ }
+  }
+                   
+.why-us .row{
+    border: 2px solid black;
+    border-radius: 10px;
+}
 .why-us .container {
     /* box-shadow: 0 5px 25px 0 rgba(250, 250, 250, 0.6); */
     box-shadow: white;
@@ -2097,7 +2074,7 @@ h2{
 
 .popup {
     display: none;
-    position: relative;
+    position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
@@ -2142,103 +2119,6 @@ h2{
     padding: 30px;    /* More padding for desktop */
   }
 }
-
-/* For very small mobile screens (Android/iOS) */
-@media (max-width: 359px) {
-    .popup-content1 {
-      max-width: 90%;    /* Use a percentage to make it flexible on small screens */
-      padding: 15px;     /* Less padding for small screens */
-    }
-  }
-  
-  /* For small to medium smartphones (Android/iOS) */
-  @media (min-width: 360px) and (max-width: 639px) {
-    .popup-content1 {
-      max-width: 95%;    /* Make the width slightly larger for mid-size phones */
-      padding: 20px;     /* Moderate padding for better spacing */
-    }
-  }
-  
-  @media (min-width: 640px) {
-    /* For tablets and larger mobile screens */
-    .popup-content1 {
-      max-width: 640px; /* Adjust width for tablets */
-      padding: 25px;    /* Slightly more padding for larger screens */
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    /* For desktops and larger screens */
-    .popup-content1 {
-      max-width: 600px; /* Keep the width larger for desktop */
-      padding: 30px;    /* More padding for desktop */
-    }
-  }
-
-  /* For very small mobile screens (Android/iOS) */
-@media (max-width: 359px) {
-    .popup-content2 {
-      max-width: 90%;    /* Use a percentage to make it flexible on small screens */
-      padding: 15px;     /* Less padding for small screens */
-    }
-  }
-  
-  /* For small to medium smartphones (Android/iOS) */
-  @media (min-width: 360px) and (max-width: 639px) {
-    .popup-content2 {
-      max-width: 95%;    /* Make the width slightly larger for mid-size phones */
-      padding: 20px;     /* Moderate padding for better spacing */
-    }
-  }
-  
-  @media (min-width: 640px) {
-    /* For tablets and larger mobile screens */
-    .popup-content2 {
-      max-width: 640px; /* Adjust width for tablets */
-      padding: 25px;    /* Slightly more padding for larger screens */
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    /* For desktops and larger screens */
-    .popup-content2 {
-      max-width: 600px; /* Keep the width larger for desktop */
-      padding: 30px;    /* More padding for desktop */
-    }
-  }
-  
-  /* For very small mobile screens (Android/iOS) */
-@media (max-width: 359px) {
-    .popup-content3 {
-      max-width: 90%;    /* Use a percentage to make it flexible on small screens */
-      padding: 15px;     /* Less padding for small screens */
-    }
-  }
-  
-  /* For small to medium smartphones (Android/iOS) */
-  @media (min-width: 360px) and (max-width: 639px) {
-    .popup-content3 {
-      max-width: 95%;    /* Make the width slightly larger for mid-size phones */
-      padding: 20px;     /* Moderate padding for better spacing */
-    }
-  }
-  
-  @media (min-width: 640px) {
-    /* For tablets and larger mobile screens */
-    .popup-content3 {
-      max-width: 640px; /* Adjust width for tablets */
-      padding: 25px;    /* Slightly more padding for larger screens */
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    /* For desktops and larger screens */
-    .popup-content3 {
-      max-width: 600px; /* Keep the width larger for desktop */
-      padding: 30px;    /* More padding for desktop */
-    }
-  }
-  
 
   
   
@@ -3037,12 +2917,10 @@ h2{
   # Footer
   --------------------------------------------------------------*/
 #footer {
-    background-image: url(../img/footer.jpeg);
+    background: #016fa5;
+    padding: 0 0 30px 0;
     color: #fff;
-    width: 100%;
     font-size: 14px;
-    padding: 80px,20px,0px,20px ;
-    margin-top: 90px;
 }
 
 #footer .footer-newsletter {
@@ -3137,7 +3015,7 @@ h2{
 }
 
 #footer .footer-top .social-links a:hover {
-    background: #e1e6e9;
+    background: #68a4c4;
     color: #fff;
     text-decoration: none;
 }
@@ -3266,7 +3144,7 @@ h2{
   */
 .give-padding {
     padding: 1%;
-
+    
     
 }
 
@@ -3277,13 +3155,11 @@ h2{
 /*
   circuit
   */
-  .background_new {
-    background-image: url(../img/long-version-v4.gif);
-    position: center;
-   background-size: cover;
-   
-}
 
+.background_new {
+    background-image: url(../img/);
+    position: center;
+}
 
 /*
   showcase
@@ -3510,7 +3386,7 @@ p {
 }
 
 a {
-    color: #edf1f3;
+    color: #222222;
     text-decoration: none;
     outline: none !important;
 }
@@ -3554,7 +3430,6 @@ img {
 .form-control:focus {
     border-color: #ffffff !important;
     box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
-   
 }
 
 .navbar-form input {
@@ -4417,6 +4292,94 @@ button {
     left: 650px;
 }
 
+/*events media queries*/
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container_new2 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-menu {
+      width: 100%;
+      display: block;
+    }
+  
+    .nav-menu ul {
+      flex-direction: column;
+    }
+  
+    .nav-menu ul li {
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .hero-section {
+      padding: 10px;
+    }
+  
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .one, .two {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .eve_box {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-6 {
+      flex: 1 1 100%;
+      order: 1;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .text-md-right {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .popup-content {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .socialmedia {
+      margin: 0 5px;
+      width: 30px; /* Adjust size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .header-transparent {
+      padding: 10px;
+    }
+  
+    .nav-menu ul {
+      padding: 0;
+    }
+  
+    .popup-content {
+      padding: 10px;
+    }
+  
+    .popup h2 {
+      font-size: 1.5rem;
+    }
+  
+    .popup p,
+    .popup ul li {
+      font-size: 0.9rem;
+    }
+  }
 /*
 .hero-section {
     display: flex;
@@ -4631,7 +4594,4 @@ flex-direction: row;
       z-index: 2;
     }
   }
- .form-control{
-    border-radius: 7px;
-
- }
+ 
