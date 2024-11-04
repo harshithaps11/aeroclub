@@ -358,6 +358,7 @@ h6,
   --------------------------------------------------------------*/
 #hero {
     width: 100%;
+    top: -5px;
     height: 90vh;
     overflow: hidden;
     position: relative;
@@ -3564,7 +3565,7 @@ button {
 .header {
     width: 100%;
     background: transparent;
-    padding: 20px 30px;
+    padding: 80px 60px;
     position: absolute;
 }
 
