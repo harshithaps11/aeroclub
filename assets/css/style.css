@@ -3575,7 +3575,14 @@ button {
     color: #fff;
     line-height: 40px;
 }
-
+.img-fluids{
+    background-image: url("../img/logo_aero.png");
+    height: 65px;
+    width: 70px;
+    background-size: cover;
+    margin-top: -20px;
+    margin-left: 10px;
+}
 /** banner section **/
 
 .banner_main {
