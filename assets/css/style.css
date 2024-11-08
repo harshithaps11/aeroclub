@@ -76,16 +76,28 @@ h6,
     z-index: 997;
     transition: all 0.5s;
     padding: 20px 0;
+<<<<<<< HEAD
     background: #016fa5;
 }
 
 #header.header-transparent {
     background: rgba(9, 139, 204, 0.8);
+=======
+    background: rgba(2, 51, 120, 0.8);;
+}
+
+#header.header-transparent {
+    background: rgba(2, 51, 120, 0.8);
+>>>>>>> f56a740cd810b139344c86d3ae6cc76c5995b352
     ;
 }
 
 #header.header-scrolled {
+<<<<<<< HEAD
     background: rgba(9, 139, 204, 0.8);
+=======
+    background: rgba(2, 51, 120, 0.8);
+>>>>>>> f56a740cd810b139344c86d3ae6cc76c5995b352
     height: 70px;
     padding: 10px 0;
 }
@@ -111,11 +123,26 @@ h6,
     margin: 0;
     max-height: 40px;
 }
+<<<<<<< HEAD
 
+=======
+/*
+>>>>>>> f56a740cd810b139344c86d3ae6cc76c5995b352
 #main {
     margin-top: 80px;
 }
+*/
 
+.logo{
+    width: 60px;
+    height: 20vh;
+    position: relative;
+    left: 20px;
+}
+.img-fluid{
+    width: 60px;
+    height: 60px;
+}
 .rectangular-box {
     width: 300px;
     height: 200px;
@@ -358,6 +385,7 @@ h6,
   --------------------------------------------------------------*/
 #hero {
     width: 100%;
+    top: -5px;
     height: 90vh;
     overflow: hidden;
     position: relative;
@@ -3564,7 +3592,7 @@ button {
 .header {
     width: 100%;
     background: transparent;
-    padding: 20px 30px;
+    padding: 80px 60px;
     position: absolute;
 }
 
@@ -4292,6 +4320,258 @@ button {
     left: 650px;
 }
 
+/*events media queries*/
+/* Media Queries */
+/* Extra Small Devices (Phones, 0px and up) */
+@media (max-width: 575.98px) {
+    body {
+        font-size: 14px; /* Adjust base font size */
+    }
+
+    header {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center the text */
+    }
+
+    .nav-menu ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .nav-menu li {
+        margin: 5px 0; /* Adjust spacing */
+    }
+
+    .gallery img {
+        width: 100%; /* Full width images */
+        margin: 0; /* Remove margin */
+    }
+}
+
+/* Small Devices (Tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    header {
+        flex-direction: row; /* Horizontal layout */
+        justify-content: space-between; /* Space out logo and menu */
+    }
+
+    .nav-menu ul {
+        display: flex; /* Horizontal menu */
+        flex-direction: row; /* Keep items in a row */
+    }
+
+    .gallery img {
+        width: 48%; /* Two images side by side */
+        margin: 1%; /* Slight margin for spacing */
+    }
+}
+
+/* Medium Devices (Desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .nav-menu ul {
+        justify-content: space-around; /* Even spacing */
+    }
+
+    .gallery img {
+        width: 32%; /* Three images in a row */
+        margin: 1%; /* Margin for spacing */
+    }
+}
+
+/* Large Devices (Laptops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .nav-menu ul {
+        justify-content: flex-start; /* Align to the start */
+    }
+
+    .gallery img {
+        width: 23%; /* Four images in a row */
+        margin: 1%; /* Margin for spacing */
+    }
+}
+
+/* Extra Large Devices (Desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .nav-menu ul {
+        justify-content: flex-start; /* Align to the start */
+    }
+
+    .gallery img {
+        width: 20%; /* Five images in a row */
+        margin: 1%; /* Margin for spacing */
+    }
+}
+
+
+/* Extra Small Devices (Phones, 0px and up) 
+@media (max-width: 575.98px) {
+    .nav-menu {
+        display: none; 
+    }
+
+    .nav-menu-mobile {
+        display: block; 
+    }
+
+    .gallery img {
+        width: 100%; 
+    }
+
+    .eve_box {
+        flex-basis: 100%; 
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .nav-menu-mobile {
+        display: none; 
+    }
+
+    .nav-menu {
+        display: flex; 
+    }
+
+    .gallery img {
+        width: 48%; 
+    }
+
+    .eve_box {
+        flex-basis: 48%; 
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .nav-menu {
+        display: flex; 
+    }
+
+    .gallery img {
+        width: 32%; 
+    }
+
+    .eve_box {
+        flex-basis: 32%; 
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .nav-menu {
+        display: flex; 
+    }
+
+    .gallery img {
+        width: 23%; 
+    }
+
+    .eve_box {
+        flex-basis: 23%; 
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .nav-menu {
+        display: flex; 
+    }
+
+    .gallery img {
+        width: 20%; 
+    }
+
+    .eve_box {
+        flex-basis: 20%; 
+    }
+}
+/* Media Queries */
+/*
+@media (max-width: 1200px) {
+    .container_new2 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-menu {
+      width: 100%;
+      display: block;
+    }
+  
+    .nav-menu ul {
+      flex-direction: column;
+    }
+  
+    .nav-menu ul li {
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .hero-section {
+      padding: 10px;
+    }
+  
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .one, .two {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .eve_box {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-6 {
+      flex: 1 1 100%;
+      order: 1;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .text-md-right {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .popup-content {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .socialmedia {
+      margin: 0 5px;
+      width: 30px;  
+    }
+  }
+  /*
+  @media (max-width: 576px) {
+    .header-transparent {
+      padding: 10px;
+    }
+  
+    .nav-menu ul {
+      padding: 0;
+    }
+  
+    .popup-content {
+      padding: 10px;
+    }
+  
+    .popup h2 {
+      font-size: 1.5rem;
+    }
+  
+    .popup p,
+    .popup ul li {
+      font-size: 0.9rem;
+    }
+  }
+  */
 /*
 .hero-section {
     display: flex;
