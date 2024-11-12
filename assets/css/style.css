@@ -1206,6 +1206,27 @@ section {
         margin-left: -70px;
 }
   }
+  @media (min-width:375px) and (max-width:380px){
+    .why-us{
+        margin-left:-50px;
+    }
+  }
+  @media (min-width:390px) and (max-width:395px){
+    .why-us{
+        margin-left:-65px;
+    }
+  }
+  @media (min-width:360px) and (max-width:365px){
+    .why-us{
+        margin-left:-55px;
+    }
+  }
+  @media (min-width:344px) and (max-width:349px){
+    .why-us{
+        margin-left:-70px;
+    }
+  }
+
   
   @media (min-width: 640px) {
     /* For tablets and larger mobile screens */
@@ -1222,7 +1243,14 @@ section {
         margin-left: -80px;
     }
   }
-  
+  @media (min-width:768px) and (max-width:775px){
+    .why-us{
+        margin-left:-60px;
+    }
+  }
+
+
+
   @media (min-width: 1024px) {
     /* For desktops and larger screens */
     .why-us {
