@@ -4226,12 +4226,15 @@ button {
 
 .slide .item:nth-child(3){
     left: 70%;
+    top:500px;
 }
 .slide .item:nth-child(4){
     left: calc(70% + 220px);
+    top:500px;
 }
 .slide .item:nth-child(5){
     left: calc(70% + 440px);
+    top:500px;
 }
 
 /* here n = 0, 1, 2, 3,... */
