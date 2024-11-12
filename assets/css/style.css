@@ -113,7 +113,7 @@ h6,
 }
 
 #main {
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 .rectangular-box {
@@ -597,6 +597,7 @@ h6,
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+
 }
 .my-btn {
 	height: 50px; 
@@ -610,6 +611,7 @@ h6,
     top: 630px;
     left: 23px;
     z-index: 1;
+    
 }
 .my-btn-border {
 	height: 59px; 
@@ -618,13 +620,13 @@ h6,
 	animation-name: bord-pop;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
-	box-shadow: 2px 2px 5px #ccc, -2px -2px 5px #ccc ;
+    box-shadow: 2px 2px 5px #ccc, -2px -2px 5px #ccc ;
 }
 .btn-bell {
-	color: white;
+	color: rgb(241, 241, 241);
 	font-size: 20px;
 	animation-name: bell-ring;
-	animation-duration: 2s;
+	animation-duration: 5s;
 	animation-iteration-count: infinite;
 }
 @keyframes bord-pop {
@@ -672,11 +674,13 @@ h6,
 	}
 }
 .modal {
-    display: none; /* Hidden by default */
+    display:flex; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 5px;
-    top: 530px;
+    right: 50px;
+    top: 580px;
+    align-items: center;
     width: 120px; /* Full width */
     height: 200px; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -1071,11 +1075,12 @@ section {
 }
 
 
-.container_new_2 {
+.container_new2 {
     padding: 0%;
+    position: relative;
     position: 100px;
     margin: 0 5% 0 5%;
-    background: rgb(250, 248, 248);
+    background: #0a2239;
 }
 
 .services {
@@ -1202,6 +1207,27 @@ section {
         margin-left: -70px;
 }
   }
+  @media (min-width:375px) and (max-width:380px){
+    .why-us{
+        margin-left:-50px;
+    }
+  }
+  @media (min-width:390px) and (max-width:395px){
+    .why-us{
+        margin-left:-65px;
+    }
+  }
+  @media (min-width:360px) and (max-width:365px){
+    .why-us{
+        margin-left:-55px;
+    }
+  }
+  @media (min-width:344px) and (max-width:349px){
+    .why-us{
+        margin-left:-70px;
+    }
+  }
+
   
   @media (min-width: 640px) {
     /* For tablets and larger mobile screens */
@@ -1218,7 +1244,14 @@ section {
         margin-left: -80px;
     }
   }
-  
+  @media (min-width:768px) and (max-width:775px){
+    .why-us{
+        margin-left:-60px;
+    }
+  }
+
+
+
   @media (min-width: 1024px) {
     /* For desktops and larger screens */
     .why-us {
@@ -1701,7 +1734,7 @@ section {
 }
 
 .testimonials .owl-nav,
-.testimonials .owl-dots {
+    testimonials .owl-dots {
     margin-top: 5px;
     text-align: center;
 }
@@ -1712,7 +1745,7 @@ section {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #ddd !important;
+    background-color: #212529 !important;
 }
 
 .testimonials .owl-dot.active {
@@ -2215,8 +2248,8 @@ h2{
 }
 
 .team .member .member-info span {
-    display: block;
-    font-size: 13px;
+    display: flex;
+    font-size: 11px;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 15px;
@@ -4106,11 +4139,13 @@ button {
 
 .card {
     position: relative;
+    width: fit-content;
+    height:fit-content;
     margin-top: auto;
     border: white;
     border: 2px solid black;
     border-radius: 20px;
-   margin-left: 20px;
+   
 
 }
 
@@ -4198,12 +4233,15 @@ button {
 
 .slide .item:nth-child(3){
     left: 70%;
+    top:500px;
 }
 .slide .item:nth-child(4){
     left: calc(70% + 220px);
+    top:500px;
 }
 .slide .item:nth-child(5){
     left: calc(70% + 440px);
+    top:500px;
 }
 
 /* here n = 0, 1, 2, 3,... */
