@@ -608,7 +608,7 @@ h6,
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
     position: fixed;
-    top: 630px;
+    top: 85%;
     left: 23px;
     z-index: 1;
     
