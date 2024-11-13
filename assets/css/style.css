@@ -113,7 +113,7 @@ h6,
 }
 
 #main {
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 .rectangular-box {
@@ -1741,7 +1741,7 @@ section {
 }
 
 .testimonials .owl-nav,
-.testimonials .owl-dots {
+    testimonials .owl-dots {
     margin-top: 5px;
     text-align: center;
 }
@@ -1752,7 +1752,7 @@ section {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #ddd !important;
+    background-color: #212529 !important;
 }
 
 .testimonials .owl-dot.active {
@@ -2255,8 +2255,8 @@ h2{
 }
 
 .team .member .member-info span {
-    display: block;
-    font-size: 13px;
+    display: flex;
+    font-size: 11px;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 15px;
@@ -4146,11 +4146,13 @@ button {
 
 .card {
     position: relative;
+    width: fit-content;
+    height:fit-content;
     margin-top: auto;
     border: white;
     border: 2px solid black;
     border-radius: 20px;
-   margin-left: 20px;
+   
 
 }
 
