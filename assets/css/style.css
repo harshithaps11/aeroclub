@@ -1070,7 +1070,7 @@ section {
     padding: 0%;
     position: relative;
     margin: 0 5% 0 5%;
-    background: white;
+    background: #53A2BE;
     box-shadow: 0 15px 36px 0 rgba(4, 6, 10, 0.14);
 }
 
@@ -4551,4 +4551,5 @@ flex-direction: row;
       z-index: 2;
     }
   }
- 
+
+  
