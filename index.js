@@ -32,6 +32,9 @@ app.get("/home", (req, res) => {
 app.get("/projects", (req, res) => {
   res.render("projects.ejs");
 });
+app.get("/pioneer", (req, res) => {
+  res.render("pioneer.ejs");
+});
 app.get("/events", (req, res) => {
   res.render("events.ejs");
 });
