@@ -695,7 +695,6 @@ h6,
     border: 2px solid rgba(255,255,255,0.18);
     overflow: auto;
     border-radius: 10px;
-
 }
 
 .modal-content1 .fa-brands{
@@ -1086,10 +1085,23 @@ section {
     margin: 0 5% 0 5%;
     background: #75a0b0;
     box-shadow: 0 15px 36px 0 rgba(4, 6, 10, 0.14);
+
 }
-
-
-.container_new_2 {
+.container_new h1{
+    color: #ffffff;
+}
+.container_new h2{
+    color: #ffffff;
+}
+.container_new h3{
+    color: #ffffff;
+}
+.container_new h4{
+    color: #ffffff;
+}
+.container_new h5{
+    color: #ffffff;
+}.container_new_2 {
 
     padding: 0%;
     position: relative;
@@ -3432,6 +3444,7 @@ p {
     font-weight: 500;
     font-size: 15px;
     line-height: 24px;
+    text-align: start;
 }
 
 a {
@@ -4408,12 +4421,14 @@ button {
 }
 .contain_eve{
     height:45px;
-    width:1180px;
+    width: 1500px;
     margin-top: 20px;
     background-color:#0A2239;
    border-radius: 20px;
     box-shadow:0 5px 10px 0  #0d2735 ;
    position: relative;
+    top: -50px;
+   
    
   
    
@@ -4437,6 +4452,8 @@ flex-direction: row;
 .ha {
     display: flex;
     justify-content: space-around;
+    position: relative;
+    top: -50px;
     
   }
   
