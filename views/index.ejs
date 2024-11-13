@@ -236,9 +236,13 @@ align:center;}
 #myModal{
   height: 200px;
   width: 100px;
-  background-color: #016fa5;
+  backdrop-filter:blur(30px);
+  box-shadow: 0 0 30px rgba(227,228,237,0.37);
+  border:2px solid rgba(225,225,255,0.18);
   display: none;
+  border-radius: 15px;
 }
+
   </style>
 
 </head>
@@ -435,7 +439,7 @@ setInterval(() => moveSlide(1), 6000);
   <div id="myModal" class="modal">
     <div class="modal-content1">
         <span class="close">&times;</span>
-        <a href="https://www.instagram.com/aeroclubnitte/?igsh=bnM1cjI0YWtudjVr"></a>
+        <a href="https://www.instagram.com/aeroclubnitte/?igsh=bnM1cjI0YWtudjVr"><i class="fa-brands fa-instagram instagram"></i></a>
         <a href=""></a>
     </div>
 </div>
