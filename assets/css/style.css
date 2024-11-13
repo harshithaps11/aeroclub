@@ -863,7 +863,13 @@ section {
 /*--------------------------------------------------------------
   # Contact
   --------------------------------------------------------------*/
-
+.contact-us{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .contact .info {
     width: 100%;
     background: #fff;
@@ -1075,12 +1081,13 @@ section {
 }
 
 
-.container_new2 {
+.container_new_2 {
+
     padding: 0%;
     position: relative;
-    position: 100px;
     margin: 0 5% 0 5%;
-    background: #0a2239;
+    background: rgb(250, 248, 248);
+    box-shadow: 0 15px 36px 0 rgba(4, 6, 10, 0.14);
 }
 
 .services {
