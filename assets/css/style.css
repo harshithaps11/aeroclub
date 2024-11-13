@@ -144,6 +144,8 @@ h6,
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-right: 15px;
+    margin-left: -5px;
 }
 
 .nav-menu>ul>li {
@@ -695,9 +697,14 @@ h6,
     border-radius: 10px;
 }
 
-.modal-content .fa-instagram{
-    width: 20px;
-    height: 20px;
+.modal-content1 .fa-brands{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 50px;
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+    color: white;
+    padding-left: 10px;
 }
 
 .close {
@@ -4253,8 +4260,8 @@ button {
 
 
 .slide .item:nth-child(3){
-    left: 70%;
-    top:500px;
+    left: 85%;
+    top:75%;
 }
 .slide .item:nth-child(4){
     left: calc(70% + 220px);
