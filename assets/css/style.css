@@ -685,7 +685,7 @@ h6,
     
 }
 
-.modal-content1 {
+.modal-content {
     width: 100px; /* Full width */
     height: 180px;
     backdrop-filter: blur(30px);
@@ -693,10 +693,9 @@ h6,
     border: 2px solid rgba(255,255,255,0.18);
     overflow: auto;
     border-radius: 10px;
-
 }
 
-.modal-content1 .fa-brands .fa-instagram{
+.modal-content .fa-instagram{
     width: 20px;
     height: 20px;
 }
@@ -1079,10 +1078,23 @@ section {
     margin: 0 5% 0 5%;
     background: #75a0b0;
     box-shadow: 0 15px 36px 0 rgba(4, 6, 10, 0.14);
+
 }
-
-
-.container_new_2 {
+.container_new h1{
+    color: #ffffff;
+}
+.container_new h2{
+    color: #ffffff;
+}
+.container_new h3{
+    color: #ffffff;
+}
+.container_new h4{
+    color: #ffffff;
+}
+.container_new h5{
+    color: #ffffff;
+}.container_new_2 {
 
     padding: 0%;
     position: relative;
