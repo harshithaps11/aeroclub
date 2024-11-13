@@ -4421,13 +4421,17 @@ button {
 }
 .contain_eve{
     height:45px;
-    width: 1500px;
+    width: 90%;
     margin-top: 20px;
+    margin-left: 55px;
     background-color:#0A2239;
    border-radius: 20px;
     box-shadow:0 5px 10px 0  #0d2735 ;
    position: relative;
     top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    
    
   
@@ -4446,6 +4450,7 @@ button {
 display: flex;
 justify-content: center;;
 flex-direction: row;
+flex-wrap: wrap;
 
 }
 
@@ -4464,6 +4469,7 @@ flex-direction: row;
   
   .image_container {
     position: relative;
+    width: auto;
     
   }
   
@@ -4515,8 +4521,8 @@ flex-direction: row;
     --d: 10s;
     /* duration */
     display: grid;
-    width: 400px;
-    height: 500px;
+    width: 25%;
+    height: 15%;
     position: relative;
     left: 150px;
     top:50px;
