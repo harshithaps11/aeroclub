@@ -394,8 +394,8 @@ h6,
   }
   #item1 button{
     position: relative;
-    top:170px;
-    left:165px;
+    top:75%;
+    left:0%;
     background-color:#0A2239;
     width:200px;
     height:75px;
@@ -4350,9 +4350,13 @@ button {
 }
 .prev{
     position: relative;
-    left: 650px;
-}
+    left: 40%;
 
+}
+.next{
+    position: relative;
+    left: 50%;
+}
 /*
 .hero-section {
     display: flex;
