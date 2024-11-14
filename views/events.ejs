@@ -37,6 +37,10 @@
     <!-- Template Main CSS File -->
     <link href="../css/style.css" rel="stylesheet" />
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
       .whatsapp-link {
         color: #45beff !important;
       }
@@ -137,11 +141,43 @@
 .socialmedia:hover{
     transform: translateY(-15px);
   }
- @media (min-width:375px) and (max-width:380px){
-    .hero_section{
-      
-    }
+.hero-section{
+  width:100%;height:550px;background: linear-gradient(to bottom,#333, black);padding-top: 20px;padding-bottom: 40px;position:relative;top:-80px;
+}
+@media (min-width:1440px){
+.gallery {
+  --d: 10s;
+  /* duration */
+  display: grid;
+  width: 25%;
+  height: 15%;
+  position: relative;
+  left: 150px;
+  top:50px;
+}
+}
+@media (min-width:412px){
+  .gallery {
+    --d: 10s;
+    /* duration */
+    display: grid;
+    width: 30vh;
+    position: relative;
+    left: 50px;
+    top:50px;
   }
+  }
+  @media (min-width:375px) and (max-width:411px){
+    .gallery {
+      --d: 10s;
+      /* duration */
+      display: grid;
+      width: 30vh;
+      position: relative;
+      left: 50px;
+      top:90px;
+    }
+    }
     </style>
   </head>
 
@@ -206,13 +242,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </ul>
             </li>
           </ul>
-        </nav><!-- .nav-menu -->
+        </nav>
   
       </div>
     </header>
     <section class="events">
-      <div class="hero-section" style=" width:100%;height:550px;background: linear-gradient(to bottom,#333, black);padding-top: 20px;padding-bottom: 40px;position:relative;top:-80px;">
-    <!-- <img src="/assets/img/MORE (2).png" alt="Hero Image" class="hero-image">-->
+      <div class="hero-section">
         <div class="gallery" >
           <img src="/assets/img/Event2.jpg" alt="vayurvya">
           <img src="/assets/img/boeing.jpeg" alt="boeing">
@@ -220,10 +255,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <img src="/assets/img/Words With Wings.jpg" alt="words">
           <img src="/assets/img/AeroX_initial.jpg" alt="aerox">
         </div>
-        <div class="overlay-content">
-            <!-- Add any text or buttons you want to overlay on the image -->
-            
-            
+        <div class="overlay-content">            
         </div>
         
     </div>
@@ -233,144 +265,209 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="contain_eve">
           <center><h2 style="font-size: large;font-weight: bold; color: white;">2023-24</h2></center>          
         </div>
-        <div class="one">
-        <div class="ha">
-          <div class="eve_box" id="rc_2324">
-            <div class="image_container">
-              <img src="/assets/img/rc_aeromodelling.jpg" alt="rc2023">
-              <div class="overlay">
-                <div class="text">Students actively participated in the hands-on workshop, building their own RC planes. After completion, flying demonstrations were conducted by pilots led by Rathan Raj. Feedback forms revealed positive responses, with students appreciating the learning experience. Club seniors were present throughout the workshop to clarify doubts and assist participants.</div>
+        <div class="container_new">
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+    
+            <div class="col-lg-4 col-md-6 filter-app">
+              <div class="portfolio-item" >
+                
+                <img src="../img/solarplane.jpg" id="solar" style="height: 315px;" class="img-fluid" alt="" onclick="showPopup(this)">
+                  <div id="popup1"  class="popup">
+                    
+                    <div class="popup-content" >
+      
+                        <span id="solar_close" class="close" onclick="hidePopup(this)">&times;</span>
+                        <h2>Solar Powered radio controlled plane</h2>
+                        <p>Renewable solar energy powers the RC plane motor, which requires 6-7 volts and 40-60 amps. To meet this demand, 14 solar cells with 0.5 volts and 6 amps panels were installed on the aircraft for energy generation.
+                          </p>
+                         
+                    </div>
+                </div>
+                  <div class="project-name">
+                      <p>Solar Powered radio controlled plane</p>
+                  </div>
               </div>
-            </div>
-            <h3 class="heading">RC Workshop</h3>
           </div>
-          
-          <div class="eve_box" id="quad_2324">
-            <div class="image_container">
-              <img src="/assets/img/quad23.jpg" alt="Quad Event">
-              <div class="overlay">
-                <div class="text">Aeroclub's Quadcopter workshop, led by Rithesh Shetty and Pratheeksha Nayak, introduced 42 participants to the basics of quadcopters, their electronic components, and hands-on building. Participants even built their own quadcopters from scratch and learned flight controller calibration for practical experience. With 20 volunteers supporting the event, it was a successful workshop
+         
+
+
+           
+            <div class="col-lg-4 col-md-6 filter-app">
+              <div class="portfolio-item">
+                  <img src="../img/umatis.jpg" id="uman" style="height:315px;" class="img-fluid" alt="" onclick="showPopup(this)" >
+                  <div id="popup2" class="popup">
+                    <div class="popup-content">
+                      <span id="umantis_close" class="close" onclick="hidePopup(this)">&times;</span>
+                        <h2>UMANTIS</h2>
+                        <p> Unmanned aerial navigation
+                          and terrestrial vehicle
+                          developed with aerial and
+                          terrestrial surveillance
+                          vehicle. A prototype was
+                          developed of the hybrid
+                          version.
+                          </p>
+                    </div>
+                  </div>
+              
+                  <div class="project-name" >
+                      <p>UMANTIS</p>
+                  </div>
+                </div>
+            </div>
+            
+              
+    
+
+
+              <div class="col-lg-4 col-md-6 filter-app">
+                <div class="portfolio-item">
+                  <img src="../img/HAAPS.jpg" id="haaps" style="height:315px;" class="img-fluid" alt="" onclick=showPopup(this)>
+                    <div id="popup3" class="popup">
+                      <div class="popup-content">
+                        <span id="haaps_close" class="close" onclick="hidePopup(this)">&times;</span>
+                          <h2>HAAPS</h2>
+                         <p>High Altitude Aeronautical Platform Station.
+                          They are operated in 17-22 km altitude of
+                          stratospheric layer. It is developed for long
+                          range wireless narrow band and broadband
+                          telecommunications as well as broadcasting
+                            </p>
+                      </div>
+                </div>
+                  <div class="project-name">
+            <p>HAAPS</p>
+        </div>
                 </div>
               </div>
-            </div>
-            <h3 class="heading">Quadcopter Workshop</h3>
-          </div>
-          
-          <div class="eve_box" id="outreach_2324">
-            <div class="image_container">
-              <img src="/assets/img/outreach23.jpg" alt="Outreach Event">
-              <div class="overlay">
-                <div class="text">Rotary Club Sullia City and Rotary Club Sullia, along with Aero Club NITTE, presented the AEROGYAN outreach program at Rotary High School Mithadka on February 17th, 2024. The Aero Club members impressed with their professionalism and expertise and a captivating flying demonstration.The successful AEROGYAN program showcased the participating organizations' dedication to inspiring the community about aviation.</div>
-              </div>
-            </div>
-            <h3 class="heading">Outreach Event</h3>
-          </div>
-          <div class="eve_box" id="rc_2324">
-            <div class="image_container">
-              <img src="/assets/img/vayu23.jpg" alt="Vayurvya">
-              <div class="overlay">
-                <div class="text">To celebrate the 10th Anniversary of AeroClub Nitte, the event "Vayurvya" was held on the college grounds on the 9th and 10th of February 2024. The distinguished chief guests included Lt. Cdr Divin Bharadwaj, Dr. Balbir Singh, CAP. Ganesh Karnik, AVM Ramesh Karnik (Retd.), and Dr. M. R. K. Menon. </div>
-              </div>
-            </div>
-            <h3 class="heading">Vayurvya</h3>
-          </div>
-        
-        </div>
-        <div class="ha">
-        
-        
-        </div>
+              
+                
 
-      </div>
+
+
+              <div class="col-lg-4 col-md-6 filter-app">
+                <div class="portfolio-item">
+                  <img src="../img/cropyield.png" id="acye" style="height:315px;" class="img-fluid" alt=""  onclick="showPopup(this)">
+                <div id="popup4"  class="popup">
+                    <div class="popup-content3">
+                        <span id="acye_close" class="close" onclick="hidePopup(this)">&times;</span>
+                        <h2>AERIAL CROP YIELD ESTIMATOR</h2>
+                        <p>Developing a precise aerial crop
+                          yield estimator using data from
+                          UAVs and advanced deep
+                          learning techniques, such as
+                          convolutional neural networks..</p>
+                    </div>
+                </div>
+                   <div class="project-name">
+            <p>Aerial Crop Yield Estimator</p>
+        </div>
+                </div>
+              </div>
       <div class="year" id="2022-23">
         <div class="contain_eve" >
           <center><h2 style="font-size:larger; font-weight: bolder;color: white;">2022-23</h2></center>          
   
         </div>
-        <div class="two">
-        <div class="ha">
-          <div class="eve_box" id="rc_2324">
-            <div class="image_container">
-              <img src="/assets/img/rc22.jpg" alt="rc22">
-              <div class="overlay">
-                <div class="text">Aero Club Nitte conducted RC AEROMODELLING WORKSHOP for all four years of engineering students at NMAMIT college, on 3rd and 4th of December,2022. Workshop was held for two days from 9:00am to 5:00pm where building of radio -controlled planes with electronic components took place</div>
+        <div class="container_new">
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+    
+            <div class="col-lg-4 col-md-6 filter-app">
+              <div class="portfolio-item" >
+                
+                <img src="../img/solarplane.jpg" id="solar" style="height: 315px;" class="img-fluid" alt="" onclick="showPopup(this)">
+                  <div id="popup1"  class="popup">
+                    
+                    <div class="popup-content" >
+      
+                        <span id="solar_close" class="close" onclick="hidePopup(this)">&times;</span>
+                        <h2>Solar Powered radio controlled plane</h2>
+                        <p>Renewable solar energy powers the RC plane motor, which requires 6-7 volts and 40-60 amps. To meet this demand, 14 solar cells with 0.5 volts and 6 amps panels were installed on the aircraft for energy generation.
+                          </p>
+                         
+                    </div>
+                </div>
+                  <div class="project-name">
+                      <p>Solar Powered radio controlled plane</p>
+                  </div>
               </div>
-            </div>
-            <h3 class="heading">RC Workshop</h3>
           </div>
-                 
-          <div class="eve_box" id="quad_2324">
-            <div class="image_container">
-              <img src="/assets/img/quad24.jpg" alt="Quad24">
-              <div class="overlay">
-                <div class="text">Quadcopter workshop was conducted by Aeroclub on 8th and 9th October 2022. The participants were taught the basics of Quadcopter and the electronic components involved in building a Quadcopter. A hand on experience was also given to the participants wherein they built their own Quadcopter from scratch, the flight controller caliberation was also taught to the participants using which they hands-on caliberated the quadcopter.</div>
-              </div>
+         
+
+
+           
+            <div class="col-lg-4 col-md-6 filter-app">
+              <div class="portfolio-item">
+                  <img src="../img/umatis.jpg" id="uman" style="height:315px;" class="img-fluid" alt="" onclick="showPopup(this)" >
+                  <div id="popup2" class="popup">
+                    <div class="popup-content">
+                      <span id="umantis_close" class="close" onclick="hidePopup(this)">&times;</span>
+                        <h2>UMANTIS</h2>
+                        <p> Unmanned aerial navigation
+                          and terrestrial vehicle
+                          developed with aerial and
+                          terrestrial surveillance
+                          vehicle. A prototype was
+                          developed of the hybrid
+                          version.
+                          </p>
+                    </div>
+                  </div>
+              
+                  <div class="project-name" >
+                      <p>UMANTIS</p>
+                  </div>
+                </div>
             </div>
-            <h3 class="heading">Quadcopter Workshop</h3>
-          </div>
-          
-          <div class="eve_box" id="outreach_2324">
-            <div class="image_container">
-              <img src="/assets/img/outreach22.jpg" alt="Outreach Event">
-              <div class="overlay">
-                <div class="text">Aero Club Nitte conducted an outreach program for the students of class 8-10 of NSAM School, NSAM Senior Secondary High School and Nitte Pre-University College on 8th December,2022. The members of the club volunteered and went to three venues by splitting into a group of two</div>
-              </div>
-            </div>
-            <h3 class="heading">Outreach Program</h3>
-          </div>
+            
+              
+    
+
+
+              <div class="col-lg-4 col-md-6 filter-app">
+                <div class="portfolio-item">
+                  <img src="../img/HAAPS.jpg" id="haaps" style="height:315px;" class="img-fluid" alt="" onclick=showPopup(this)>
+                    <div id="popup3" class="popup">
+                      <div class="popup-content">
+                        <span id="haaps_close" class="close" onclick="hidePopup(this)">&times;</span>
+                          <h2>HAAPS</h2>
+                         <p>High Altitude Aeronautical Platform Station.
+                          They are operated in 17-22 km altitude of
+                          stratospheric layer. It is developed for long
+                          range wireless narrow band and broadband
+                          telecommunications as well as broadcasting
+                            </p>
+                      </div>
+                </div>
+                  <div class="project-name">
+            <p>HAAPS</p>
         </div>
-        
+                </div>
+              </div>
+              
+                
 
-<div class="ha">
-  <div class="eve_box" id="rc_2324">
-    <div class="image_container">
-      <img src="/assets/img/chikmagaluroutreach22.jpg" alt="chikmagaluru outreach">
-      <div class="overlay">
-        <div class="text">            AeroClub Nitte conducted an Outreach program on 27th of February 2023 for the students of 9th standard in Government High School, Chikmagalur District. A team of 6 from Aeroclub along with Dr. Gururaj Upadhyaya conducted the event</div>
-      </div>
-    </div>
-    <h3 class="heading">Chikamagaluru Outreach Program</h3>
-  </div>
-  
-  <div class="eve_box" id="quad_2324">
-    <div class="image_container">
-      <img src="/assets/img/overhaulin.jpg" alt="Overhaulin">
-      <div class="overlay">
-        <div class="text">Aero Club Nitte conducted a competition ’Crack The Crash’ in Overhaulin 2022,a Mechanical department fest conducted by AIMS association held on 9th December 2022. The competition was held in three rounds which were simulation, crash investigation and glider rush.The first round had 42 contestants out of which 10 were selected for the second round and final two winners were selected based on the final round. </div>
-      </div>
-    </div>
-    <h3 class="heading">Overhaulin</h3>
-  </div>
-  
-  <div class="eve_box" id="outreach_2324">
-    <div class="image_container">
-      <img src="/assets/img/aerophiliaskidrive.jpg" alt="skydrive">
-      <div class="overlay">
-        <div class="text">This is a very proud moment for the N M A M Institute of Technology, as both the teams from Aeroclub-Nitte have secured 1st and 2nd place in AEROPHILIA SKYDIVE 2022 held at Sahyadri college of Engineering and Management, Mangalore 
 
-          The first place was secured by Aeroclub Nitte – 1 with Deekshith Prabhu as the pilot and the second place was secured by Aeroclub Nitte 2 with Aman Kumar Srivatsav as the pilot.</div>
-      </div>
-    </div>
-    <h3 class="heading">Aerophilia Skydrive</h3>
-  </div>
-  
-</div>
-<div class="ha">
-  <div class="eve_box" id="rc_2324">
-    <div class="image_container">
-      <img src="/assets/img/talk on quadcopter.jpg" alt="quadtalk">
-      <div class="overlay">
-        <div class="text">Aeroclub Nitte conducted a talk for the diploma students of NRAM Polytechnic college Nitte on the topic UAV and Quadcopter on 9th December 2022 the club volunteered and went to two venues.</div>
-      </div>
-    </div>
-    <h3 class="heading">Talk on Quadcopter</h3>
-  </div>
+
+              <div class="col-lg-4 col-md-6 filter-app">
+                <div class="portfolio-item">
+                  <img src="../img/cropyield.png" id="acye" style="height:315px;" class="img-fluid" alt=""  onclick="showPopup(this)">
+                <div id="popup4"  class="popup">
+                    <div class="popup-content3">
+                        <span id="acye_close" class="close" onclick="hidePopup(this)">&times;</span>
+                        <h2>AERIAL CROP YIELD ESTIMATOR</h2>
+                        <p>Developing a precise aerial crop
+                          yield estimator using data from
+                          UAVs and advanced deep
+                          learning techniques, such as
+                          convolutional neural networks..</p>
+                    </div>
+                </div>
+                   <div class="project-name">
+            <p>Aerial Crop Yield Estimator</p>
         </div>
-
-
-        
-
-      </div>
+                </div>
+              </div>
 
     </section>
       <!-- ======= Footer ======= -->
@@ -554,7 +651,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       }
     });
   </script>
-
+  <script>
+    function showPopup(img)
+     {
+      if (img.id=="solar"){
+      document.getElementById("popup1").style.display = "flex";
+      }else if (img.id=="uman"){
+      document.getElementById("popup2").style.display = "flex";
+      }else if (img.id=="haaps"){
+        document.getElementById("popup3").style.display="flex";
+      }else if (img.id=="acye"){
+        document.getElementById("popup4").style.display="flex";
+      }else if (img.id=="hms"){
+        document.getElementById("popup5").style.display="flex";
+      }else if (img.id=="aps"){
+        document.getElementById("popup6").style.display="flex";
+      }else if (img.id=="hac"){
+        document.getElementById("popup7").style.display="flex";
+      }else if (img.id=="sd"){
+        document.getElementById("popup8").style.display="flex";
+      }else if (img.id=="ap"){
+        document.getElementById("popup9").style.display="flex";
+      }else if (img.id=="vtol"){
+        document.getElementById("popup10").style.display="flex";
+      }
+    }
+    
+    function hidePopup(close) {
+      if(close.id=="solar_close"){
+        document.getElementById("popup1").style.display = "none";
+      }else if (close.id=="umantis_close"){
+        document.getElementById("popup2").style.display="none";
+      }else if (close.id=="haaps_close"){
+        document.getElementById("popup3").style.display="none";
+      }else if(close.id=="acye_close"){
+        document.getElementById("popup4").style.display="none";
+      }else if (close.id=="hms_close"){
+        document.getElementById("popup5").style.display="none";
+      }else if (close.id=="aps_close"){
+        document.getElementById("popup6").style.display="none";
+      }else if (close.id=="hac_close"){
+        document.getElementById("popup7").style.display="none";
+      }else if(close.id=="sd_close"){
+        document.getElementById("popup8").style.display="none";
+      }else if (close.id=="ap_close"){
+        document.getElementById("popup9").style.display="none";
+      }else if (close.id=="vtol_close"){
+        document.getElementById("popup10").style.display="none";
+      }
+    }
+    </script> 
   <!-- Template Main JS File -->
   <script src="../js/main.js"></script>
   </body>

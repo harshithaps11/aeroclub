@@ -146,6 +146,7 @@ h6,
     list-style: none;
     margin-right: 15px;
     margin-left: -5px;
+    padding-left: 5px;
 }
 
 .nav-menu>ul>li {
@@ -2122,10 +2123,16 @@ h2{
 
 .image-container {
     width: 250px;
+    height: 35vh;
     position: relative;
     display: inline-block;
 }
-
+@media (min-width:412px) and (max-width:420px){
+    .gallery{
+        width: 10vh;
+        height:10vh ;
+    }
+}
 .image {
     width: 100px;
     height: 100px;
@@ -4464,6 +4471,7 @@ flex-wrap: wrap;
   
   .eve_box {
     width: 30%;
+    height: 35vh;
     text-align: center;
   }
   
@@ -4517,20 +4525,9 @@ flex-wrap: wrap;
  
  
  /* number of images*/
-.gallery {
-    --d: 10s;
-    /* duration */
-    display: grid;
-    width: 25%;
-    height: 15%;
-    position: relative;
-    left: 150px;
-    top:50px;
 
-
-  }
   
-  .gallery > img {
+  .gallery  img {
     grid-area: 1/1;
     width: 100%;
     aspect-ratio: 1;
