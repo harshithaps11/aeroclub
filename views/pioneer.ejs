@@ -173,12 +173,374 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   justify-content: center;
   border-radius: 5px;
 }
+/* Pop-up styles */
+.popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow: auto;
+      /* Ensure the entire pop-up is scrollable */
+    }
 
-</style>
+    .popup-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      max-height: 80vh;
+      /* Set a maximum height for the content */
+      overflow-y: auto;
+      /* Make the content scrollable */
+    }
 
+    .popup h2 {
+      color: #333;
+    }
+
+    .popup p {
+      color: #4e79a4;
+    }
+
+    .popup ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .popup button {
+      background-color: #333;
+      color: #2676c2cb;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .popup button:hover {
+      background-color: #4580ad;
+    }
+
+    /* Close button style */
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      color: #555555;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #4e3333;
+    }
+      /* Navbar styles */
+      .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #008cba; /* Navbar background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: sticky; /* Makes the navbar sticky */
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: rgb(26, 32, 220);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.navbar li a:hover {
+    background-color: #005f73; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight zoom-in effect */
+}
+
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #008cba;
+    color: white;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.642);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #005f73;
+}
+
+@media (max-width: 1200px) {
+    .team-container {
+        grid-template-columns: repeat(4, 1fr); /* 4 member3s per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .team-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 member3s per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-container {
+        grid-template-columns: 4fr; /* 1 member3 per row on very small screens */
+    }
+}
+
+
+.col-md-6 {
+    padding-top: 20px; /* Adjust the value according to your preference */
+}
+html {
+          scroll-behavior: smooth;
+          }
+
+   
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Wrapper for background image and content */
+        .background-wrapper 
+        {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Adjust height as needed */
+        }
+        
+        /* Semi-transparent overlay */
+        .background-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(0deg, rgba(206, 209, 209, 0), rgba(11, 84, 221, 0)); /* Adjust colors and opacity */
+            z-index: 1;
+        }
+        .background-wrapper > * {
+           position: relative;
+            z-index: 2;
+          }
+        /* Content on top of the background */
+        .content {
+            position: relative;
+            z-index: 2;
+            color: rgba(38, 38, 174, 0.649); /* Text color */
+            padding: 20px;
+            text-align: center;
+        }
+        .team-section {
+    text-align: center;
+    padding: 10px;
+}
+
+.team-container {
+    background-color: #B0E0E6; /* Powder blue background behind the cards */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Dynamic columns */
+    gap: 10px;
+    padding: 10px;
+    justify-content: center; /* Ensures the grid is centered */
+}
+
+
+
+.team-card {
+    
+    background-color: #56a7cf52; /* Powder blue */
+    border-radius: 20px; /* Rounds the corners of the card */
+    padding: 20px; /* Adds space inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Light shadow for 3D effect */
+    text-align: center; /* Centers text inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation on hover for scaling and shadow */
+    position: auto; /* Position relative to allow for absolute positioning inside */
+    width: 90%; /* Ensures the card takes up full width of its grid column */
+    min-height: 200px; /* Ensures that all cards have at least this height */
+    padding: 30px;
+    display: flex; /* Flexbox for inner alignment */
+    flex-direction: column; /* Align content vertically */
+    justify-content: space-between; /* Distributes content evenly inside the card */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.member3-img {
+    overflow: hidden; /* Ensures the image doesn't overflow outside the container */
+    border-radius: 50%; /* Makes the image container circular */
+    width: 150px; /* Sets the width of the image container */
+    height: 150px; /* Sets the height of the image container */
+    margin: 0 auto 20px; /* Centers the image container and adds 20px space below it */
+}
+
+.member3-img img {
+    border: none; /* Ensure no border is added around the image */
+    width: 100%; /* Makes the image fit the container's width */
+    height: 100%; /* Makes the image fit the container's height */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+
+.team-card:hover {
+    transform: scale(1.09); /* Slightly enlarges the card on hover */
+    box-shadow: 0 8px 16px rgb(3, 27, 124); /* Darker shadow for a raised effect on hover */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the card */
+}
+
+  
+
+
+.team-card:hover .member3-img img {
+    transform: scale(1.2); /* Slight zoom-in effect on the image when hovered */
+}
+
+.member3-info h4 {
+    font-size: 1.5em; /* Increases the font size of the member3's name */
+    margin-bottom: 10px; /* Adds space below the name */
+}
+
+.member3-info .span {
+    color: #ff6600; /* Orange color for the role text */
+    margin-bottom: 5px; /* Adds space below the role text */
+    font-weight: bold; /* Makes the role text bold */
+}
+
+.member3-info p {
+    text-align: center;
+    color: #c0c0c0; /* Dark gray color for the text */
+}
+
+.social-icons a {
+    color: #ffff; /* Dark color for the social media icons */
+    margin: 0 10px; /* Adds space of 10px to the left and right of each icon */
+    font-size: 1.2em; /* Increases the size of the social media icons */
+    transition: color 0.3s ease; /* Smooth transition when changing the icon color on hover */
+}
+
+.social-icons a:hover {
+    color: #043fb4; /* Changes the icon color to orange on hover */
+    
+}
+
+.outer-box {
+  background-color:  #0A2239 ;/* Powder blue */
+}
+/* Modified the icons */
+.socialmedia{
+  margin-left: 5px;
+  transition: 0.5s;
+}
+  .socialmedia:hover{
+    transform: translateY(-15px);
+  }
+
+/*.regular-container {
+    text-align: right;
+    position: relative;
+}
+
+.regular-dropdown-menu {
+    position: absolute;
+    right: 20;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0px;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.regular-dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease;
+}
+
+.regular-dropdown-menu a:last-child {
+    border-bottom: none; /* Remove border for the last item 
+}
+
+.regular-dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}*/
+.container_new_4{
+    align-items: center;
+    padding: 1%;
+    color: #333;
+    position: relative;
+    margin: 0 5% 0 5%;
+    background: #0A2239;
+    box-shadow: 0 15px 36px 0 rgba(4, 6, 10, 0.14);}
+    .team {
+    background: #0A2239;
+    padding-bottom: 0px;
+    border-radius: 20px;
+}
+    </style>
 </head>
 
 <body>
+  
   <!--
 <div class="parallax"> 
   <div class="content">
@@ -212,18 +574,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="/home"><img src="../img/logo_aero.png" alt="" style=" height: 90px; width: 85px;" class="img-fluid"></a>
+        <a href="/home"><div  class="img-fluids"></div></a>
       </div>
 
 
 
-      <nav class="nav-menu float-right d-none d-lg-block ">
 
+      <nav class="nav-menu float-right d-none d-lg-block ">
+        
         <ul>
           <li ><a href="/home">Home</a></li>
           <li><a href="/projects">Projects</a></li>
           <li><a href="/events">Events</a></li> 
-          <li class="active" class="dropdown">
+          <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Achievements <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="/achievement#2024" class="whatsapp-link">2024</a></li>
@@ -235,22 +598,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </li>
           <li><a href="/gallery">Gallery</a></li>
           <li class="dropdown">
-            <a href="/team" class="dropdown">Team
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a></a>
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Team<span class="caret"></span></a>
             <div class="dropdown-menu">
-                <a href="/team#2020-24BATCH">2020-24 BATCH</a>
-                <a href="/team#2021-25BATCH">2021-25 BATCH</a>
-                <a href="/team#2022-26BATCH">2022-26 BATCH</a>
-                <a href="/team#2023-27BATCH">2023-27 BATCH</a>
+                <a href="/team#2020-24BATCH" class="whatsapp-link">2020-24 BATCH</a>
+                <a href="/team#2021-25BATCH" class="whatsapp-link">2021-25 BATCH</a>
+                <a href="/team#2022-26BATCH" class="whatsapp-link">2022-26 BATCH</a>
+                <a href="/team#2023-27BATCH" class="whatsapp-link">2023-27 BATCH</a> <!--class="whatsapp-link" is for maintaining colour-->
             </div>
         </li>
-        <li><a href="pioneer">Pioneer</a></li>
-        
-        
-        
+          <li><a href="/pioneer">Pioneer</a></li>
           <li><a href="/contact">Contact Us</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 100px;">Join Us <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Join Us <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="https://chat.whatsapp.com/FxJah3YRcNlKcBUyrEoWlP" class="whatsapp-link">Aero Club Nitte</a>
               </li>
@@ -272,7 +631,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="headingAc">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h1 style="width: 100%; text-align: center;color: black;"><strong>ACHIEVEMENTS</strong></h1>
+          <h1 style="width: 100%; text-align: center;color: black;"><strong>PIONEER</strong></h1>
           <ol>
           <!--  <li><a href="/home">Home</a></li>
             <li>Achievements</li>
@@ -290,7 +649,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
 
             <h1 class="section-title" style="font-size: 3vh; color: rgba(1, 1, 66, 0.887);font-style: 'Montserrat' ; text-align:left ; ">
-                <h2 style="width: 100%; text-align: center !important; "><strong>Class of 2024</strong></h2> 
+                <h2 style="width: 100%; text-align: center !important; "><strong>VISIONARY</strong></h2> 
                </h1>
                <!-- <div class="parallax"> 
                 <div class="content">
@@ -303,112 +662,231 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <div class="col-md-5">
 
                     <div class="img-blur">
-                      <img src="../img/SAE-DDC.jpg" style="width: 600px; height: 350px; " class="'img-fluid rounded" alt=""><br>
+                      <img src="../img/ananth200.jpeg" style="width: 600px; height: 350px; " class="'img-fluid rounded" alt=""><br>
+                      <div class="social">
+
+                        <a href="https://www.linkedin.com/in/ananth-erasappa-83995583"><i class="icofont-linkedin"></i></a>
+                      </div>
                     </div>
                   </div>
             
                  <div class="col-md-6 pt-5">
-                    <h1><strong>SAE DDC </strong></h1>
-                    <p> The Aero Club Nitte team proudly clinched 1st place in the overall category at the prestigious SAE DDC 2024, outperforming 54 formidable teams!
+                    <h1><strong>Mr. Ananth Erasappa </strong><class="social-icons">
+                        <a href="https://www.linkedin.com/in/ananth-erasappa-83995583"><i class="icofont-linkedin"></i></a></h1>
+                    <p style="text-align: justify;">Ananth Erasappa: The Heart of Aeroclub and Visionary of Vayurvya
 
-                      Held from August 29th to 31st at SRM University, Chennai, this renowned competition, organized by SAE India Southern Section, tested our skills across various aeronautics and engineering disciplines. We set a remarkable record in the flying round, successfully assembling an aircraft within a constrained timeframe and showcasing its superior performance with a payload.
-
-                                </p>
+                        As president of our Aeroclub, Ananth Erasappa has been more than a leader; he’s been a guide and mentor, especially in realizing our dream of Vayurvya. His dedication and expertise have empowered us and shaped our journey in aeronautics.
+                        
+                        Ananth’s leadership is the cornerstone of our club’s identity. Through highs and lows, he has been a constant presence, supporting us through challenges and celebrating victories. His unwavering commitment inspires us to strive for excellence while staying grounded in our passion.
+                        
+                        Thanks to his guidance, Aeroclub has achieved new heights, competing at local and national levels. Ananth and his team have led us to transform our dreams into reality, shaping a journey that has been both inspiring and transformative. We are deeply grateful for their leadership and commitment.</p>
+                                
                  </div>
                 </div>
-              </div>  
+              </div> 
+              
+              <br>
 
-
-
-
-               <div class="give-padding">
-                <div class="row" data-aos="fade-right" data-aos-delay="100">
-                  <div class="col-md-5">
-
-                    <div class="img-blur">
-                      <img src="../img/Aerodash.jpg" style="width: 600px; height: 350px; " class="'img-fluid rounded" alt="">
-                    </div>
-                  </div>
-            
-                 <div class="col-md-6 pt-5">
-                    <h1><strong>Aerodash- VIT,Vellore </strong></h1>
-                    <p> Remarkable event is the 1st place victory at the VIT Aero Dash 2024, held on August 8th and 9th in Vellore, and organized by the American Society of Mechanical Engineers (ASME). Competing against some of the best teams, our success was driven by innovative designs, technical precision, and exceptional flight performance. The competition required teams to optimize aircraft for maximum payloads while adhering to strict guidelines on launch accuracy and timing. The outstanding efforts in both the technical presentation and flight rounds showcased their dedication to innovation and engineering excellence. This achievement is ongoing commitment to advancing aviation technology through collaboration and precision.
-
-
-                                </p>
-                 </div>
-                </div>
-              </div>  
-
-
-
-               <div class="give-padding">
-                <div class="row" data-aos="fade-right" data-aos-delay="100">
-                  <div class="col-md-5">
-
-                    <div class="img-blur">
-                      <img src="../img/SAE-ADDC.jpg" style="width: 600px; height: 350px;" class="'img-fluid rounded" alt="">
-                    </div>
-                  </div>
-            
-                 <div class="col-md-6 pt-5">
-                    <h1><strong>SAE ADDC </strong></h1>
-                    <p> AeroClub Nitte is here with one more announcement about winning 1st place at the SAE Drone Development Competition 2024, held at KCG Tech Engineering College, Chennai, on July 19th and 20th. Competing against 47 teams, we excelled across three rigorous rounds: technical inspection, flight performance, and presentation.
-
-
-                                   
-                    
-                            </p>
-                 </div>
-                </div>
-              </div>  
-
-
-
-
-
-               <div class="give-padding">
-                <div class="row" data-aos="fade-right" data-aos-delay="100">
-                  <div class="col-md-5">
-
-                    <div class="img-blur">
-                      <img src="../img/Boeing-Finals.jpg" style="width: 600px; height: 350px;" class="'img-fluid rounded" alt="">
-                    </div>
-                  </div>
-            
-                 <div class="col-md-6 pt-5">
-                    <h1><strong>Boeing  National Aeromodelling Competition Finals, RVCE Bengaluru </strong></h1>
-                    <p> Aeroclub has achieved a historic feat, claiming the 1st, 2nd, and 3rd places in the finals of the prestigious Boeing National Aeromodelling Competition Finals held at RVCE, Bengaluru. This extraordinary accomplishment underscores the unwavering dedication, technical prowess, and competitive spirit of our team members.
-
-
-                                </p>
-                 </div>
-                </div>
-              </div>  
-
-
-
-         <div class="give-padding">
-                <div class="row" data-aos="fade-right" data-aos-delay="100">
-                  <div class="col-md-5">
-
-                    <div class="img-blur">
-                      <img src="../img/IIT-KANPUR.jpg" style="width: 600px; height: 350px; " class="'img-fluid rounded" alt="">
-                    </div>
-                  </div>
-            
-                 <div class="col-md-6 pt-5">
-                    <h1><strong>Boeing IIT National Aeromodelling Competition-Kanpur </strong></h1>
-                    <p> Aeroclub has soared to unprecedented heights, capturing both the 1st and 3rd places in the prestigious Boeing National Aeromodelling Competition. This extraordinary achievement is a testament to the unwavering dedication, technical prowess, and competitive spirit of our team. By qualifying for the finals and securing these top positions, we have not only showcased our exceptional talent but have also cemented our reputation.
-
-
-                               </p>
-                 </div>
-                </div>
-              </div>  
       
         </section>
+
+        <br>
+        <br>
+        <section id="2024">  
+    
+          <section class="features">
+              <div class="container_new">
+                
+      
+                  <h1 class="section-title" style="font-size: 3vh; color: rgba(1, 1, 66, 0.887);font-style: 'Montserrat' ; text-align:left ; ">
+                      <h2 style="width: 100%; text-align: center !important; "><strong>FACULTY CO-ORDINATOR</strong></h2> 
+                     </h1>
+                     <!-- <div class="parallax"> 
+                      <div class="content">
+                        <h1>Parallax Effect Section 1</h1>
+                        <p>Scroll down to see the effect.</p>
+                      </div>
+                    </div> -->
+                     <div class="give-padding">
+                      <div class="row" data-aos="fade-right" data-aos-delay="100">
+                        <div class="col-md-5">
+      
+                          <div class="img-blur">
+                            <img src="../img/gururaj.jpg" style="width: 600px; height: 350px; " class="'img-fluid rounded" alt=""><br>
+                            <div class="social">
+      
+                              <a href="https://www.linkedin.com/in/ananth-erasappa-83995583"><i class="icofont-linkedin"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                  
+                       <div class="col-md-6 pt-5">
+                          <h1><strong>Dr.Gururaj Upadhyaya </strong>
+                              <a href="https://www.linkedin.com/in/ananth-erasappa-83995583"><i class="icofont-linkedin"></i></a></h1>
+                          <p style="text-align: justify;">Ananth Erasappa: The Heart of Aeroclub and Visionary of Vayurvya
+      
+                              As president of our Aeroclub, Ananth Erasappa has been more than a leader; he’s been a guide and mentor, especially in realizing our dream of Vayurvya. His dedication and expertise have empowered us and shaped our journey in aeronautics.
+                              
+                              Ananth’s leadership is the cornerstone of our club’s identity. Through highs and lows, he has been a constant presence, supporting us through challenges and celebrating victories. His unwavering commitment inspires us to strive for excellence while staying grounded in our passion.
+                              
+                              Thanks to his guidance, Aeroclub has achieved new heights, competing at local and national levels. Ananth and his team have led us to transform our dreams into reality, shaping a journey that has been both inspiring and transformative. We are deeply grateful for their leadership and commitment.</p>
+                                      
+                       </div>
+                      </div>
+                    </div> 
+                    
+                    <br>
+      
+            
+              </section>
+              <br>
+              <br>
+        <section class="features">
+            <div class="container_new">
+              
+    
+                <h1 class="section-title" style="font-size: 3vh; color: rgba(1, 1, 66, 0.887);font-style: 'Montserrat' ; text-align:left ; ">
+                    <h2 style="width: 100%; text-align: center !important; "><strong>PILLARS OF SUPPORT</strong></h2> 
+                </h1>
+                <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                    <div class="outer-box">  <div class="container_new_4">
+                      <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
+                      
+                      
+                      
+                      <div class="row">
+              
+                       <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                          <div class="team-card member3">
+                              <div class="member3-img">
+                                  <img src="../img/gururaj.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+                              </div>
+                              
+                              <div class="member3-info">
+                                  <h4>Dr.Gururaj Upadhyaya</h4>
+                                  <p class="role">Associate Professor</p>
+                                  <span>Dept of ME, NMAMIT</span>
+                                  <div class="social-icons">
+                                      <a href="https://www.linkedin.com/in/gururaj-upadhyaya-24b24515"><i class="icofont-linkedin"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>-->
+                     <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="team-card member3">
+                            <div class="member3-img">
+                                <img src="../img/Divin.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+                            </div>
+                            <div class="member3-info">
+                                <h4>Lt Cdr Divin Bharadwaj</h4>
+                                <p class="role">Founder of AeroClub Nitte</p>
+                                <span>Indian Navy</span>
+                                <div class="social-icons">
+                                    <a href=""><i class="icofont-linkedi"></i></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="team-card member3">
+                            <div class="member3-img">
+                                <img src="../img/kathik1.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+                            </div>
+                            <div class="member3-info">
+                                <h4>Mr. Karthik B</h4>
+                                <p class="role">Senior executive</p>
+                                <span>Tata Aerospace and Defense</span>
+                                <div class="social-icons">
+                                    <a href="https://www.linkedin.com/in/karthik-badanidiyoor/"><i class="icofont-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="team-card member3">
+                            <div class="member3-img">
+                                <img src="../img/harshita1.jpeg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+                            </div>
+                            <div class="member3-info">
+                                <h4>Ms. Harshitha GS</h4>
+                                <p class="role">Paid media executive</p>
+                                <span>The Ascot Group, UK</span>
+                                <div class="social-icons">
+                                    <a href="https://www.linkedin.com/in/harshitha-g-suresh"><i class="icofont-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="team-card member3">
+                            <div class="member3-img">
+                                <img src="../img/ankith.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+                            </div>
+                            <div class="member3-info">
+                                <h4>Mr. Ankith Bhandary</h4>
+                                <p class="role">Software Development</p>
+                                <span>OCI, Oracle</span>
+                                <div class="social-icons">
+                                    <a href="https://www.linkedin.com/in/ankith-bhandary-1b5234193/"><i class="icofont-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="team-card member3">
+                            <div class="member3-img">
+                                <img src="../img/sushmita.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+                            </div>
+                            <div class="member3-info">
+                                <h4>Ms. Sushmita S Shetty</h4>
+                                <p class="role">DSE</p>
+                                <span>Jfrog</span>
+                                <div class="social-icons">
+                                    <a href="https://www.linkedin.com/in/sushmita-s-shetty-125214180"><i class="icofont-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="team-card member3">
+                            <div class="member3-img">
+                                <img src="../img/deekshityo.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+                            </div>
+                            <div class="member3-info">
+                                <h4>Mr. Deekshith Prabhu</h4>
+                                <p class="role">System Engineer</p>
+                                <span>Karman Drones</span>
+                                <div class="social-icons">
+                                    <a href="https://www.linkedin.com/in/deekshith-prabhu-1888ba212/"><i class="icofont-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="team-card member3">
+                            <div class="member3-img">
+                                <img src="../img/team/amankumar.jpg" style="height: 150px; width: 150px;" class="img-fluid" alt="">
+                            </div>
+                            <div class="member3-info">
+                                <h4>Mr. Aman Kumar Srivatsav</h4>
+                                <p class="role">UAV Design Engineer & Test Pilot</p>
+                                <span>blueINFINITY Innovation Labs</span>
+                                <div class="social-icons">
+                                    <a href="https://www.linkedin.com/in/aman-kumar-srivastav-544591202/"><i class="icofont-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+        </section>
+        <br>
+        <br>
       </section>
+      <br>
+      <br>
+      
   
   
   </main><!-- End #main -->
