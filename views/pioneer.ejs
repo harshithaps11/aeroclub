@@ -28,12 +28,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link href="../vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="../vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <link href="../vendor/venobox/venobox.css" rel="stylesheet">
   <link href="../vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="../vendor/aos/aos.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Template Main CSS File -->
   <link href="../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
 <style>
 .whatsapp-link {
   color: #45beff !important;
@@ -536,6 +543,86 @@ html {
     padding-bottom: 0px;
     border-radius: 20px;
 }
+.team {
+    background: #fff;
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+
+.team .member {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.team .member .member-img {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.member-img img{
+    padding: 5px;
+    border-radius: 20px;
+}
+.team .member .social {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    right: 0;
+    height: 40px;
+    opacity: 0;
+    transition: bottom ease-in-out 0.4s;
+    text-align: center;
+    background: rgba(113, 118, 121, 0.8);
+}
+
+.team .member .social a {
+    transition: color 0.3s;
+    color: #fff;
+    margin: 0 10px;
+    padding-top: 8px;
+    display: inline-block;
+}
+
+.team .member .social a:hover {
+    color: #68a4c4;
+}
+
+.team .member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.team .member .member-info h4 {
+    font-weight: 700;
+    margin: 15px 0 5px 0;
+    font-size: 18px;
+}
+
+.team .member .member-info span {
+    display: flex;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #68a4c4;
+}
+
+.team .member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+}
+
+.team .member:hover .social {
+    bottom: 0;
+    opacity: 1;
+    transition: bottom ease-in-out 0.4s;
+}
+
     </style>
 </head>
 
@@ -749,8 +836,221 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <h2 style="width: 100%; text-align: center !important; "><strong>PILLARS OF SUPPORT</strong></h2> 
                 </h1>
                 <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-                    <div class="outer-box">  <div class="container_new_4">
-                      <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
+                    <div class="outer-box">  <div class="container_new">
+                      <div class="slider owl-carousel">
+                        <!-- <div class="card">
+                           <div class="member">
+                             <div class="member-img">
+                               <img src="../img/gururaj.jpg" style="height: 314px; width: 466px;" class="img-fluid" alt="">
+                               <div class="social">
+               
+                                 <a href="https://www.linkedin.com/in/gururaj-upadhyaya-24b24515"><i class="icofont-linkedin"></i></a>
+                               </div>
+                             </div>
+                             <div class="member-info">
+                               <h4>Dr. Gururaj Upadhyaya</h4>
+                               <span>Associate Professor<br>Dept of ME, NMAMIT<br><br> </span>
+               
+               
+                             </div>
+                         </div> 
+                       </div>-->
+                      <!--  <div class="card">
+                           <div class="member">
+                             <div class="member-img">
+                               <img src="../img/Divin.jpg"  style="height: 314px; width: 466px;" class="img-fluid" alt="">
+                               <div class="social">
+                                 <a href="#"><i class="icofont-linkedin"></i></a>
+                               </div>
+                             </div>
+                             <div class="member-info">
+                               <h4>Lt Cdr Divin Bharadwaj</h4>
+                               <span>Founder of AeroClub Nitte
+                                 <br>Indian Navy<br></span>
+                               <br>
+                             </div>
+                           </div>
+                       </div> -->
+               
+                        <!-- <div class="card">
+                           <div class="member">
+                             <div class="member-img">
+                               <img src="../img/ananth200.jpeg" style="height: 314px; width: 466px;" class="img-fluid" alt="">
+                               <div class="social">
+               
+                                 <a href="https://www.linkedin.com/in/ananth-erasappa-83995583"><i class="icofont-linkedin"></i></a>
+                               </div>
+                             </div>
+                             <div class="member-info">
+                               <h4>Mr. Ananth Erasappa</h4>
+                               <span>UAV Operator<br>UN peacekeeping mission<br><br><br></span>
+               
+                             </div>
+                           </div>
+                         </div>-->
+               
+                       <div class="card">
+                           <div class="member">
+                             <div class="member-img">
+                               <img src="../img/kathik1.jpg"  style="height: 314px; width: 466px;" class="img-fluid" alt="">
+                               <div class="social">
+                                 <a href="https://www.linkedin.com/in/karthik-badanidiyoor/"><i class="icofont-linkedin"></i></a>
+                               </div>
+                             </div>
+                             <div class="member-info">
+                               <h4>Mr. Karthik B</h4>
+                               <span>Senior executive
+                                 <br>Tata Aerospace and Defense</span>
+                               <br><br>
+                             </div>
+                           </div>
+                         </div>
+               
+                         <div class="card">
+                           <div class="member">
+                             <div class="member-img">
+                               <img src="../img/harshita1.jpeg" style="height: 314px; width: 466px;" class="img-fluid" alt="">
+               
+                               <div class="social">
+               
+                                 <a href="https://www.linkedin.com/in/harshitha-g-suresh"><i class="icofont-linkedin"></i></a>
+                               </div>
+                             </div>
+               
+                             <div class="member-info">
+                               <h4>Ms. Harshitha GS</h4>
+                               <span>Paid media executive<br>The Ascot Group, UK<br><br><br></span>
+               
+                             </div>
+                           </div>
+                         </div>
+               
+                         <div class="card">
+                           <div class="member">
+                             <div class="member-img">
+                               <img src="../img/ankith.jpg" style="height: 314px; width: 466px;" class="img-fluid" alt="">
+                               <div class="social">
+               
+                                 <a href="https://www.linkedin.com/in/ankith-bhandary-1b5234193/"><i class="icofont-linkedin"></i></a>
+                               </div>
+                             </div>
+                             <div class="member-info">
+                              <h4>Mr. Ankith Bhandary</h4>
+                               <span>Software Development<br> Engineer-2
+                                 <br>OCI, Oracle<br><br></span>
+                             </div>
+                           </div>
+                         </div>
+               
+                         <div class="card">
+                           <div class="member">
+                             <div class="member-img">
+                               <img src="../img/sushmita.jpg" style="height: 314px; width: 466px;" class="img-fluid" alt="">
+                               <div class="social">
+               
+                                 <a href="https://www.linkedin.com/in/sushmita-s-shetty-125214180"><i class="icofont-linkedin"></i></a>
+                               </div>
+                             </div>
+                             <div class="member-info">
+                               <h4>Ms. Sushmita S Shetty</h4>
+                               <span>DSE<br>Jfrog<br><br><br></span>
+               
+                             </div>
+                           </div>
+                         </div>
+               
+               
+                         <div class="card">
+                           <div class="member">
+                             <div class="member-img">
+                               <img src="../img/deekshityo.jpg" style="height: 314px; width: 466px;" class="img-fluid" alt="">
+                               <div class="social">
+               
+                                 <a href="https://www.linkedin.com/in/deekshith-prabhu-1888ba212/"><i class="icofont-linkedin"></i></a>
+                               </div>
+                             </div>
+                             <div class="member-info">
+                               <h4>Mr. Deekshith Prabhu</h4>
+                               <span>System Engineer<br>Karman Drones<br><br><br></span>
+               
+                             </div>
+                           </div>
+                         </div>
+                         
+                         <div class="card">
+                           <div class="member">
+                             <div class="member-img">
+                               <img src="../img/team/amankumar.jpg" style="height: 314px; width: 466px;" class="img-fluid" alt="">
+                               <div class="social">
+               
+                                 <a href="https://www.linkedin.com/in/deekshith-prabhu-1888ba212/"><i class="icofont-linkedin"></i></a>
+                               </div>
+                             </div>
+                             <div class="member-info">
+                               <h4>Mr. Aman Kumar </h4>
+                              <span>UAV Design Engineer & Test Pilot<br>blueINFINITY <br>Innovation Labs<br><br></span>
+               
+                             </div>
+                           </div>
+                         </div>
+               
+               
+                        <!-- <div class="card">
+                           <div class="member">
+                             <div class="member-img">
+                               <img src="../img/team/amankumar.jpg" style="height:314px; width:466px" class="img-fluid" alt="">
+                               <div class="social">
+               
+                                 <a href="https://www.linkedin.com/in/aman-kumar-srivastav-544591202/"><i
+                                     class="icofont-linkedin"></i></a>
+                               </div>
+                             </div>
+                             <div class="member-info">
+                               <h4>Mr. Aman Kumar Srivastav </h4>
+                               <span>UAV Design Engineer & Test Pilot <br>blueINFINITY Innovation Labs<br><br></span>
+                             </div>
+                           </div>
+                         </div>-->
+                       </div>
+               
+                       
+               
+                       <script>
+                         $(".slider").owlCarousel({
+                           loop: true,
+                           autoplay: true,
+                           autoplayTimeout: 1000, //1000ms = 1s;
+                           responsiveClass: true,
+                           responsive: {
+                             0: {
+                               items: 1,
+                               nav: true
+                             },
+                             600: {
+                               items: 3,
+                               nav: true
+                             },
+                             1000: {
+                               items: 5,
+                               nav: true,
+                               loop: true
+                             }
+                           },
+               
+                           autoplayHoverPause: true,
+                         });
+                       </script>
+               
+               
+                     </div>
+                     </div>
+               
+                     </div>
+                  </section><!-- End Why Us Section -->
+                   <br>
+                   <br>
+                   <br>
+                      <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch"></div>
                       
                       
                       
@@ -787,7 +1087,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 
                             </div>
                         </div>
-                    </div> -->
+                    </div> 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div class="team-card member3">
                             <div class="member3-img">
@@ -886,9 +1186,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
       </section>
       <br>
-      <br>
+      <br>-->
       
-  
+    
   
   </main><!-- End #main -->
 
