@@ -865,6 +865,14 @@ section {
     }
 
 }
+@media screen and (max-width:968px) {
+    .services .container_new1 {
+
+        box-sizing: border-box;
+
+    }
+
+}
 
 /*--------------------------------------------------------------
   # Contact
@@ -1086,7 +1094,20 @@ section {
     margin: 0 5% 0 5%;
     background: #75a0b0;
     box-shadow: 0 15px 36px 0 rgba(4, 6, 10, 0.14);
+    top: -75px;
 
+}
+container_new1{
+    
+        align-items: center;
+        padding: 1%;
+        color: #c0c0c0;
+        position: relative;
+        margin: 0 5% 0 5%;
+        background: #75a0b0;
+        box-shadow: 0 15px 36px 0 rgba(4, 6, 10, 0.14);
+        top: -75px;
+    
 }
 .container_new h1{
     color: #ffffff;
@@ -2186,6 +2207,40 @@ h2{
     padding: 30px;    /* More padding for desktop */
   }
 }
+@media (max-width: 359px) {
+    .popup-content3 {
+      max-width: 90%;    /* Use a percentage to make it flexible on small screens */
+      padding: 15px;     /* Less padding for small screens */
+    }
+  }
+  
+  /* For small to medium smartphones (Android/iOS) */
+  @media (min-width: 360px) and (max-width: 639px) {
+    .popup-content3 {
+      max-width: 95%;    /* Make the width slightly larger for mid-size phones */
+      padding: 20px;     /* Moderate padding for better spacing */
+    }
+  }
+  
+  @media (min-width: 640px) {
+    /* For tablets and larger mobile screens */
+    .popup-content3 {
+      max-width: 640px; /* Adjust width for tablets */
+      padding: 25px;    /* Slightly more padding for larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* For desktops and larger screens */
+    .popup-content3 {
+      max-width: 600px; /* Keep the width larger for desktop */
+      padding: 30px;    /* More padding for desktop */
+    }
+  }
+  
+    
+    
+  
 
   
   
@@ -4436,7 +4491,7 @@ button {
    border-radius: 20px;
     box-shadow:0 5px 10px 0  #0d2735 ;
    position: relative;
-    top: -50px;
+    top: -80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4444,6 +4499,20 @@ button {
    
   
    
+}
+
+.contain_eve1{
+    height: 45px;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 55px;
+    background-color: #0A2239;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 #0d2735;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .eve_box{
     margin:20px;
