@@ -228,22 +228,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   cursor: pointer;
 }
 
-/* .portfolio-info .tooltip {
-  position: relative;
-  bottom: 0; 
-  left: 50%;
-  transform: translate(-50%, 7px); 
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  z-index: 9999;
-  max-width: 800px;
-  max-height: 500px;
-  overflow: auto;
-} */
+
 .portfolio-info .tooltip {
    position: absolute;
     top: 100%; /* Set top to 100% to position it at the bottom */
@@ -414,7 +399,7 @@ nav ul li:hover .dropdown1{
     <section class="breadcrumbs">
       <div class="container_new4">
         <div class="d-flex justify-content-between align-items-center">
-          <h2 style="width: 100%;text-align: center;"><strong>PROJECTS</strong></h2>
+          <h1 style="width: 100%;text-align: center;color: black;"><strong>PROJECTS</strong></h1>
           <ol>
           <!--  <li><a href="/home">Home</a></li>
             <li>Projects</li>
@@ -431,21 +416,6 @@ nav ul li:hover .dropdown1{
               <div class="portfolio-item" >
                 
                 <img src="../img/solarplane.jpg" id="solar" style="height: 315px;" class="img-fluid" alt="" onclick="showPopup(this)">
-                  <!--<div class="portfolio-info" data-toggle="tooltip" data-placement="top">
-                      <h3><a href="../img/solarplane.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"></a></h3>
-                      <a href="../img/solarplane.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><b><i class="icofont-square-up"></i></b></a>
-                      <div class="tooltip scrollable-tooltip">
-                          <strong>Solar Powered radio controlled plane</strong><br>
-                          <div class="scrollable-content">
-                              Renewable solar energy powers the RC plane motor, which requires 6-7 volts and 40-60 amps. To meet this demand, 14 solar cells with 0.5 volts and 6 amps panels were installed on the aircraft for energy generation.
-                              Renewable solar energy powers the RC plane motor, which requires 6-7 volts and 40-60 amps. To meet this demand, 14 solar cells with 0.5 volts and 6 amps panels were installed on the aircraft for energy generation.
-                            </div>
-                      </div>
-                      
-                    
-                
-                   
-                  </div>-->
                   <div id="popup1"  class="popup">
                     
                     <div class="popup-content" >
@@ -469,24 +439,6 @@ nav ul li:hover .dropdown1{
             <div class="col-lg-4 col-md-6 filter-app">
               <div class="portfolio-item">
                   <img src="../img/umatis.jpg" id="uman" style="height:315px;" class="img-fluid" alt="" onclick="showPopup(this)" >
-                 <!-- <div class="portfolio-info" data-toggle="tooltip" data-placement="top">
-                    <h3><a href="../img/umatis.jpg" data-gall="portfolioGallery" class="venobox"
-                        title="App 1"></a></h3>
-                    <a href="../img/umatis.jpg" data-gall="portfolioGallery" class="venobox"
-                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
-                    <div class="tooltip scrollable-tooltip">
-                      
-                      <strong>UMANTIS</strong><br>
-                      <div class="scrollable-content">
-                      Unmanned aerial navigation
-                        and terrestrial vehicle
-                        developed with aerial and
-                          terrestrial surveillance
-                          vehicle. A prototype was
-                          developed of the hybrid
-                      version.
-                    </div></div>
-                  </div>-->
                   <div id="popup2" class="popup">
                     <div class="popup-content">
                       <span id="umantis_close" class="close" onclick="hidePopup(this)">&times;</span>
@@ -515,22 +467,6 @@ nav ul li:hover .dropdown1{
               <div class="col-lg-4 col-md-6 filter-app">
                 <div class="portfolio-item">
                   <img src="../img/HAAPS.jpg" id="haaps" style="height:315px;" class="img-fluid" alt="" onclick=showPopup(this)>
-                  <!--<div class="portfolio-info" data-toggle="tooltip" data-placement="top">
-                    <h3><a href="../img/HAAPS.jpg" data-gall="portfolioGallery" class="venobox"
-                        title="App 1"></a></h3>
-                    <a href="../img/HAAPS.jpg" data-gall="portfolioGallery" class="venobox"
-                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
-                    <div class="tooltip scrollable-tooltip">
-                      <strong>HAAPS</strong><br>
-                      <div class="scrollable-content">
-                    
-                      High Altitude Aeronautical Platform Station.
-                      They are operated in 17-22 km altitude of
-                      stratospheric layer. It is developed for long
-                      range wireless narrow band and broadband
-                      telecommunications as well as broadcasting
-                    </div></div>
-                  </div>-->
                     <div id="popup3" class="popup">
                       <div class="popup-content">
                         <span id="haaps_close" class="close" onclick="hidePopup(this)">&times;</span>
@@ -556,21 +492,6 @@ nav ul li:hover .dropdown1{
               <div class="col-lg-4 col-md-6 filter-app">
                 <div class="portfolio-item">
                   <img src="../img/cropyield.png" id="acye" style="height:315px;" class="img-fluid" alt=""  onclick="showPopup(this)">
-                  <!--<div class="portfolio-info" data-toggle="tooltip" data-placement="top">
-                    <h3><a href="../img/cropyield.png" data-gall="portfolioGallery" class="venobox"
-                        title="App 1"></a></h3>
-                    <a href="../img/cropyield.png" data-gall="portfolioGallery" class="venobox"
-                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
-                    <div class="tooltip scrollable-tooltip">
-                      <strong> Aerial Crop Yield Estimator</strong><br>
-                      <div class="scrollable-content">
-                      Developing a precise aerial crop
-yield estimator using data from
-UAVs and advanced deep
-learning techniques, such as
-convolutional neural networks.
-                    </div></div>
-                  </div>-->
                 <div id="popup4"  class="popup">
                     <div class="popup-content3">
                         <span id="acye_close" class="close" onclick="hidePopup(this)">&times;</span>
@@ -596,20 +517,7 @@ convolutional neural networks.
              <div class="col-lg-4 col-md-6 filter-app">
               <div class="portfolio-item">
                 <img src="../img/Health_monitoring_system.jpg" id="hms" style="height:315px;" class="img-fluid" alt="" onclick="showPopup(this)">
-                <!--<div class="portfolio-info" data-toggle="tooltip" data-placement="top">
-                  <h3><a href="../img/Health_monitoring_system.jpg" data-gall="portfolioGallery" class="venobox"
-                      title="App 1"></a></h3>
-                  <a href="../img/Health_monitoring_system.jpg" data-gall="portfolioGallery" class="venobox"
-                    title="App 1"><b><i class="icofont-square-up"></i></b></a>
-                  <div class="tooltip scrollable-tooltip">
-                    <strong>Aerial Crop Health Monitoring System</strong><br>
-                    <div class="scrollable-content">
-                    Utilising the NDVI approach,
-crop health is monitored based
-on the light reflection of
-healthy and unhealthy plants
-                  </div>
-                </div></div>-->
+
                 <div id="popup5"  class="popup">
                   <div class="popup-content3">
                       <span id="hms_close" class="close" onclick="hidePopup(this)">&times;</span>
@@ -630,21 +538,6 @@ healthy and unhealthy plants
               <div class="col-lg-4 col-md-6 filter-app">
                 <div class="portfolio-item">
                   <img src="../img/aerial_pesticide_sprayer.jpg" id="aps" style="height:315px;" class="img-fluid" alt="" onclick="showPopup(this)">
-                  <!--<div class="portfolio-info" data-toggle="tooltip" data-placement="top">
-                    <h3><a href="../img/aerial_pesticide_sprayer.jpg" data-gall="portfolioGallery" class="venobox"
-                        title="App 1"></a></h3>
-                    <a href="../img/aerial_pesticide_sprayer.jpg" data-gall="portfolioGallery" class="venobox"
-                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
-                    <div class="tooltip scrollable-tooltip">
-                      <strong> Aerial Pesticide Sprayer</strong><br>
-                      <div class="scrollable-content">
-                      This aircraft can access sensitive
-                      and hard-to-reach areas, enabling
-                      the development of an aerial
-                      pesticide sprayer for precise crop
-                      protection at a fixed altitude.
-                    </div></div>
-                  </div>-->
                   <div id="popup6"  class="popup">
                     <div class="popup-content3">
                         <span id="aps_close" class="close" onclick="hidePopup(this)">&times;</span>
@@ -667,22 +560,6 @@ healthy and unhealthy plants
               <div class="col-lg-4 col-md-6 filter-app">
                 <div class="portfolio-item">
                   <img src="../img/Hot_airfoil_cutter.jpg" id="hac" style="height:315px;" class="img-fluid" alt="" onclick="showPopup(this)">
-                 <!-- <div class="portfolio-info" data-toggle="tooltip" data-placement="top">
-                    <h3><a href="../img/Hot_airfoil_cutter.jpg" data-gall="portfolioGallery" class="venobox"
-                        title="App 1"></a></h3>
-                    <a href="../img/Hot_airfoil_cutter.jpg" data-gall="portfolioGallery" class="venobox"
-                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
-                    <div class="tooltip scrollable-tooltip">
-                      <strong>Hot Wire Airfoil Cutter</strong><br>
-                      <div class="scrollable-content">
-                      It is a device based on heating
-principle. The hot wire enables
-to pass through the specifies
-material. It was designed and
-fabricated to obtain airfoil
-structure for the wings.
-                    </div>
-                  </div></div>-->
                   <div id="popup7"  class="popup">
                     <div class="popup-content1">
                         <span id="hac_close" class="close" onclick="hidePopup(this)">&times;</span>
@@ -702,46 +579,9 @@ structure for the wings.
               </div>
 
 
-              
-
-
-              <!-- <div class="col-lg-4 col-md-6 filter-app">
-                <div class="portfolio-item">
-                  <img src="../img/umatis.jpg" style="height:315px;" class="img-fluid" alt="">
-                  <div class="portfolio-info" data-toggle="tooltip" data-placement="top">
-                    <h3><a href="../img/umatis.jpg" data-gall="portfolioGallery" class="venobox"
-                        title="App 1"></a></h3>
-                    <a href="../img/umatis.jpg" data-gall="portfolioGallery" class="venobox"
-                      title="App 1"><b><i class="icofont-square-up"></i></b></a>
-                    <div class="tooltip">
-                      <strong>Stable Airplane Configuration</strong><br>
-                      The main objective of this project is to design, construct and fly a remote controlled aircraft having high stability at lower and higher speeds while taking into account the availaible power, aircrafts length, width and height requirements.
-                    </div>
-                  </div>
-                  <div class="project-name">
-            <p>Surveillance Drone Project</p>
-        </div>
-                </div>
-              </div> -->
-
-
              <div class="col-lg-4 col-md-6 filter-app">
       <div class="portfolio-item">
         <img src="../img/surveillance_drone.jpg" id="sd" style="height:315px;" class="img-fluid" alt="" onclick="showPopup(this)">
-        <!--<div class="portfolio-info" data-toggle="tooltip" data-placement="top">
-            <h3><a href="../img/surveillance_drone.jpg" data-gall="portfolioGallery" class="venobox"
-                    title="App 1"></a></h3>
-            <a href="../img/surveillance_drone.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><b><i
-                        class="icofont-square-up"></i></b></a>
-            <div class="tooltip scrollable-tooltip">
-                <strong>Surveillance Drone</strong><br>
-                <div class="scrollable-content">
-
-                  The autonomous drone, weighing approximately 2.5 kg, is configured in an H shape for optimal stability during perimeter surveillance. It employs a Pixhawk flight controller for precise autonomous operations, with Mission Planner serving as the ground control station (GCS). The onboard Raspberry Pi enhances computational capabilities, and the drone is versatile enough for payload dropping.
-                  </div></div>
-        Project name displayed at the bottom outside the tooltip div 
-        
-    </div>-->
     <div id="popup8"  class="popup">
       <div class="popup-content1">
           <span id="sd_close" class="close" onclick="hidePopup(this)">&times;</span>
@@ -759,18 +599,6 @@ structure for the wings.
     <div class="col-lg-4 col-md-6 filter-app">
               <div class="portfolio-item">
               <img src="../img/Autonomous_plane.jpg" id="ap" style="height:315px;" class="img-fluid" alt="" onclick="showPopup(this)">
-           <!-- <div class="portfolio-info" data-toggle="tooltip" data-placement="top">
-                  <h3><a href="../img/Autonomous_plane.jpg" data-gall="portfolioGallery" class="venobox"
-                        title="App 1"></a></h3>
-                  <a href="../img/Autonomous_plane.jpg" data-gall="portfolioGallery" class="venobox"title="App 1"><b><i
-                       class="icofont-square-up"></i></b></a>
-            <div class="tooltip scrollable-tooltip">
-                <strong>Autonomous Plane</strong><br>
-                <div class="scrollable-content">
-
-                    An autonomous fixed wing UAV for payload dropping and medical kit is an unmanned aerial vehicle that has a fixed wing design and can fly without human intervention to deliver medical supplies or equipment to a desired location. Autonomous fixed wing UAVs can be useful for emergency situations, rural areas, or remote locations where conventional delivery methods are not feasible or safe.
-                    </div></div>
-              </div>-->
                 <div id="popup9"  class="popup">
                 <div class="popup-content1">
                     <span id="ap_close" class="close" onclick="hidePopup(this)">&times;</span>
@@ -787,30 +615,6 @@ structure for the wings.
 <div class="col-lg-4 col-md-6 filter-app">
 <div class="portfolio-item">
           <img src="../img/V-TOL UAV.jpg" id="vtol" style="height:315px;" class="img-fluid" alt="" onclick="showPopup(this)">
-          <!--<div class="portfolio-info" data-toggle="tooltip" data-placement="top">
-                  <h3><a href="../img/Autonomous_plane.jpg" data-gall="portfolioGallery" class="venobox"
-                      title="App 1"></a></h3>
-                  <a href="../img/V-TOL UAV.jpg" data-gall="portfolioGallery" class="venobox"title="App 1"><b><i
-                     class="icofont-square-up"></i></b></a>
-          <div class="tooltip scrollable-tooltip">
-                <strong>V-TOL Project</strong><br>
-                <div class="scrollable-content">
-
-                  Vertical Takeoff Landing is of the successful team project accomplished by Aero Club Nitte. It had won the "Best project of the year award" at the major Project Expro exhibition and competition, 2024. It is fully hand-crafted. 
-                  <br> 
-                  Specifications
-                  <li> 
-                    <ul>- Wingspan : 1.2m</ul>
-                    <ul>- Empty aircraft weight : 1.7kg (3.747lbs)</ul>
-                    <ul>- MTOW (max Takeoff weight) : 4kg (8.818lbs)</ul>
-                    <ul>- Payload capacity : 0.5kg (1.102lbs)</ul>
-                    <ul> - Endurance : 20mins </ul>
-                    <ul>- Cruise speed : 10m/s</ul>
-                    <ul>- Range : 1km</ul>
-                    <ul> - Avionics : ArduPilot flight software (mission planner 1.3.76)</ul>
-                  </li>
-                  </div></div>
-            </div>-->
             <div id="popup10"  class="popup">
               <div class="popup-content2">
                   <span id="vtol_close" class="close" onclick="hidePopup(this)">&times;</span>
@@ -849,7 +653,7 @@ structure for the wings.
   
     <!-- ======= Footer ======= -->
     <footer id="footer" data-aos-duration="500">
-      <div class="container">
+      <div class="container_2">
         <div class="row">
           <div class="col-md-6">
             <h2 style="color: #fff;text-align: start;">Address</h2>
