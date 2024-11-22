@@ -362,6 +362,7 @@ h6,
 #hero {
     width: 100%;
     height: 90vh;
+    margin-top: 0;
     overflow: hidden;
     position: relative;
       }
@@ -404,8 +405,8 @@ h6,
   @media (min-width: 360px) and (max-width: 639px) {
     #item1 button {
         position: relative;
-        top:170px;
-        left:-70px;
+        top:7vh;
+        left:-10px;
         background-color:#0A2239;
         width:150px;
         height:50px;     /* Moderate padding for better spacing */
@@ -436,6 +437,41 @@ h6,
     }
   }
 
+  /* video */
+  @media (min-width: 360px) and (max-width: 639px) {
+    #item1 button {
+        position: relative;
+        top:7vh;
+        left:-10px;
+        background-color:#0A2239;
+        width:150px;
+        height:50px;     /* Moderate padding for better spacing */
+    }
+  }
+  
+  @media (min-width: 640px) {
+    /* For tablets and larger mobile screens */
+    .btnwork {
+        position: relative;
+        top:170px;
+        left:50px;
+        background-color:#0A2239;
+        width:200px;
+        height:75px;    /* Slightly more padding for larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* For desktops and larger screens */
+    .btnwork {
+        position: relative;
+        top:170px;
+        left:50px;
+        background-color:#0A2239;
+        width:200px;
+        height:75px;    /* More padding for desktop */
+    }
+  }
 /*#hero::after {
     content: "";
     position: absolute;
