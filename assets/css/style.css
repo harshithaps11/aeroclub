@@ -3101,6 +3101,8 @@ h2{
     color: #fff;
     font-size: 14px;
     overflow: hidden;
+    padding-left: 2vh;
+    padding-right: 4vh;
 }
 
 #footer .footer-newsletter {
